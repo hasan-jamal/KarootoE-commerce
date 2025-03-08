@@ -1,64 +1,70 @@
 // StartSlider1
 
 $(document).ready(function () {
-  $(".sliderClients").slick({
-    prevArrow: $(".arrow-sliderImgLeft"),
-    nextArrow: $(".arrow-sliderImgRight"),
-    centerMode: true,
-    centerPadding: "0px",
+  $(".sliderCategories").slick({
+    centerMode: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     dots: false,
+    arrows: false,
     responsive: [
-      {
-        breakpoint: 7000,
-        settings: {
-          slidesToShow: 4,
-          centerMode: true,
-          centerPadding: "0px",
-        },
-      },
-      {
-        breakpoint: 2000,
-        settings: {
-          slidesToShow: 4,
-          centerMode: true,
-          centerPadding: "0px",
-        },
-      },
       {
         breakpoint: 1800,
         settings: {
-          slidesToShow: 3.2,
+          slidesToShow: 8.3,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
         breakpoint: 1700,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 8.3,
           centerMode: true,
-          centerPadding: "0px",
+        },
+      },
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 7.3,
+          centerMode: true,
         },
       },
       {
         breakpoint: 1300,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 7.6,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1100,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 7.3,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 5.3,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 4.3,
           centerMode: false,
-          centerPadding: "0px",
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3.3,
+          centerMode: false,
         },
       },
     ],
@@ -85,7 +91,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 4,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -93,7 +98,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 4,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -101,7 +105,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 3.2,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -109,7 +112,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 3,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -117,7 +119,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -125,7 +126,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           centerMode: false,
-          centerPadding: "0px",
         },
       },
     ],
@@ -151,7 +151,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 7,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -159,7 +158,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 6,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -167,7 +165,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 5.2,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -175,7 +172,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 5,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -183,7 +179,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 4,
           centerMode: true,
-          centerPadding: "0px",
         },
       },
       {
@@ -191,7 +186,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           centerMode: false,
-          centerPadding: "0px",
         },
       },
     ],
