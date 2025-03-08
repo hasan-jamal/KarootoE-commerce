@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAROOTO</title>
+    <link rel="shortcut icon" href="./images/karooto logo.svg" type="image/x-icon" />
+    <!---Style CSS-->
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="./css/slick slider/animate.min.css">
+    <link rel="stylesheet" href="./css/slick slider/slick.min.css">
+    <link rel="stylesheet" href="./css/slick slider/slickSlider.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="d-flex flex-column">
+            <div class="d-flex navbarPart1 align-items-center">
+                <div class="navbarIcons d-flex align-items-center">
+                    <a href=""><img src="./images/facebook.svg" alt="facebook icon"></a>
+                    <a href=""><img src="./images/X.com.svg" alt="X icon"></a>
+                    <a href=""><img src="./images/youtube.svg" alt="youtube icon"></a>
+                    <a href=""><img src="./images/instgram.svg" alt="instgram icon"></a>
+                </div>
+                <div class=" d-flex header-contact  align-items-center">
+                    <p class="style-font mb-0 darkGreen fontSize16">Call Us :</p>
+                    <a href="#" class="font-medium darkGreen2 fontSize18 textUnDecoration">+972567408830</a>
+                </div>
+                <div class="">
+                    <div class="coverNav" onclick="toggleSidenav();">
+                        <button class="close-nav" onclick="closeSidenav();"><img src="./images/close-nav.svg"
+                                alt="close"></button>
+                    </div>
+                    <div class="hamburger" id="hamburger" onclick="toggleSidenav();">
+                        <div class="div1"></div>
+                        <div class="div2"></div>
+                        <div class="div3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex navbarPart2 justify-content-between align-items-center">
+                <div class="karootoLogo"><img src="./images/karooto logo.svg" alt="karooto logo"></div>
+                <div class="HeaderLocation">
+                    <div class="divLocation">
+                        <div class="btnLocation">
+                            <img src="./images/location-user.svg" alt="location user" class="location-user">
+                            <div class="">
+                                <span class="style-font">Location</span>
+                                <p class="fontSize16 style-font mb-0">Mogadishu, Somalia Street</p>
+                            </div>
+                            <img src="./images/Arrow-Down-green.svg" alt="">
+                        </div>
+                        <div class="listLocations">
+                            <div class="itemLocation d-flex">
+                                <img src="./images/location-listIcon.svg" alt="location list Icon">
+                                <div class="d-flex flex-column">
+                                    <p class="mb-0 style-font">Company</p>
+                                    <span class="style-font darkGreen2">Mogadishu, Somalia Street</span>
+                                </div>
+                            </div>
+                            <div class="itemLocation d-flex">
+                                <img src="./images/location-listIcon.svg" alt="location list Icon">
+                                <div class="d-flex flex-column">
+                                    <p class="mb-0 style-font">Home</p>
+                                    <span class="style-font darkGreen2">Mogadishu, Somalia Street</span>
+                                </div>
+                            </div>
+                            <div class="itemLocation d-flex">
+                                <img src="./images/location-listIcon.svg" alt="location list Icon">
+                                <div class="d-flex flex-column">
+                                    <p class="mb-0 style-font">Family home</p>
+                                    <span class="style-font darkGreen2">Mogadishu, Somalia Street</span>
+                                </div>
+                            </div>
+                            <button class="addAddress">
+                                <img src="./images/plusGreen.svg" alt="plusGreen" class="plusGreen">
+                                <span class="style-font">Add New Shipping Address</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex navbarPart3 align-items-center">
+                <form action="" class="d-flex align-items-center fxHeaderForm">
+                    <div class="divCategories">
+                        <button type="button" class="d-flex align-items-center btn-hover btnCategories">
+                            <span class="fontSize16 style-font">All Categories</span>
+                            <img src="./images/Arrow-Down-white.svg" alt="">
+                        </button>
+                        <div class="listCategories">
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">All Categories</p>
+                                <span class="font-medium">All Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Fruits</p>
+                                <span class="font-medium">50 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Vegetables</p>
+                                <span class="font-medium">450 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Milk & egg</p>
+                                <span class="font-medium">50 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Beverages</p>
+                                <span class="font-medium">200 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Kitchen</p>
+                                <span class="font-medium">50 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Snacks</p>
+                                <span class="font-medium">500 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Electronics</p>
+                                <span class="font-medium">120 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Compo</p>
+                                <span class="font-medium">150 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Bakery</p>
+                                <span class="font-medium">320 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Beverages</p>
+                                <span class="font-medium">150 Products</span>
+                            </div>
+                            <div class="itemCategory d-flex flex-column">
+                                <p class="mb-0 font-medium fontSize16">Laundry</p>
+                                <span class="font-medium">700 Products</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center fxFormSearch">
+                        <input type="text" class="fontSize16 style-font" placeholder="Search for products....">
+                        <img src="./images/search-white.svg" alt="search icon">
+                    </div>
+                </form>
+                <div class="d-flex headerlLinksIcons">
+                    <a href="" class="btn-hover"><img src="./images/favourite-white.svg" alt="favourite icon"></a>
+                    <a href="" class="btn-hover"><img src="./images/shopping-cart-white.svg"
+                            alt="shopping cart icon"></a>
+                    <a href="" class="btn-hover"><img src="./images/user-white.svg" alt="user icon"></a>
+                </div>
+            </div>
+            <div class="navbarPart4 d-flex flex-column">
+                <div class="box-nav w-100">
+                    <button class="d-flex align-items-center justify-content-between btnNav"><span
+                            class="font-medium darkGreen2">Home</span>
+                        <img src="./images/Arrow-Down-green.svg" alt="Arrow Green" class="arrowNav"></button>
+                    <div class="listNav justify-content-center">
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-nav w-100">
+                    <button class="d-flex align-items-center justify-content-between btnNav"><span
+                            class="font-medium darkGreen2">Shop</span>
+                        <img src="./images/Arrow-Down-green.svg" alt="Arrow Green"></button>
+                    <div class="listNav justify-content-center">
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-nav w-100">
+                    <button class="d-flex align-items-center justify-content-between btnNav"><span
+                            class="font-medium darkGreen2">Fruits</span>
+                        <img src="./images/Arrow-Down-green.svg" alt="Arrow Green"></button>
+                    <div class="listNav justify-content-center">
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Fruits</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-nav w-100">
+                    <button class="d-flex align-items-center justify-content-between btnNav"><span
+                            class="font-medium darkGreen2">Electronics</span>
+                        <img src="./images/Arrow-Down-green.svg" alt="Arrow Green"></button>
+                    <div class="listNav justify-content-center">
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Fruits</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-nav w-100">
+                    <button class="d-flex align-items-center justify-content-between btnNav"><span
+                            class="font-medium darkGreen2">Milk & egg</span>
+                        <img src="./images/Arrow-Down-green.svg" alt="Arrow Green"></button>
+                    <div class="listNav justify-content-center">
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Fruits</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-nav w-100">
+                    <button class="d-flex align-items-center justify-content-between btnNav"><span
+                            class="font-medium darkGreen2">Compo</span>
+                        <img src="./images/Arrow-Down-green.svg" alt="Arrow Green"></button>
+                    <div class="listNav justify-content-center">
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Category</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                        <div class="part-listNav">
+                            <h4 class="font-medium darkGreen2">Fruits</h4>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                            <a href="" class="font-light">product Name</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <header id="header">
+        <div class="d-flex justify-content-between align-items-center header-part1 px-110">
+            <div class=" d-flex header-contact  align-items-center">
+                <p class="style-font mb-0 darkGreen fontSize16">Call Us :</p>
+                <a href="#" class="font-medium darkGreen2 fontSize18 textUnDecoration">+972567408830</a>
+            </div>
+            <div class="header-texts">
+                <h1 class="font-medium mb-0 darkGreen fontSize18">Sign up and GET 30% OFF for your first order. <a
+                        href="" class="font-bold lightGreen fontSize18">Sign up now</a></h1>
+            </div>
+            <div class="d-flex header-icons">
+                <a href="" class="btn-hover d-block"><img src="./images/facebook-icon.svg" alt="facebook icon"></a>
+                <a href="" class="btn-hover d-block"><img src="./images/twitter-icon.svg" alt="twitter icon"></a>
+                <a href="" class="btn-hover d-block"><img src="./images/youtube icon.svg" alt="youtube icon"></a>
+                <a href="" class="btn-hover d-block"><img src="./images/instgram icon.svg" alt="instgram icon"></a>
+            </div>
+        </div>
+        <div class="d-flex header-part2 px-110">
+            <div class="karootoLogo"><img src="./images/karooto logo.svg" alt="karooto logo"></div>
+            <div class="HeaderLocation">
+                <div class="divLocation">
+                    <div class="btnLocation">
+                        <img src="./images/location-user.svg" alt="location user" class="location-user">
+                        <div class="">
+                            <span class="style-font">Location</span>
+                            <p class="fontSize16 style-font mb-0">Mogadishu, Somalia Street</p>
+                        </div>
+                        <img src="./images/Arrow-Down-green.svg" alt="">
+                    </div>
+                    <div class="listLocations">
+                        <div class="itemLocation d-flex">
+                            <img src="./images/location-listIcon.svg" alt="location list Icon">
+                            <div class="d-flex flex-column">
+                                <p class="mb-0 style-font">Company</p>
+                                <span class="style-font darkGreen2">Mogadishu, Somalia Street</span>
+                            </div>
+                        </div>
+                        <div class="itemLocation d-flex">
+                            <img src="./images/location-listIcon.svg" alt="location list Icon">
+                            <div class="d-flex flex-column">
+                                <p class="mb-0 style-font">Home</p>
+                                <span class="style-font darkGreen2">Mogadishu, Somalia Street</span>
+                            </div>
+                        </div>
+                        <div class="itemLocation d-flex">
+                            <img src="./images/location-listIcon.svg" alt="location list Icon">
+                            <div class="d-flex flex-column">
+                                <p class="mb-0 style-font">Family home</p>
+                                <span class="style-font darkGreen2">Mogadishu, Somalia Street</span>
+                            </div>
+                        </div>
+                        <button class="addAddress">
+                            <img src="./images/plusGreen.svg" alt="plusGreen" class="plusGreen">
+                            <span class="style-font">Add New Shipping Address</span>
+                        </button>
+                    </div>
+                </div>
+
+                <form class="location-list">
+                    <button class="fontSize16 style-font">Mogadishu, Somalia Street</button>
+                    <button class="fontSize16 style-font"> Somalia Street</button>
+                    <button class="fontSize16 style-font">Mogadishu, Somalia Street</button>
+                    <button class="fontSize16 style-font">Mogadishu Street</button>
+                </form>
+            </div>
+            <form action="" class="d-flex align-items-center fxHeaderForm">
+                <div class="divCategories">
+                    <button type="button" class="d-flex align-items-center btn-hover btnCategories">
+                        <span class="fontSize16 style-font">All Categories</span>
+                        <img src="./images/Arrow-Down-white.svg" alt="">
+                    </button>
+                    <div class="listCategories">
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">All Categories</p>
+                            <span class="font-medium">All Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Fruits</p>
+                            <span class="font-medium">50 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Vegetables</p>
+                            <span class="font-medium">450 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Milk & egg</p>
+                            <span class="font-medium">50 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Beverages</p>
+                            <span class="font-medium">200 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Kitchen</p>
+                            <span class="font-medium">50 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Snacks</p>
+                            <span class="font-medium">500 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Electronics</p>
+                            <span class="font-medium">120 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Compo</p>
+                            <span class="font-medium">150 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Bakery</p>
+                            <span class="font-medium">320 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Beverages</p>
+                            <span class="font-medium">150 Products</span>
+                        </div>
+                        <div class="itemCategory d-flex flex-column">
+                            <p class="mb-0 font-medium fontSize16">Laundry</p>
+                            <span class="font-medium">700 Products</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center fxFormSearch">
+                    <input type="text" class="fontSize16 style-font" placeholder="Search for products....">
+                    <img src="./images/search-white.svg" alt="search icon">
+                </div>
+            </form>
+            <div class="d-flex headerlLinksIcons">
+                <a href="" class="btn-hover"><img src="./images/favourite-white.svg" alt="favourite icon"></a>
+                <a href="" class="btn-hover"><img src="./images/shopping-cart-white.svg" alt="shopping cart icon"></a>
+                <a href="" class="btn-hover"><img src="./images/user-white.svg" alt="user icon"></a>
+            </div>
+        </div>
+        <div class="d-flex align-items-center header-part3 px-110">
+            <div class="divBrowse">
+                <button type="button" id="btnBrowse" class="btnBrowse align-items-center d-flex justify-content-center">
+                    <img src="./images/dashboard-circleIcons.svg" alt="dashboard circle Icons">
+                    <span class="fontSize18 font-bold">Browse All Categories</span>
+                </button>
+                <div class="listBrowse fxGeneral-cards">
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Fruits-icon.svg" alt="Fruits icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Fruits</p>
+                            <span class="font-medium">50 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Electronics-icon.svg" alt="Electronics icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Electronics</p>
+                            <span class="font-medium">120 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Vegetables-icon.svg" alt="Vegetables icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Vegetables</p>
+                            <span class="font-medium">450 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Compo-icon.svg" alt="Compo icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Compo</p>
+                            <span class="font-medium">150 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Milk-icon.svg" alt="Milk & egg icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Milk & egg</p>
+                            <span class="font-medium">350 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Bakery-icon.svg" alt="Bakery icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Bakery</p>
+                            <span class="font-medium">150 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Beverages-icon.svg" alt="Beverages icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Beverages</p>
+                            <span class="font-medium">200 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Beverages2-icon.svg" alt="Beverages icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Beverages</p>
+                            <span class="font-medium">150 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Kitchen-icon.svg" alt="Kitchen icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Kitchen</p>
+                            <span class="font-medium">50 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Laundry-icon.svg" alt="Laundry icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Laundry</p>
+                            <span class="font-medium">700 Products</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center boxCategory ">
+                        <div class="imgCategory"><img src="./images/Snacks-icon.svg" alt="Snacks icon"></div>
+                        <div class="boxCategory-text">
+                            <p class="mb-0 font-medium fontSize18 darkGreen2">Snacks</p>
+                            <span class="font-medium">500 Products</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linksHeader d-flex">
+                <a href="" class="fontSize18 style-font btn-hover active">Home</a>
+                <a href="" class="fontSize18 style-font btn-hover">Shop</a>
+                <div class="divLink">
+                    <a class="fontSize18 style-font btn-hover linkBtn" data-target="Fruits-list">Fruits</a>
+                    <div class="listlinks" id="Fruits-list">
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Citrus Fruits</h5>
+                            <a href="" class="font-light d-block">Oranges</a>
+                            <a href="" class="font-light d-block">Lemons</a>
+                            <a href="" class="font-light d-block">Limes</a>
+                            <a href="" class="font-light d-block">Grapefruits</a>
+                            <a href="" class="font-light d-block">Tangerines</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Berries</h5>
+                            <a href="" class="font-light d-block">Strawberries</a>
+                            <a href="" class="font-light d-block">Blueberries</a>
+                            <a href="" class="font-light d-block">Raspberries</a>
+                            <a href="" class="font-light d-block">Blackberries</a>
+                            <a href="" class="font-light d-block">Cranberries</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Tropical Fruits</h5>
+                            <a href="" class="font-light d-block">Pineapples</a>
+                            <a href="" class="font-light d-block">Mangoes</a>
+                            <a href="" class="font-light d-block">Papayas</a>
+                            <a href="" class="font-light d-block">Bananas</a>
+                            <a href="" class="font-light d-block">Kiwis</a>
+                        </div>
+                        <div class="listFromPart">
+                            <img src="./images/Fruits-img.png" alt="Fruits banner">
+                        </div>
+                    </div>
+                </div>
+                <div class="divLink">
+                    <a class="fontSize18 style-font btn-hover linkBtn" data-target="Vegetable-list">Vegetable</a>
+                    <div class="listlinks" id="Vegetable-list">
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Leafy Greens</h5>
+                            <a href="" class="font-light d-block">Spinach</a>
+                            <a href="" class="font-light d-block">Kale</a>
+                            <a href="" class="font-light d-block">Lettuce</a>
+                            <a href="" class="font-light d-block">Swiss Chard</a>
+                            <a href="" class="font-light d-block">Collard Greens</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Cruclferous Veg.</h5>
+                            <a href="" class="font-light d-block">Broccoli</a>
+                            <a href="" class="font-light d-block">Cauliflower</a>
+                            <a href="" class="font-light d-block">Cabbage</a>
+                            <a href="" class="font-light d-block">Brussels Sprouts</a>
+                            <a href="" class="font-light d-block">Bok Choy</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Root Vegetables</h5>
+                            <a href="" class="font-light d-block">Carrots</a>
+                            <a href="" class="font-light d-block">Beets</a>
+                            <a href="" class="font-light d-block">Radishes</a>
+                            <a href="" class="font-light d-block">Turnips</a>
+                            <a href="" class="font-light d-block">Sweet Potatoes</a>
+                        </div>
+                        <div class="listFromPart">
+                            <img src="./images/Vegetable-img.png" alt="Vegetable banner">
+                        </div>
+                    </div>
+                </div>
+                <div class="divLink divLinkLeft">
+                    <a class="fontSize18 style-font btn-hover linkBtn" data-target="Electronics-list">Electronics</a>
+                    <div class="listlinks" id="Electronics-list">
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Category</h5>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Category</h5>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Category</h5>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                        </div>
+                        <div class="listFromPart">
+                            <img src="./images/Vegetable-img.png" alt="Vegetable banner">
+                        </div>
+                    </div>
+                </div>
+                <div class="divLink divLinkLeft">
+                    <a class="fontSize18 style-font btn-hover linkBtn" data-target="Milk-list">Milk & egg</a>
+                    <div class="listlinks" id="Milk-list">
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Category</h5>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Category</h5>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Category</h5>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                        </div>
+                        <div class="listFromPart">
+                            <img src="./images/Milk-img.png" alt="Milk banner">
+                        </div>
+                    </div>
+                </div>
+                <div class="divLink divLinkLeft">
+                    <a class="fontSize18 style-font btn-hover linkBtn" data-target="Compo-list">Compo</a>
+                    <div class="listlinks" id="Compo-list">
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Category</h5>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Category</h5>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                        </div>
+                        <div class="listFromPart d-flex flex-column">
+                            <h5 class="font-bold darkGreen2">Category</h5>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                            <a href="" class="font-light d-block">Product name</a>
+                        </div>
+                        <div class="listFromPart">
+                            <img src="./images/Compo-img.png" alt="Compo banner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="backFooter">
+                <div class="d-flex fx-footer fx-general-cards">
+                    <div class="footer-part footer-part1 fx-general-card-st">
+                        <img src="./images/karooto logo.svg" alt="logo" class="footer-logo">
+                        <p class="style-font fontSize18">We build readymade websites, mobile
+                            applications, and elaborate online
+                            business services.</p>
+                        <h2 class="font-bold">Download the app</h2>
+                        <div class="d-flex fx-images">
+                            <a href=""><img src="./images/App-Store.svg" alt="App Store icon"></a>
+                            <a href=""><img src="./images/Google-Play.svg" alt="Google Play icon"></a>
+                        </div>
+                    </div>
+                    <div class="footer-part2 fx-general-card-st d-flex">
+                        <div class="footer-part ">
+                            <h5 class="font-bold">Company</h5>
+                            <div class="fx-footer-links">
+                                <a href="" class="font-medium fontSize18">Help Center</a>
+                                <a href="" class="font-medium fontSize18">privacy policy</a>
+                                <a href="" class="font-medium fontSize18">Terms and conditions</a>
+                                <a href="" class="font-medium fontSize18">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="footer-part ">
+                            <h5 class="font-bold">Customer Services</h5>
+                            <div class="fx-footer-links">
+                                <a href="" class="font-medium fontSize18">My Account</a>
+                                <a href="" class="font-medium fontSize18">My Orders</a>
+                                <a href="" class="font-medium fontSize18">Manage Address</a>
+                                <a href="" class="font-medium fontSize18">Payment Methods</a>
+                                <a href="" class="font-medium fontSize18">My Wallet</a>
+                                <a href="" class="font-medium fontSize18">My Coupons</a>
+                            </div>
+                        </div>
+                        <div class="footer-part">
+                            <h5 class="font-bold">Categories</h5>
+                            <div class="fx-footer-links">
+                                <a href="" class="font-medium fontSize18">Fruits</a>
+                                <a href="" class="font-medium fontSize18">Electronics</a>
+                                <a href="" class="font-medium fontSize18">Vegetables</a>
+                                <a href="" class="font-medium fontSize18">Compo</a>
+                                <a href="" class="font-medium fontSize18">Milk & egg</a>
+                                <a href="" class="font-medium fontSize18">Laundry</a>
+                                <a href="" class="font-medium fontSize18">Beverages</a>
+                            </div>
+                        </div>
+                        <div class="footer-part">
+                            <h5 class="font-bold">Contact Info</h5>
+                            <div class="fx-footer-links">
+                                <a href="" class="font-medium fontSize18">+ 972567408830</a>
+                                <a href="" class="font-medium fontSize18">Info@KAROOTO.com</a>
+                                <a href="" class="font-medium fontSize18">Mogadishu, Somalia Street</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center down-footer">
+                    <div class="d-flex align-items-center socialMedia-icons">
+                        <a href=""><img src="./images/facebook-footer.svg" alt="facebook icon"></a>
+                        <a href=""><img src="./images/twiter-footer.svg" alt="twiter icon"></a>
+                        <a href=""><img src="./images/linkedin-footer.svg" alt="linkedin icon"></a>
+                        <a href=""><img src="./images/instgram-footer.svg" alt="instgram icon"></a>
+                    </div>
+                    <p class="mb-0 fontSize16 style-font">© 2025 KAROOTO . All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Jquery Library -->
+    <script src="./js/jquery/jquery.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="./js/slick slider/slick.min.js"></script>
+    <script src="./js/slick slider/slick-animation.min.js"></script>
+    <script src="./js/slick slider/slick.js"></script>
+    <!--Navbar JS-->
+    <script src="./js/navbar-pages.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".btnNav").click(function () {
+                $(".listNav").toggleClass("active");
+                $(".arrowNav").toggleClass("rotate");
+            });
+        });
+    </script>
+</body>
+
+</html>
