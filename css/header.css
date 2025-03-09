@@ -529,12 +529,6 @@ header .header-part3 .linksHeader .listlinks .listFromPart a{
   header .header-part3 .linksHeader .listlinks .listFromPart h5{font-size: 29px;}
   header .header-part3 .linksHeader .listlinks .listFromPart a{font-size: 28px;}
 }
-@media (min-width:2304px) {
-    
-}
-@media (min-width:3072px) {
-    
-}
 @media (max-width:1396.36px) {
   header .header-part2{padding: 28px 100px;}
   header .header-part3{padding: 18px 100px;}

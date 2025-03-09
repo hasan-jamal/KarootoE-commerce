@@ -72,141 +72,29 @@ $(document).ready(function () {
 });
 //  End Slider 1
 // StartSlider 2
-
 $(document).ready(function () {
-  $(".sliderArticles").slick({
-    prevArrow: $(".arrow-sliderLeft"),
-    nextArrow: $(".arrow-sliderRight"),
-    centerMode: true,
-    centerPadding: "0px",
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+  $(".SliderBanner").slick({
     dots: false,
-    responsive: [
-      {
-        breakpoint: 7000,
-        settings: {
-          slidesToShow: 4,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 2000,
-        settings: {
-          slidesToShow: 4,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 1800,
-        settings: {
-          slidesToShow: 3.2,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 1700,
-        settings: {
-          slidesToShow: 3,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 2,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
-        },
-      },
-    ],
-  });
-});
-//  End Slider 2
-// StartSlider 3
-$(document).ready(function () {
-  $(".slider-logos").slick({
-    prevArrow: $(".arrow-sliderLeft"),
-    nextArrow: $(".arrow-sliderRight"),
-    centerMode: true,
-    centerPadding: "0px",
+    appendDots: $(".dots-SliderBanner"),
+    customPaging: function (slider, i) {
+      return "<div></div>";
+    },
+    arrows: false, // You can set this to true if you want navigation arrows
     infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 7000,
-        settings: {
-          slidesToShow: 7,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 2000,
-        settings: {
-          slidesToShow: 6,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 1800,
-        settings: {
-          slidesToShow: 5.2,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 1700,
-        settings: {
-          slidesToShow: 5,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 4,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false,
-        },
-      },
-    ],
-  });
-});
-//  End Slider 3
-
-//  End Slider 5
-$(document).ready(function () {
-  $(".sliderEnergy").slick({
-    prevArrow: $(".yellow-ArrowLeft"),
-    nextArrow: $(".yellow-ArrowRight"),
-    centerMode: true,
-    centerPadding: "0px",
-    infinite: true,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    autoplaySpeed: 1500,
-    dots: false,
+    autoplay: true, // Optional: Enable autoplay
+    autoplaySpeed: 2000, // Optional: Set autoplay speed in milliseconds
   });
+
+  // Sync the active dot with the current slide
+  $(".SliderBanner").on("afterChange", function (event, slick, currentSlide) {
+    $(".dots-SliderBanner div").removeClass("active");
+    $(".dots-SliderBanner div").eq(currentSlide).addClass("active");
+  });
+
+  // Initialize the first dot as active
+  $(".dots-SliderBanner div").first().addClass("active");
 });
-//  End Slider 5
+//  End Slider 2
