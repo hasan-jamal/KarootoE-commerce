@@ -28,41 +28,21 @@
     color: #5A5555;
     font-size: 12px;
 }
-@media (min-width:1706.67px) {
-
-}
-@media (min-width:1920px) {
-
-}
-@media (min-width:2048px) {
-
-}
-@media (min-width:2304px) {
-    
-}
-@media (min-width:3072px) {
-    
-}
-@media (max-width:1396.36px) {
-    
-}
 @media (max-width:1228.8px) {
-.sectionOne .sliderCategories .slideImage img{width: 70px;height: 70px;}
-.sectionOne .sliderCategories p{font-size: 10px;}
+    .sectionOne .sliderCategories .slideImage img{width: 70px;height: 70px;}
+    .sectionOne .sliderCategories p{font-size: 10px;}
 }
 @media (max-width:1024px) {
     .sectionOne .sliderCategories .slide{padding: 0 8px;}
-.sectionOne .sliderCategories .slideImage img{width: 50px;height: 50px;}
-}
-@media (max-width:877.71px) {
-
-}
-@media (max-width:768px) {
-    
+    .sectionOne .sliderCategories .slideImage img{width: 50px;height: 50px;}
 }
 @media (max-width:614.4px) {
-.sectionOne .sliderCategories .slide{padding: 0 5px;}
-.sectionOne .sliderCategories .styleSlide{padding: 10px 8px;}
+    .sectionOne .sliderCategories .slide{padding: 0 5px;}
+    .sectionOne .sliderCategories .styleSlide{padding: 10px 8px;}
 }
 @media (max-width:512px) {
 }
+/* Section Banner */
+.sectionBanner img{border-radius: 20px;}
+/* Section Products */
+.sectionProducts{margin: 30px 0 50px 0;}
