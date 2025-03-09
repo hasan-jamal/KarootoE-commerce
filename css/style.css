@@ -111,7 +111,7 @@
     .controlSlideProducts{display: flex;justify-content: end;align-items: end;gap:60px;}
     .sectionProducts .arrows-sliderProducts{position: relative;right: 0;bottom: 0;}
     .sectionProducts .arrows-sliderProducts img{width: 30px;}
-   
+   .sectionProducts .sliderProducts .slide{padding: 0;}
 }
 @media (max-width:512px) {
 }
