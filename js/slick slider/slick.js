@@ -84,7 +84,7 @@ $(document).ready(function () {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
   });
 
@@ -98,9 +98,9 @@ $(document).ready(function () {
 //  End Slider 2
 // Start slider 3
 $(document).ready(function () {
-  $(".sliderProducts").slick({
+  $(".slickProducts1").slick({
     dots: true,
-    appendDots: $(".dots-sliderProducts"),
+    appendDots: $(".dots-slickProducts1"),
     prevArrow: $(".leftProduct"),
     nextArrow: $(".rightProduct"),
     customPaging: function (slider, i) {
@@ -145,17 +145,170 @@ $(document).ready(function () {
   });
 
   function updateActiveDot(currentSlide) {
-    $(".dots-sliderProducts .dot").removeClass("active");
-    $(".dots-sliderProducts .dot").eq(currentSlide).addClass("active");
+    $(".dots-slickProducts1 .dot").removeClass("active");
+    $(".dots-slickProducts1 .dot").eq(currentSlide).addClass("active");
   }
-  $(".sliderProducts").on("afterChange", function (event, slick, currentSlide) {
+  $(".slickProducts1").on("afterChange", function (event, slick, currentSlide) {
     updateActiveDot(currentSlide);
   });
 
   updateActiveDot(0);
 
-  $(".dots-sliderProducts .dot").on("click", function () {
+  $(".dots-slickProducts1 .dot").on("click", function () {
     var slideIndex = $(this).index();
-    $(".sliderProducts").slick("slickGoTo", slideIndex);
+    $(".slickProducts1").slick("slickGoTo", slideIndex);
   });
 });
+//  End Slider 3
+// Start slider 4
+$(document).ready(function () {
+  $(".slickProducts2").slick({
+    dots: true,
+    appendDots: $(".dots-slickProducts2"),
+    prevArrow: $(".leftProduct1"),
+    nextArrow: $(".rightProduct1"),
+    customPaging: function (slider, i) {
+      return '<div class="dot"></div>';
+    },
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+    ],
+  });
+
+  function updateActiveDot(currentSlide) {
+    $(".dots-slickProducts2 .dot").removeClass("active");
+    $(".dots-slickProducts2 .dot").eq(currentSlide).addClass("active");
+  }
+  $(".slickProducts2").on("afterChange", function (event, slick, currentSlide) {
+    updateActiveDot(currentSlide);
+  });
+
+  updateActiveDot(0);
+
+  $(".dots-slickProducts2 .dot").on("click", function () {
+    var slideIndex = $(this).index();
+    $(".slickProducts2").slick("slickGoTo", slideIndex);
+  });
+});
+//  End Slider 4
+// Start slider 5
+$(document).ready(function () {
+  $(".slickProducts3").slick({
+    dots: true,
+    appendDots: $(".dots-slickProducts3"),
+    prevArrow: $(".leftProduct2"),
+    nextArrow: $(".rightProduct2"),
+    customPaging: function (slider, i) {
+      return '<div class="dot"></div>';
+    },
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+    ],
+  });
+
+  function updateActiveDot(currentSlide) {
+    $(".dots-slickProducts3 .dot").removeClass("active");
+    $(".dots-slickProducts3 .dot").eq(currentSlide).addClass("active");
+  }
+  $(".slickProducts3").on("afterChange", function (event, slick, currentSlide) {
+    updateActiveDot(currentSlide);
+  });
+
+  updateActiveDot(0);
+
+  $(".dots-slickProducts3 .dot").on("click", function () {
+    var slideIndex = $(this).index();
+    $(".slickProducts3").slick("slickGoTo", slideIndex);
+  });
+});
+// StartSlider 6
+$(document).ready(function () {
+  $(".SliderBanner").slick({
+    dots: false,
+    appendDots: $(".dots-SliderBanner"),
+    customPaging: function (slider, i) {
+      return "<div></div>";
+    },
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+  });
+
+  $(".SliderBanner").on("afterChange", function (event, slick, currentSlide) {
+    $(".dots-SliderBanner div").removeClass("active");
+    $(".dots-SliderBanner div").eq(currentSlide).addClass("active");
+  });
+
+  $(".dots-SliderBanner div").first().addClass("active");
+});
+//  End Slider 6
