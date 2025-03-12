@@ -45,6 +45,7 @@ $(document).ready(function () {
     );
   });
 });
+///////////////////////////////////////////
 $(document).ready(function () {
   $(".btnSort").click(function (event) {
     event.stopPropagation();
@@ -63,5 +64,17 @@ $(document).ready(function () {
   });
   $(".listSorting").click(function (event) {
     event.stopPropagation();
+  });
+});
+/////////////////////////////////////
+$(document).ready(function () {
+  $(".featureBox img").click(function () {
+    $(this).closest(".featureBox").remove();
+  });
+
+  $(".clearAll").click(function (e) {
+    e.preventDefault();
+    $(".featureBox").remove();
+    $(this).remove();
   });
 });
