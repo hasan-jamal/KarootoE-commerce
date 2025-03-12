@@ -1,0 +1,48 @@
+.sectionTitle{
+   background-image: url(../../images/backBanner2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 63px 0;
+}
+.sectionTitle h1{font-size: 60px;margin-bottom: 15px;}
+.sectionTitle .fx-LinksTitle{gap: 15px;}
+.sectionTitle a{
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+}
+@media (min-width:1706.67px) {
+    .sectionTitle h1{font-size: 70px;}
+    .sectionTitle a{font-size: 20px;}
+}
+@media (min-width:1920px) {
+    .sectionTitle{    padding: 90px 0 73px 0;}
+    .sectionTitle h1{font-size: 80px;margin-bottom: 20px;}
+    .sectionTitle a{font-size: 24px;}
+}
+@media (min-width:2048px) {
+    .sectionTitle{padding: 100px 0 88px 0;}
+    .sectionTitle h1{font-size: 90px;}
+    .sectionTitle a{font-size: 26px;}
+}
+@media (max-width:1228.8px) {
+    .sectionTitle{padding: 60px 0 43px 0;}
+    .sectionTitle h1{font-size: 50px;margin-bottom: 0;}
+    .sectionTitle a{font-size: 16px;}
+}
+@media (max-width:1024px) {
+    .sectionTitle{padding: 50px 0 43px 0;}
+    .sectionTitle h1{font-size: 40px;}
+    .sectionTitle a{font-size: 16px;}
+}
+@media (max-width:877.71px) {
+    .sectionTitle{padding: 40px 0 33px 0;}
+}
+@media (max-width:614.4px) {
+    .sectionTitle .fx-LinksTitle img{width: 8px;}
+    .sectionTitle{padding: 28px 0;}
+    .sectionTitle h1{font-size: 35px;}
+    .sectionTitle a{font-size: 14px;}
+    .sectionTitle .fx-LinksTitle{gap: 10px;}
+}

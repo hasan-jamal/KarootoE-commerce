@@ -70,7 +70,7 @@
 }
 .sectionProducts .arrows-sliderProducts{
     position: absolute;
-    right:5rem;
+    right:7rem;
     bottom: -1rem;
     gap: 16px;
 }
@@ -78,7 +78,7 @@
 
 }
 @media (min-width:1920px) {
-
+    .sectionProducts .arrows-sliderProducts{right: 9.5rem;}
 }
 @media (min-width:2048px) {
 
@@ -90,22 +90,23 @@
 
 }
 @media (max-width:1396.36px) {
-
+    .sectionProducts .arrows-sliderProducts{right: 6rem;}
 }
 @media (max-width:1228.8px) {
-
+    .sectionProducts .arrows-sliderProducts{right: 3rem;}
 }
 @media (max-width:1024px) {
   .sectionProducts .arrows-sliderProducts img{width: 25px;}
   .sectionProducts .arrows-sliderProducts{bottom: 0;}
   .sectionProducts .slick-dots{gap: 6px;}
   .sectionProducts .slick-dots div{width: 8px;height: 8px;}
+   .sectionProducts .arrows-sliderProducts{right: 3.5rem;}
 }
 @media (max-width:877.71px) {
 
 }
 @media (max-width:768px) {
-
+   .sectionProducts .arrows-sliderProducts{right: 2.5rem;}
 }
 @media (max-width:614.4px) {
     .controlSlideProducts{display: flex;justify-content: end;align-items: end;gap:60px;}
@@ -174,16 +175,22 @@
 }
 .sectionSliderBanner .dots-SliderBanner div.active{ background: #6DA117;}
 @media (min-width:1706.67px) {
-
+    .sectionSliderBanner .fx-SliderBanner .texts p{font-size: 22px;}
+    .sectionSliderBanner .fx-SliderBanner .texts h1{font-size: 54px;}
 }
 @media (min-width:1920px) {
-
+    .sectionSliderBanner .fx-SliderBanner .texts p{font-size: 25px;}
+    .sectionSliderBanner .fx-SliderBanner .texts h1{font-size: 58px;}
+    .sectionSliderBanner .fx-SliderBanner .texts{padding-top: 2rem;}
+    .sectionSliderBanner .fx-SliderBanner .image{width: 40%;}
+    .sectionSliderBanner .fx-SliderBanner{align-items: center;}
 }
 @media (min-width:2048px) {
-
+ .sectionSliderBanner .fx-SliderBanner .texts p{font-size: 27px;}
+  .sectionSliderBanner .fx-SliderBanner .texts h1{font-size: 60px;}
 }
 @media (min-width:2304px) {
-
+ .sectionSliderBanner .fx-SliderBanner .texts p{font-size: 28px;}
 }
 @media (min-width:3072px) {
 
@@ -220,59 +227,6 @@
      .sectionSliderBanner-container{padding: 40px 16px 0 16px;}
     .sectionSliderBanner .fx-SliderBanner .texts{width: 100%;padding-bottom: 0;}
     .sectionSliderBanner .image img{width: 100%;margin: auto;}
-}
-@media (max-width:512px) {
-}
-/* Section Features Style */
-.sectionFeatures{margin: 100px  0;}
-.sectionFeatures .fx-sectionFeatures{justify-content: center;gap: 80px;}
-.sectionFeatures .fx-sectionFeatures .boxFeature{gap: 20px;}
-.sectionFeatures .fx-sectionFeatures .boxFeature h1{font-size: 30px;line-height: 30px;}
-.sectionFeatures .fx-sectionFeatures .boxFeature p{font-size: 20px;color: #A1A1A1;}
-@media (min-width:1706.67px) {
-
-}
-@media (min-width:1920px) {
-
-}
-@media (min-width:2048px) {
-
-}
-@media (min-width:2304px) {
-
-}
-@media (min-width:3072px) {
-
-}
-@media (max-width:1396.36px) {
-    .sectionFeatures .fx-sectionFeatures{gap: 60px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature{gap: 18px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature h1{font-size: 26px;line-height: 26px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature p{font-size: 18px;}
-}
-@media (max-width:1228.8px) {
-    .sectionFeatures .fx-sectionFeatures{gap: 50px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature{gap: 16px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature h1{font-size: 24px;line-height: 24px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature p{font-size: 16px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature img{width: 55px;}
-}
-@media (max-width:1024px) {
-    .sectionFeatures .fx-sectionFeatures{gap: 40px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature{gap: 15px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature h1{font-size: 22px;line-height: 22px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature p{font-size: 15px;}
-    .sectionFeatures .fx-sectionFeatures .boxFeature img{width: 50px;}
-}
-@media (max-width:877.71px) {
-
-}
-@media (max-width:768px) {
-    .sectionFeatures .fx-sectionFeatures{flex-wrap: wrap;align-items: center;}
-}
-@media (max-width:614.4px) {
-    .sectionFeatures{margin: 70px  0;}
-    .sectionFeatures .fx-sectionFeatures{align-items: start;justify-content: start;width: 90%; padding: 0 20px;}
 }
 @media (max-width:512px) {
 }
