@@ -420,6 +420,29 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/* Pagination Style */
+.pagination{gap: 5px;margin-top: 60px;}
+.pagination button{
+  background: none;
+  padding: 2px 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.pagination button.active,
+.pagination button:hover{
+  background: #6DA117;
+  color: #fff;
+  font-weight: bold;
+  font-family:'Dubai Bold' ;
+}
+.pagination .btnImageLeft{padding: 0;margin-right: 5px;transform: rotate(180deg);}
+.pagination .btnImageRight{padding: 0;}
+.pagination .btnImageRight:hover,
+.pagination .btnImageLeft:hover{background: none;;}
 /* Buttons Style */
 .btnLinear-gradient{
   background: linear-gradient(87deg, #6DA117 0.41%, #B9C700 104.45%);
@@ -474,13 +497,28 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   border-radius: 2px;
 }
 @media (min-width:1706.67px) {
-
+  .checkbox-group label:before{padding: 12px;}
+  .checkbox-group input:checked + label:after{
+        top: 6px;
+        left: 10px;
+        width: 6px;
+        height: 15px;
+  }
+  .pagination button{font-size: 17px;}
 }
 @media (min-width:1920px) {
-
+  .checkbox-group label:before{padding: 14px;}
+  .checkbox-group input:checked + label:after{
+    top: 6px;
+    left: 12px;
+    width: 7px;
+    height: 19px;
+  }
+   .pagination button{font-size: 20px;padding: 5px 15px;}
 }
 @media (min-width:2048px) {
-
+  .checkbox-group input:checked + label:after{left: 10px;}
+   .pagination button{font-size: 22px;}
 }
 @media (min-width:2304px) {
 
@@ -508,7 +546,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .btnLinear-gradient img{width: 15px;}
 }
 @media (max-width:614.4px) {
-
+.pagination{gap: 3px;margin-top: 30px;}
 }
 @media (max-width:512px) {
 }

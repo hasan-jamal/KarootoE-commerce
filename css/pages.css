@@ -216,14 +216,20 @@
     flex: 1 1 calc(33.3% - 20px);
     max-width: calc(33.3% - 0px);
   }
-  @media (min-width:1706.67px) {
-
+@media (min-width:1706.67px) {
+    .filter .checkbox-group label,
+    .filterPrice .field input{font-size: 19px;}
+    .filterProducts .filter h4{font-size: 21px;}
 }
 @media (min-width:1920px) {
-
+    .filter .checkbox-group label,
+    .filterPrice .field input{font-size: 22px;}
+    .filterProducts .filter h4{font-size: 24px;}
 }
 @media (min-width:2048px) {
-
+.filter .checkbox-group label,
+.filterPrice .field input{font-size: 25px;}
+ .filterProducts .filter h4{font-size: 27px;}
 }
 @media (min-width:2304px) {
 
