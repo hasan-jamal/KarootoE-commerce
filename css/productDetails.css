@@ -1,0 +1,167 @@
+.productDetails{margin: 50px 0;}
+.productDetails .fx-productDetails{gap: 30px;}
+.productDetails .fx-productDetails .sliderAndImages{width: 45%;}
+.productDetails .fx-productDetails .productContent{width: 55%;}
+.productDetails .fx-productDetails .sliderAndImages .boxImage{
+    padding: 80px 100px;
+    border-radius: 20px;
+    background: #F6F6F6;
+    position: relative;
+}
+.productDetails .fx-productDetails .sliderAndImages .boxImage img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.productDetails .fx-productDetails .sliderAndImages .arrows-sliderProducts{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  gap: 16px;
+}
+.productDetails .fx-productDetails .sliderAndImages .arrows-sliderProducts img{
+    width: 44px;
+    height: 44px;
+}
+.productDetails .fx-productDetails .sliderAndImages .imagesProducts{
+    overflow: auto;
+    margin-top: 20px;
+    gap: 15px;
+}
+.productDetails .fx-productDetails .sliderAndImages .imagesProducts .divImage{
+    width: 162px;
+    padding: 16px 22px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.productDetails .fx-productDetails .slick-slide  .divImage{
+    border: none !important;
+}
+.productDetails .fx-productDetails .slick-current.slick-active .divImage{
+    border: 1.5px solid var(--Color3, #6DA117) !important;
+}
+.productDetails .fx-productDetails .sliderAndImages .imagesProducts .divImage img{width: 100%;}
+.productDetails .fx-productDetails .categoryTitle{
+    color: #B0B0B0;
+    line-height: 28px;
+}
+.productDetails .fx-productDetails h1{font-size: 40px;}
+.productDetails .fxTitle-product{gap: 15px;}
+.productDetails .fxTitle-product button{
+    padding: 0px 30px;
+    height: 38px;
+    border-radius: 40px;
+    background: rgba(109, 161, 23, 0.10);
+    line-height: 28px; 
+}
+.productDetails .fxRating-product{gap: 10px;margin-bottom: 16px;}
+.productDetails .fxRating-product .stars{gap: 6px;}
+.productDetails .fxRating-product .stars img{
+    width: 25px;
+    height: 25px;
+}
+.productDetails .fxPrice-product{align-items: center;gap: 9px;}
+.productDetails .fxPrice-product h2{font-size: 30px;} 
+.productDetails .fxPrice-product span{
+    color: #989898;
+    text-decoration-line:line-through;
+}
+.productDetails .contentProduct{
+    color: #AFAFAF;
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 100%;
+    margin-top: 16px;
+}
+fieldset label {
+	cursor: pointer;
+	box-sizing: border-box;
+    padding: 10px 20px;
+	-webkit-tap-highlight-color: transparent;
+    border-radius: 15px;
+    background: #F8F8F8;
+    width: 100%;
+    position: relative;
+    height: 70px;
+}
+fieldset label .fxLabel{gap: 15px;}
+fieldset input[type="radio"] {
+	appearance: none;
+    position: absolute;
+    right: 0;
+	-webkit-appearance: none;
+	transition: linear 0.8s;
+	height: 0;
+	width: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+fieldset input[type="radio"]:after {
+	content: "";
+	position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+	height: 16px;
+	width: 16px;
+	border-radius: 20px;
+	border: 1px solid #6DA117;
+	transition: linear 0.2s;
+	cursor: pointer;
+}
+fieldset input[type="radio"]:checked:after {
+	content: "";
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	background: #6DA117;
+	transition: linear 0.2s;
+	cursor: pointer;
+}
+fieldset input[type="radio"]:checked:before {
+	content: "";
+	position: absolute;
+	height: 7px;
+	width: 7px;
+	border-radius: 4px;
+	background: #fff;
+    left: -2rem;
+    top: -3.3px;
+	z-index: 1;
+	cursor: pointer;
+}
+fieldset .radio-item-container {gap: 18px;flex-wrap: wrap;}
+fieldset .radio-item {
+	display: flex;
+	position: relative;
+    flex: 1 1 calc(50% - 18px);
+    max-width: calc(50% - 0px);
+}
+fieldset .icon {
+	font-size: 24px;
+	position: absolute;
+	right: 26px;
+	top: 11px;
+	transition: linear 0.3s;
+}
+
+fieldset input[type="radio"]:checked + span > .icon {
+	transform: scale(1.7);
+}
+.productDetails .fxAmount-product{gap: 12px;}
+.productDetails .fxAmount-product button{
+    background: none;
+    width: 40px;
+}
+.productDetails .fxAmount-product button img{width: 100%;}
+.productDetails .fxButtons-product{gap: 20px;}
+.productDetails .fxButtons-product .AddToCart{
+    width: 200px;height: 55px;
+}
+.productDetails .fxButtons-product .buyNow{
+    
+}

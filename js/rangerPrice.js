@@ -2,7 +2,7 @@ const rangeInput = document.querySelectorAll(".range-input input"),
   priceInput = document.querySelectorAll(".price-input input"),
   range = document.querySelector(".slider .progress");
 
-let priceGap = 25; // Reduced gap to fit within 0-1000 range
+let priceGap = 25;
 
 priceInput.forEach((input) => {
   input.addEventListener("input", (e) => {

@@ -216,6 +216,27 @@
     flex: 1 1 calc(33.3% - 20px);
     max-width: calc(33.3% - 0px);
   }
+.filterProducts .divBanner{position: relative;margin-top: 38px;}
+.filterProducts .divBanner .sliderCategoriesDetails .slide img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.filterProducts .divBanner .dotsCategoriesDetails {
+    gap: 12px;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+.filterProducts .divBanner .dotsCategoriesDetails div {
+    width: 12px;
+    height: 12px;
+    background: #CFD3D6;
+    border-radius: 50%;
+}
+.filterProducts .divBanner .dotsCategoriesDetails div.active {
+    background: #6DA117;
+}
 @media (min-width:1706.67px) {
     .filter .checkbox-group label,
     .filterPrice .field input{font-size: 19px;}
@@ -277,40 +298,44 @@
         flex: 1 1 calc(100% - 20px);
         max-width: calc(100% - 0px);
     }
-    .filterProducts .products .fx-sorting .btnSort img{width: 13px;}
-    .filterProducts .filter{
-        position: fixed;
-        top: 0;
-        display: none;
-        background: #fff;
-        z-index: 999;
-        height: 100%;
-        width: 100%;
-        overflow-y: auto;
-        padding: 24px;
-        left: 0;
-        border-radius: 0;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease-in-out;
-    }
-    .filterProducts .products .fx-pages .lines{display: block;}
-    .filterProducts .btnCloseFilter{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #6DA117;
-        border-radius: 50%;
-        width: 31px;
-        height: 30px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-    .filterProducts .btnCloseFilter img{width: 17px;}
-    .filterProducts .products{width: 100%;}
-    .filterProducts{margin: 32px 0;}
-    .filterProducts .products .fx-sorting{gap: 4px;}
-    .filterProducts .products .fx-sorting .btnSort{padding: 6px 10px;gap: 4px;}
-    .filterProducts .products .fx-sorting .btnSort span{font-size: 13px;}
-    .filterProducts .products .fx-pages{margin-bottom: 16px;}
+  .filterProducts .products .fx-sorting .btnSort img{width: 13px;}
+  .filterProducts .filter{
+    position: fixed;
+    top: 0;
+    display: none;
+    background: #fff;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    padding: 24px;
+    left: 0;
+    border-radius: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+  }
+  .filterProducts .products .fx-pages .lines{display: block;}
+  .filterProducts .btnCloseFilter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6DA117;
+    border-radius: 50%;
+    width: 31px;
+    height: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .filterProducts .btnCloseFilter img{width: 17px;}
+  .filterProducts .products{width: 100%;}
+  .filterProducts{margin: 32px 0;}
+  .filterProducts .products .fx-sorting{gap: 4px;}
+  .filterProducts .products .fx-sorting .btnSort{padding: 6px 10px;gap: 4px;}
+  .filterProducts .products .fx-sorting .btnSort span{font-size: 13px;}
+  .filterProducts .products .fx-pages{margin-bottom: 16px;}
+  .filterProducts .divBanner .sliderCategoriesDetails .slide img{border-radius: 6px;}
+  .filterProducts .divBanner .dotsCategoriesDetails div{height: 8px;width: 8px;}
+  .filterProducts .divBanner .dotsCategoriesDetails{gap: 4px;left: 0.5rem;top: 0.5rem;}
+  .filterProducts .divBanner{margin-top: 20px;}
 }
 @media (max-width:512px) {
 }
