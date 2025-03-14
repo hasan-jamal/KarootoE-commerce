@@ -253,4 +253,7 @@ fieldset input[type="radio"]:checked + span > .icon {
 }
 @media (max-width:512px) {
     .productDetails{margin: 30px 0 50px 0;}
+    .productDetails .fx-productDetails .sliderAndImages .arrows-sliderProducts img{width: 33px;height: 33px;}
+    .productDetails .fx-productDetails .sliderAndImages .arrows-sliderProducts{gap: 8px;bottom: 10px;}
+    .productDetails .fx-productDetails .sliderAndImages .boxImage{padding: 60px 20px 60px 20px;}
 }
