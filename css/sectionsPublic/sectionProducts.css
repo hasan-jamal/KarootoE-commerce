@@ -4,6 +4,7 @@
 .sectionProducts .sliderProducts .slide{
  padding: 0 10px;
 }
+.productCard{text-decoration: none;}
 .sectionProducts .sliderProducts .slide .productCard{width: 100%;}
 .sectionProducts .slick-dots{
     display: flex;
