@@ -73,86 +73,7 @@
     color: #AFAFAF;
     margin-bottom: 16px;
 }
-fieldset {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	width: 100%;
-    margin-top: 16px;
-}
-fieldset label {
-	cursor: pointer;
-	box-sizing: border-box;
-    padding: 10px 20px;
-	-webkit-tap-highlight-color: transparent;
-    border-radius: 15px;
-    background: #F8F8F8;
-    width: 100%;
-    position: relative;
-    height: 70px;
-}
-fieldset label .fxLabel{gap: 15px;}
-fieldset input[type="radio"] {
-	appearance: none;
-    position: absolute;
-    right: 0;
-	-webkit-appearance: none;
-	transition: linear 0.8s;
-	height: 0;
-	width: 0;
-	-webkit-tap-highlight-color: transparent;
-}
-fieldset input[type="radio"]:after {
-	content: "";
-	position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translate(0,-50%);
-	height: 16px;
-	width: 16px;
-	border-radius: 20px;
-	border: 1px solid #6DA117;
-	transition: linear 0.2s;
-	cursor: pointer;
-}
-fieldset input[type="radio"]:checked:after {
-	content: "";
-	position: absolute;
-	height: 16px;
-	width: 16px;
-	background: #6DA117;
-	transition: linear 0.2s;
-	cursor: pointer;
-}
-fieldset input[type="radio"]:checked:before {
-	content: "";
-	position: absolute;
-	height: 7px;
-	width: 7px;
-	border-radius: 4px;
-	background: #fff;
-    left: -2rem;
-    top: -3.3px;
-	z-index: 1;
-	cursor: pointer;
-}
-fieldset .radio-item-container {gap: 18px;flex-wrap: wrap;}
-fieldset .radio-item {
-	display: flex;
-	position: relative;
-    flex: 1 1 calc(50% - 18px);
-    max-width: calc(50% - 0px);
-}
-fieldset .icon {
-	font-size: 24px;
-	position: absolute;
-	right: 26px;
-	top: 11px;
-	transition: linear 0.3s;
-}
-fieldset input[type="radio"]:checked + span > .icon {
-	transform: scale(1.7);
-}
+
 .productDetails .fxAmount-product{gap: 12px;}
 .productDetails .fxAmount-product button{
     background: none;
@@ -184,42 +105,27 @@ fieldset input[type="radio"]:checked + span > .icon {
     .productDetails .fxTitle-product button{height: 50px;}
     .productDetails .fxButtons-product .AddToCart,
     .productDetails .fxButtons-product .buyNow{width: 100%;height: 65px;border-radius: 30px;}
-    fieldset label{height: 80px;}
     .productDetails .fxAmount-product button{width: 55px;}
-     .productDetails .fxButtons-product .btnFavourite img{width: 40px;}
-      .productDetails .fx-productDetails .sliderAndImages .boxImage{height: 580px;}
+    .productDetails .fxButtons-product .btnFavourite img{width: 40px;}
+    .productDetails .fx-productDetails .sliderAndImages .boxImage{height: 580px;}
+
 }
 @media (min-width:1920px) {
      .productDetails .fx-productDetails .sliderAndImages .boxImage{height: 700px;}
     .productDetails .fx-productDetails h1{font-size: 65px;}
     .productDetails .fxPrice-product h2{font-size: 35px;}
     .productDetails .fxTitle-product button{height: 60px;}
-    fieldset label{height: 90px;}
     .productDetails .fxAmount-product button{width: 65px;}
     .productDetails .fxButtons-product .AddToCart,
     .productDetails .fxButtons-product .buyNow{height: 75px;}
     .productDetails .fxButtons-product .btnFavourite img{width: 45px;}
-    fieldset input[type="radio"]:checked:after,
-    fieldset input[type="radio"]:after{width: 25px;height: 25px;}
-    fieldset input[type="radio"]:checked:before{
-        height: 12px;
-        width: 12px;
-        border-radius: 50%;
-        left: -39px;
-        top: -6px;
-    }
+  
     .productDetails .fx-productDetails .sliderAndImages .arrows-sliderProducts img{width: 55px;height: 55px;}
+
 }
 @media (min-width:2048px) {
     .productDetails .fx-productDetails h1{font-size: 48px;}
     .productDetails .fxPrice-product h2{font-size: 38px;}
-    fieldset label{height: 100px;}
-}
-@media (min-width:2304px) {
-
-}
-@media (min-width:3072px) {
-
 }
 @media (max-width:1396.36px) {
     .productDetails .fxButtons-product .AddToCart,
@@ -236,10 +142,6 @@ fieldset input[type="radio"]:checked + span > .icon {
     .productDetails .fxRating-product .stars img{width: 20px;height: 20px;}
     .productDetails .fxRating-product{margin-bottom: 10px;}
     .productDetails .fxPrice-product h2{font-size: 25px;}
-    fieldset label{height: 60px;padding: 0 15px;}
-    fieldset label .fxLabel img{width: 40px;}
-    fieldset label .fxLabel{gap: 10px;}
-    fieldset .radio-item-container{gap: 14px;}
     .productDetails .fxButtons-product{margin-top: 15px;}
     .productDetails .fx-productDetails .sliderAndImages .boxImage{height: 490px;}
 }
@@ -250,21 +152,21 @@ fieldset input[type="radio"]:checked + span > .icon {
     .productDetails .fxButtons-product .buyNow{width: 140px;height: 40px;}
     .productDetails .fxButtons-product{gap: 10px;}
     .productDetails .fxButtons-product .btnFavourite{padding: 10px;}
-    fieldset{margin-top: 8px;}
+  
     .productDetails .fxMore{margin-top:24px;}
 }
 @media (max-width:877.71px) {
     .productDetails .fx-productDetails .sliderAndImages .boxImage{height: 380px;}
     .productDetails .fxButtons-product .AddToCart,
     .productDetails .fxButtons-product .buyNow{width: 100%;height: 35px;}
-     .productDetails .fxRating-product .stars img{width: 15px;height: 15px;}
-     .productDetails .fxPrice-product h2{font-size: 22px;}
-     fieldset label{height: 50px;}
-     .productDetails .fxAmount-product{gap: 0px;}
-     .productDetails .fxAmount-product button img{width: 30px;}
-     .productDetails .fxButtons-product .btnFavourite{padding: 7px;}
-     .productDetails .fxButtons-product .btnFavourite img{width: 20px;}
-     .productDetails .fxMore{margin-top: 16px;}
+    .productDetails .fxRating-product .stars img{width: 15px;height: 15px;}
+    .productDetails .fxPrice-product h2{font-size: 22px;}
+    .productDetails .fxAmount-product{gap: 0px;}
+    .productDetails .fxAmount-product button img{width: 30px;}
+    .productDetails .fxButtons-product .btnFavourite{padding: 7px;}
+    .productDetails .fxButtons-product .btnFavourite img{width: 20px;}
+    .productDetails .fxMore{margin-top: 16px;}
+   
 }
 @media (max-width:768px) {
     .productDetails .fx-productDetails{flex-direction: column;align-items: start;}
@@ -412,18 +314,9 @@ fieldset input[type="radio"]:checked + span > .icon {
 .reviewSection .comment .fx-detailsUser .rateGap span{font-size: 17px;}
 .reviewSection .comment .fx-detailsUser .userImage{width: 110px;height: 110px;}
 }
-@media (min-width:2304px) {
-
-}
-@media (min-width:3072px) {
-
-}
-@media (max-width:1396.36px) {
-
-}
 @media (max-width:1228.8px) {
-.reviewSection .comments-list .comment{padding-bottom: 16px;}
-.reviewSection .commentImages img{height: 118px;}
+    .reviewSection .comments-list .comment{padding-bottom: 16px;}
+    .reviewSection .commentImages img{height: 118px;}
 }
 @media (max-width:1024px) {
     .reviewSection .comment .fx-detailsUser .userImage{width: 50px;height: 50px;}
@@ -435,9 +328,6 @@ fieldset input[type="radio"]:checked + span > .icon {
 @media (max-width:877.71px) {
     .reviewSection .commentImages{margin-top: 20px;}
     .reviewSection .reviewList h2{margin-bottom: 16px;}
-}
-@media (max-width:768px) {
-
 }
 @media (max-width:614.4px) {
     .reviewSection .commentImages{gap: 8px;}
@@ -572,18 +462,6 @@ margin-top: 10px;
     .dropzone span{font-size: 18px;}
     .addReviewSection form .btnProducts{width: 250px;height: 70px;}
 }
-@media (min-width:2048px) {
-
-}
-@media (min-width:2304px) {
-
-}
-@media (min-width:3072px) {
-
-}
-@media (max-width:1396.36px) {
-
-}
 @media (max-width:1228.8px) {
     .addReviewSection form .btnProducts{width: 180px;height: 50px;border-radius: 40px;}
 }
@@ -624,6 +502,4 @@ margin-top: 10px;
 }
 @media (max-width:614.4px) {
     .rating label{font-size: 2rem;}
-}
-@media (max-width:512px) {
 }

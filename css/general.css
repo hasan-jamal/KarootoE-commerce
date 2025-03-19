@@ -188,6 +188,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 /* Sizes Texts */
 .fontSize18{font-size: 18px;}
 .fontSize16{font-size: 16px;}
+.fontSize15{font-size: 15px;}
 .fontSize17{font-size: 17px;}
 .fontSize25{font-size: 25px;}
 .fontSize20{font-size: 20px;}
@@ -197,6 +198,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize25{font-size: 27px;}
   .fontSize20{font-size: 22px;}
   .fontSize17{font-size: 19px;}
+  .fontSize15{font-size: 17px;}
 }
 @media (min-width:1920px) {
   .fontSize18{font-size: 24px;}
@@ -204,6 +206,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize25{font-size: 30px;}
   .fontSize20{font-size: 25px;}
   .fontSize17{font-size: 22px;}
+  .fontSize15{font-size: 20px;}
 }
 @media (min-width:2048px) {
   .fontSize25{font-size: 34px;}
@@ -213,11 +216,13 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 @media (min-width:2304px) {
   .fontSize18{font-size: 26px;}
   .fontSize16{font-size: 23px;}
+  .fontSize15{font-size: 22px;}
   .fontSize17{font-size: 25px;}
 }
 @media (max-width:1396.36px) {
   .fontSize18{font-size: 16px;}
   .fontSize16{font-size: 14px;}
+  .fontSize15{font-size: 13px;}
   .fontSize25{font-size: 23px;}
   .fontSize20{font-size: 18px;}
   .fontSize17{font-size: 15px;}
@@ -225,6 +230,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 @media (max-width:1228.8px) {
   .fontSize18{font-size: 15px;}
   .fontSize16{font-size: 13px;}
+  .fontSize15{font-size: 12px;}
   .fontSize25{font-size: 20px;}
   .fontSize20{font-size: 16px;}
   .fontSize17{font-size: 14px;}
@@ -232,6 +238,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 @media (max-width:1024px) {
   .fontSize18{font-size: 14px;}
   .fontSize16{font-size: 12px;}
+  .fontSize15{font-size: 11px;}
   .fontSize25{font-size: 18px;}
   .fontSize20{font-size: 14px;}
   .fontSize17{font-size: 13px;}
@@ -239,6 +246,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 @media (max-width:877.71px) {
   .fontSize18{font-size: 13px;}
   .fontSize16{font-size: 11px;}
+  .fontSize15{font-size: 10px;}
   .fontSize25{font-size: 16px;}
   .fontSize20{font-size: 12px;}
   .fontSize17{font-size: 12px;}
@@ -260,7 +268,8 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 .darkGreen2{color: #072506;}
 .colorGrey{color: #AFAFAF;}
 .colorGrey2{color: #989898;}
-
+.colorGrey3{color: #CCC;}
+.colorGrey4{color: #8E8E8E;}
 /* //////////////////////////////// */
  .coverBack {
   background-color: rgba(0, 0, 0, 0.6);
@@ -356,7 +365,108 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   transform: rotate(45deg);
   border-radius: 2px;
 }
+/* Fieldset Style */
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 100%;
+    margin-top: 16px;
+}
+fieldset label {
+	cursor: pointer;
+	box-sizing: border-box;
+    padding: 11px 20px;
+	-webkit-tap-highlight-color: transparent;
+    border-radius: 15px;
+    background: #F8F8F8;
+    width: 100%;
+    position: relative;
+}
+fieldset label .fxLabel{gap: 15px;}
+fieldset .fxDetailsProduct{position: relative;}
+fieldset .fxDetailsProduct .arrowLeftDark{
+    width: 10px;
+    position: absolute;
+    right: 1rem;
+}
+fieldset .fxDetailsProduct .typeTitle{line-height: 22px;}
+fieldset .fxDetailsProduct p{font-size: 12px;}
+fieldset .fxDetailsProduct .fxPrice{gap: 5px;}
+fieldset .fxDetailsProduct .fxPrice h3{font-size: 14px;}
+fieldset .fxDetailsProduct .fxPrice span{font-size: 11px;text-decoration-line:line-through;}
+fieldset input[type="radio"]:after{display: none;}
+fieldset input[type="radio"] {
+	appearance: none;
+    position: absolute;
+    right: 0;
+	-webkit-appearance: none;
+	transition: linear 0.8s;
+	height: 0;
+	width: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+fieldset input[type="radio"]:after {
+	content: "";
+	position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+	height: 16px;
+	width: 16px;
+	border-radius: 20px;
+	border: 1px solid #6DA117;
+	transition: linear 0.2s;
+	cursor: pointer;
+  display: block;
+}
+fieldset .fxDetailsProduct input[type="radio"]:after{display: none;}
+fieldset input[type="radio"]:checked:after {
+	content: "";
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	background: #6DA117;
+	transition: linear 0.2s;
+	cursor: pointer;
+}
+fieldset label.checked {
+    border: 1px solid #6DA117;
+}
+fieldset input[type="radio"]:checked:before {
+	content: "";
+	position: absolute;
+	height: 7px;
+	width: 7px;
+	border-radius: 4px;
+	background: #fff;
+    left: -2rem;
+    top: -3.3px;
+	z-index: 1;
+	cursor: pointer;
+}
+fieldset .radio-item-container {gap: 18px;flex-wrap: wrap;}
+fieldset .radio-item {
+	display: flex;
+	position: relative;
+    flex: 1 1 calc(50% - 18px);
+    max-width: calc(50% - 0px);
+}
+fieldset .icon {
+	font-size: 24px;
+	position: absolute;
+	right: 26px;
+	top: 11px;
+	transition: linear 0.3s;
+}
+fieldset input[type="radio"]:checked + span > .icon {
+	transform: scale(1.7);
+}
 @media (min-width:1706.67px) {
+  fieldset label{padding: 15px 20px;}
+  fieldset .fxDetailsProduct .fxPrice h3{font-size: 16px;}
+  fieldset .fxDetailsProduct .fxPrice span{font-size: 13px;}
+  fieldset .fxDetailsProduct p{font-size: 14px;}
   .checkbox-group label:before{padding: 12px;}
   .checkbox-group input:checked + label:after{
         top: 6px;
@@ -367,6 +477,20 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .pagination button{font-size: 17px;}
 }
 @media (min-width:1920px) {
+  fieldset input[type="radio"]:checked:after,
+  fieldset input[type="radio"]:after{width: 25px;height: 25px;}
+  fieldset input[type="radio"]:checked:before{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    left: -39px;
+    top: -6px;
+  }
+  fieldset .fxDetailsProduct .typeTitle{line-height: normal;}
+  fieldset .fxDetailsProduct .fxPrice h3{font-size: 21px;line-height: normal;}
+  fieldset .fxDetailsProduct .fxPrice span{font-size: 18px;}
+  fieldset .fxDetailsProduct p{font-size: 19px;}  
+  fieldset label{padding: 18px 22px;}
   .checkbox-group label:before{padding: 14px;}
   .checkbox-group input:checked + label:after{
     top: 6px;
@@ -393,13 +517,22 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .checkbox-group label{font-size: 15px;}
   .checkbox-group label:before{padding: 9px;}
   .checkbox-group input:checked + label:after{top: 4px;}
+  fieldset label{padding: 8px 15px;}
+  fieldset label .fxLabel img{width: 40px;}
+  fieldset label .fxLabel{gap: 10px;}
+  fieldset .radio-item-container{gap: 14px;}
+
 }
 @media (max-width:1024px) {
-
+  fieldset{margin-top: 8px;}
 }
 @media (max-width:877.71px) {
   .btnLinear-gradient{padding: 7px 20px;gap: 10px;}
   .checkbox-group label{font-size: 15px;}
+  fieldset label{padding: 8px 10px;}
+  fieldset .fxDetailsProduct .fxPrice h3{font-size: 12px;}
+  fieldset .fxDetailsProduct .fxPrice span{font-size: 9px;}
+  fieldset .fxDetailsProduct p{font-size: 10px;line-height: 15px;}
 }
 @media (max-width:768px) {
   .btnLinear-gradient{padding: 5px 16px;gap: 8px;}

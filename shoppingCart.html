@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionFeatures.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionTitle.css">
-    <link rel="stylesheet" href="./css/sectionsPublic/sectionProducts.css">
-    <link rel="stylesheet" href="./css/productDetails.css">
+    <link rel="stylesheet" href="./css/shoppingCart.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- Slick Slider -->
     <link rel="stylesheet" href="./css/slick slider/animate.min.css">
@@ -693,521 +692,225 @@
         <section class="sectionTitle">
             <div class="sectionTitle-container">
                 <div class="d-flex flex-column align-items-center justify-content-center fx-sectionTitle">
-                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Shop</h1>
+                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Shopping Cart</h1>
                     <div class="d-flex align-items-center justify-content-center fx-LinksTitle">
                         <a href="./index.html" class="font-medium darkGreen2">Home</a>
                         <img src="./images/arrowLinks.svg" alt="arrow">
-                        <a href="./shop.html" class="font-medium darkGreen2">Shop</a>
-                        <img src="./images/arrowLinks.svg" alt="arrow">
-                        <a href="./productsDetails.html" class="font-medium darkGreen2">Compo</a>
-                        <img src="./images/arrowLinks.svg" alt="arrow">
-                        <a href="./productsDetails.html" class="font-bold darkGreen2 active">Products Details</a>
+                        <a href="./shop.html" class="font-medium darkGreen2">Shopping Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shoppingCart">
+            <div class="shoppingCart-container px-110">
+                <div class="fx-shoppingCart d-flex">
+                    <div class="shoppingCart-part1">
+                        <table>
+                            <tr class="headLine">
+                                <th class="colorWhite font-medium" colspan="2">Product</th>
+                                <th class="colorWhite font-medium">Price</th>
+                                <th class="colorWhite font-medium">Quantity</th>
+                                <th class="colorWhite font-medium">Subtotal</th>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/cancelBlack-icon.svg" alt="cancel Black icon"
+                                        class="cancelBlack"></td>
+                                <td class="d-flex fx-productImage">
+                                    <div class="productImage"><img src="./images/product3.svg" alt="product image">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start ">
+                                        <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
+                                        <span class="font-medium fontSize15 colorGrey3">1 Kg</span>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$3.99</td>
+                                <td class="weightCol">
+                                    <div class="d-flex align-items-center justify-content-center fxAmount-product">
+                                        <button class="btn-hover"><img src="./images/min-square.svg"
+                                                alt="min square icon"></button>
+                                        <p class="fontSize15 darkGreen2 font-medium letterSpacing">
+                                            <span>2</span>Kg
+                                        </p>
+                                        <button class="btn-hover"><img src="./images/add-square.svg"
+                                                alt="add square icon"></button>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$7.98</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/cancelBlack-icon.svg" alt="cancel Black icon"
+                                        class="cancelBlack"></td>
+                                <td class="d-flex fx-productImage">
+                                    <div class="productImage"><img src="./images/product3.svg" alt="product image">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start">
+                                        <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
+                                        <span class="font-medium fontSize15 colorGrey3">1 Kg</span>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$3.99</td>
+                                <td class="weightCol">
+                                    <div class="d-flex align-items-center justify-content-center fxAmount-product">
+                                        <button class="btn-hover"><img src="./images/min-square.svg"
+                                                alt="min square icon"></button>
+                                        <p class="fontSize15 darkGreen2 font-medium letterSpacing">
+                                            <span>2</span>Kg
+                                        </p>
+                                        <button class="btn-hover"><img src="./images/add-square.svg"
+                                                alt="add square icon"></button>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$7.98</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/cancelBlack-icon.svg" alt="cancel Black icon"
+                                        class="cancelBlack"></td>
+                                <td class="d-flex fx-productImage">
+                                    <div class="productImage"><img src="./images/product3.svg" alt="product image" />
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start ">
+                                        <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
+                                        <span class="font-medium fontSize15 colorGrey3">1 Kg</span>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$3.99</td>
+                                <td class="weightCol">
+                                    <div class="d-flex align-items-center justify-content-center fxAmount-product">
+                                        <button class="btn-hover"><img src="./images/min-square.svg"
+                                                alt="min square icon"></button>
+                                        <p class="fontSize15 darkGreen2 font-medium letterSpacing">
+                                            <span>2</span>Kg
+                                        </p>
+                                        <button class="btn-hover"><img src="./images/add-square.svg"
+                                                alt="add square icon"></button>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$7.98</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/cancelBlack-icon.svg" alt="cancel Black icon"
+                                        class="cancelBlack"></td>
+                                <td class="d-flex fx-productImage">
+                                    <div class="productImage"><img src="./images/product3.svg" alt="product image">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start">
+                                        <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
+                                        <span class="font-medium fontSize15 colorGrey3">1 Kg</span>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$3.99</td>
+                                <td class="weightCol">
+                                    <div class="d-flex align-items-center justify-content-center fxAmount-product">
+                                        <button class="btn-hover"><img src="./images/min-square.svg"
+                                                alt="min square icon"></button>
+                                        <p class="fontSize15 darkGreen2 font-medium letterSpacing">
+                                            <span>2</span>Kg
+                                        </p>
+                                        <button class="btn-hover"><img src="./images/add-square.svg"
+                                                alt="add square icon"></button>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$7.98</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/cancelBlack-icon.svg" alt="cancel Black icon"
+                                        class="cancelBlack"></td>
+                                <td class="d-flex fx-productImage">
+                                    <div class="productImage"><img src="./images/product3.svg" alt="product image">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start">
+                                        <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
+                                        <span class="font-medium fontSize15 colorGrey3">1 Kg</span>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$3.99</td>
+                                <td class="weightCol">
+                                    <div class="d-flex align-items-center justify-content-center fxAmount-product">
+                                        <button class="btn-hover"><img src="./images/min-square.svg"
+                                                alt="min square icon"></button>
+                                        <p class="fontSize15 darkGreen2 font-medium letterSpacing">
+                                            <span>2</span>Kg
+                                        </p>
+                                        <button class="btn-hover"><img src="./images/add-square.svg"
+                                                alt="add square icon"></button>
+                                    </div>
+                                </td>
+                                <td class="fontSize20 darkGreen2 font-medium letterSpacing">$7.98</td>
+                            </tr>
+                        </table>
+                        <div class="d-flex about-ShoppingCart">
+                            <div class="d-flex align-items-center fx-applyCoupon">
+                                <input type="text" placeholder="Coupon Code" class="style-font fontSize15">
+                                <button
+                                    class="btnLinear-gradient colorWhite fontSize20 font-medium letterSpacing btn-hover">Apply
+                                    Coupon</button>
+                            </div>
+                            <a href=""
+                                class="font-bold fontSize20 letterSpacing lightGreen2 clearShoppingCart btn-hover">Clear
+                                Shopping
+                                Cart</a>
+                        </div>
+                    </div>
+                    <div class="shoppingCart-part2">
+                        <div class="orderSummary">
+                            <h3 class="fontSize17 font-medium darkGreen2">Order Summary</h3>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="style-font fontSize15 letterSpacing colorGrey4">Items</p>
+                                <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">5</h5>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="style-font fontSize15 letterSpacing colorGrey4">Sub-Total</p>
+                                <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$120.00</h5>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="style-font fontSize15 letterSpacing colorGrey4">Delivery Fee</p>
+                                <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$05.00</h5>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="style-font fontSize15 letterSpacing colorGrey4">Discount</p>
+                                <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">- $35.00</h5>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between totalAmount">
+                                <p class="style-font fontSize15 letterSpacing colorGrey4">Total</p>
+                                <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$90.00</h5>
+                            </div>
+                        </div>
+                        <form action="#" class="form">
+                            <div class="form__group d-flex align-items-center">
+                                <div class="form__radio-group">
+                                    <input id="small" type="radio" class="form__radio-input" name="size" />
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        <div class="">
+                                            <h4 class="font-medium fontSize16 letterSpacing darkGreen2">Wholesale order
+                                            </h4>
+                                            <span class="colorGrey4 font-light">The bill must exceed $800</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form__radio-group ">
+                                    <input id="large" type="radio" class="form__radio-input" name="size" />
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        <div class="">
+                                            <h4 class="font-medium fontSize16 letterSpacing darkGreen2">Small order
+                                            </h4>
+                                            <span class="colorGrey4 font-light">The bill must be less than $800</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button
+                                    class="btnLinear-gradient font-bold fontSize18 colorWhite w-100 btn-hover">Proceed
+                                    to
+                                    Checkout</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="productDetails">
-            <div class="productDetails-container px-110">
-                <div class="d-flex fx-productDetails">
-                    <div class="sliderAndImages">
-                        <div class="boxImage">
-                            <img src="./images/product8.svg" alt="product image" class="productImage">
-                            <div class="arrows-sliderProducts d-flex">
-                                <img src="./images/arrowLeftSlider.svg" alt="arrow Left Slider"
-                                    class=" btn-hover slick-arrow">
-                                <img src="./images/arrowRightSlider.svg" alt="arrow Right Slider"
-                                    class=" btn-hover slick-arrow">
-                            </div>
-                        </div>
-                        <div class="imagesProducts d-flex">
-                            <div class="divImage active"><img src="./images/lemon2.svg" alt="lemon image"></div>
-                            <div class="divImage"><img src="./images/lemon3.svg" alt="lemon image"></div>
-                            <div class="divImage"><img src="./images/lemon4.svg" alt="lemon image"></div>
-                            <div class="divImage"><img src="./images/lemon2.svg" alt="lemon image"></div>
-                            <div class="divImage"><img src="./images/lemon3.svg" alt="lemon image"></div>
-                        </div>
-                    </div>
-                    <div class="productContent">
-                        <span class="font-medium fontSize18 categoryTitle">Vegetable </span>
-                        <div class="d-flex align-items-center fxTitle-product">
-                            <h1 class="font-bold darkGreen2">Fresh yellow Lemon</h1>
-                            <button class="font-medium lightGreen2 fontSize18">In Stock</button>
-                        </div>
-                        <div class="d-flex align-items-center fxRating-product">
-                            <div class="stars d-flex">
-                                <img src="./images/star.svg" alt="star icon">
-                                <img src="./images/star.svg" alt="star icon">
-                                <img src="./images/star.svg" alt="star icon">
-                                <img src="./images/star.svg" alt="star icon">
-                                <img src="./images/star.svg" alt="star icon">
-                            </div>
-                            <span class="darkGreen2 style-font fontSize16">(4.5)</span>
-                            <span class="darkGreen2  style-font fontSize16">(201 Review)</span>
-                        </div>
-                        <div class="d-flex fxPrice-product">
-                            <h2 class="font-bold lightGreen2 letterSpacing l">$3.99</h2>
-                            <span class="font-medium fontSize20 letterSpacing">$ 5.2</span>
-                        </div>
-                        <p class="style-font contentProduct letterSpacing fontSize17">Omnis et repellendus minus quis
-                            cum quas
-                            atque nesciunt.
-                            Dolore non et
-                            voluptates corrupti.
-                            Rerum provident suscipit
-                            aperiam. Fuga qui occaecati veritatis ut. Dolorum rerum quia repudiandae et architecto
-                            inventore itaque tenetur et.
-                            Error inventore natus ipsum eaque reiciendis et perspiciatis <a href=""
-                                class="lightGreen2 font-medium fontSize17">Read more</a></p>
-                        <h3 class="font-bold fontSize20">Weight </h3>
-                        <fieldset>
-                            <div class="d-flex radio-item-container">
-                                <div class="radio-item">
-                                    <label for="500" class="d-flex align-items-center">
-                                        <input type="radio" id="500" name="Weight" value="500">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/weight-icon.svg" alt="weight icon">
-                                            <span class="font-medium fontSize18">500 g</span>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class=" radio-item">
-                                    <label for="1Kg" class="d-flex align-items-center">
-                                        <input type="radio" id="1Kg" name="Weight" value="1Kg">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/weight-icon.svg" alt="weight icon">
-                                            <span class="font-medium fontSize18">1Kg</span>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class=" radio-item">
-                                    <label for="1.5Kg" class="d-flex align-items-center">
-                                        <input type="radio" id="1.5Kg" name="Weight" value="1.5Kg">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/weight-icon.svg" alt="weight icon">
-                                            <span class="font-medium fontSize18">1.5Kg</span>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class=" radio-item">
-                                    <label for="2.5Kg" class="d-flex align-items-center">
-                                        <input type="radio" id="2.5Kg" name="Weight" value="2.5Kg">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/weight-icon.svg" alt="weight icon">
-                                            <span class="font-medium fontSize18">2.5Kg</span>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <div class=" d-flex fxButtons-product">
-                            <div class="d-flex align-items-center fxAmount-product">
-                                <button class="btn-hover"><img src="./images/min-square.svg"
-                                        alt="min square icon"></button>
-                                <p class="font-medium fontSize20 darkGreen2">
-                                    <span>2</span>Kg
-                                </p>
-                                <button class="btn-hover"><img src="./images/add-square.svg"
-                                        alt="add square icon"></button>
-                            </div>
-                            <button class="btnLinear-gradient colorWhite font-medium AddToCart btn-hover fontSize20">Add
-                                To
-                                Cart</button>
-                            <button class=" btn buyNow font-medium fontSize20 darkGreen2 letterSpacing btn-hover ">Buy
-                                Now</button>
-                            <button
-                                class=" btnFavourite btn-hover d-flex align-items-center justify-content-center"><img
-                                    src=" ./images/favouriteIcon.svg" alt="favourite Icon"></button>
-                        </div>
-                        <a href="" class="d-flex align-items-center fxMore btn-hover">
-                            <span class=" fontSize16 font-bold letterSpacing darkGreen2">+3
-                                More Combos</span>
-                            <img src=" ./images/arrowLeftDark.svg" alt="arrow Left Dark" class="arrowLeftDark">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="rateDetails">
-            <div class="rateDetails-container">
-                <div class="d-flex fx-rateDetails">
-                    <div class="rateDetails-part1">
-                        <h1 class="font-bold text-center letterSpacing">(4.5)</h1>
-                        <div class="d-flex fx-rateIcons">
-                            <img src="./images/star.svg" alt="star icon">
-                            <img src="./images/star.svg" alt="star icon">
-                            <img src="./images/star.svg" alt="star icon">
-                            <img src="./images/star.svg" alt="star icon">
-                            <img src="./images/starGrey.svg" alt="star icon">
-                        </div>
-                        <span class="style-font letterSpacing text-center d-block">(210 Reviews)</span>
-                    </div>
-                    <div class="border"></div>
-                    <div class="rateDetails-part2">
-                        <div class="rating-container">
-                            <span class="rating-label font-medium darkGreen2">5 Star</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 50%;"></div>
-                            </div>
-                        </div>
-                        <div class="rating-container">
-                            <span class="rating-label font-medium darkGreen2">4 Star</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 10%;"></div>
-                            </div>
-                        </div>
-                        <div class="rating-container">
-                            <span class="rating-label font-medium darkGreen2">3 Star</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 70%;"></div>
-                            </div>
-                        </div>
-                        <div class="rating-container">
-                            <span class="rating-label font-medium darkGreen2">2 Star</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width:30%;"></div>
-                            </div>
-                        </div>
-                        <div class="rating-container">
-                            <span class="rating-label font-medium darkGreen2">1 Star</span>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 20%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="reviewSection">
-            <div class="reviewSection-container px-110">
-                <div class="reviewList">
-                    <div class="reviewList-width">
-                        <h2 class="font-bold fontSize25 darkGreen2">Review List</h2>
-                        <div class="comments-list d-flex flex-column">
-                            <div class="comment">
-                                <div class="d-flex head-detailsUser ">
-                                    <div class="d-flex fx-detailsUser">
-                                        <img src="./images/userImage.svg" alt="user Image" class="userImage" />
-                                        <div class="d-flex flex-column infoUser">
-                                            <h3 class="font-bold darkGreen2 fontSize18 letterSpacing">Delbert Johnson
-                                            </h3>
-                                            <div class="d-flex align-items-center rateGap">
-                                                <div class="d-flex align-items-center rateIcons">
-                                                    <img src="./images/star.svg" alt="star icon">
-                                                    <img src="./images/star.svg" alt="star icon">
-                                                    <img src="./images/star.svg" alt="star icon">
-                                                    <img src="./images/star.svg" alt="star icon">
-                                                    <img src="./images/starGrey.svg" alt="star icon">
-                                                </div>
-                                                <span class="colorGrey2 letterSpacing style-font">(4.5)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="style-font colorGrey day">Tuesday</span>
-                                </div>
-                                <p class="colorGrey fontSize16 style-font letterSpacing mb-0">Harum iusto tempore porro
-                                    non
-                                    labore
-                                    rem ipsam occaecati.
-                                    Dolorum rerum
-                                    soluta deserunt et
-                                    numquam. Eum laboriosam natus
-                                    id ipsa distinctio optio architecto qui consequuntur. Qui nemo eos. Accusantium odit
-                                    deserunt omnis ducimus quis.
-                                    Sapiente consequuntur alias harum nobis odio soluta id.</p>
-                            </div>
-                            <div class="comment">
-                                <div class="d-flex head-detailsUser ">
-                                    <div class="d-flex fx-detailsUser">
-                                        <img src="./images/userImage.svg" alt="user Image" class="userImage" />
-                                        <div class="d-flex flex-column infoUser">
-                                            <h3 class="font-bold darkGreen2 fontSize18 letterSpacing">Delbert Johnson
-                                            </h3>
-                                            <div class="d-flex align-items-center rateGap">
-                                                <div class="d-flex align-items-center rateIcons">
-                                                    <img src="./images/star.svg" alt="star icon">
-                                                    <img src="./images/star.svg" alt="star icon">
-                                                    <img src="./images/star.svg" alt="star icon">
-                                                    <img src="./images/star.svg" alt="star icon">
-                                                    <img src="./images/starGrey.svg" alt="star icon">
-                                                </div>
-                                                <span class="colorGrey2 letterSpacing style-font">(4.5)</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <span class="style-font colorGrey letterSpacing day">Tuesday</span>
-                                </div>
-                                <p class="colorGrey fontSize16 style-font letterSpacing mb-0">Harum iusto tempore porro
-                                    non
-                                    labore
-                                    rem ipsam occaecati.
-                                    Dolorum rerum
-                                    soluta deserunt et
-                                    numquam. Eum laboriosam natus
-                                    id ipsa distinctio optio architecto qui consequuntur. Qui nemo eos. Accusantium odit
-                                    deserunt omnis ducimus quis.
-                                    Sapiente consequuntur alias harum nobis odio soluta id.</p>
-                                <div class="d-flex commentImages">
-                                    <img src="./images/lemonComment.png" alt="product image" class="fxGeneral-card">
-                                    <img src="./images/lemonComment.png" alt="product image" class="fxGeneral-card">
-                                    <img src="./images/lemonComment2.png" alt="product image" class="fxGeneral-card">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="addReviewSection">
-            <div class="addReviewSection-container px-110">
-                <h3 class=" font-medium darkGreen2 fontSize25">Add your review</h3>
-                <p class=" style-font darkGreen2 fontSize16">Your email address will not be published. Required fields
-                    are marked*</p>
-                <form action="" class="fxGeneral-cards">
-                    <div class="form-group w50 fxGeneral-card">
-                        <label for="nameUser" class="style-font darkGreen2 fontSize18">Name *</label>
-                        <input type="text" id="nameUser" name="nameUser" class="style-font fontSize16 d-block"
-                            placeholder="Ex. Floyd Leuschke">
-                    </div>
-                    <div class="form-group w50 fxGeneral-card">
-                        <label for="emailUser" class="style-font darkGreen2 fontSize18">Email *</label>
-                        <input type="email" id="emailUser" name="emailUser" class="style-font fontSize16 d-block"
-                            placeholder="Ex.@gmail.com">
-                    </div>
-                    <div class="form-group w100 fxGeneral-card">
-                        <label for="yourRating" class="style-font darkGreen2 fontSize18">Your Rating *</label>
-                        <div class="rating">
-                            <input type="radio" id="star5" name="rating" value="5" />
-                            <label for="star5" title="5 stars">★</label>
-                            <input type="radio" id="star4" name="rating" value="4" />
-                            <label for="star4" title="4 stars">★</label>
-                            <input type="radio" id="star3" name="rating" value="3" />
-                            <label for="star3" title="3 stars">★</label>
-                            <input type="radio" id="star2" name="rating" value="2" />
-                            <label for="star2" title="2 stars">★</label>
-                            <input type="radio" id="star1" name="rating" value="1" />
-                            <label for="star1" title="1 star">★</label>
-                        </div>
-                    </div>
-                    <div class="form-group w100 fxGeneral-card">
-                        <label for="reviewTitle" class="style-font darkGreen2 fontSize18">Add Review Title
-                            *</label>
-                        <input type="text" id="reviewTitle" name="reviewTitle" class="style-font fontSize16 d-block"
-                            placeholder="Write Title here">
-                    </div>
-                    <div class="form-group w100 fxGeneral-card">
-                        <label for="detailedReview" class="style-font darkGreen2 fontSize18">Add Detailed Review
-                            *</label>
-                        <textarea name="detailedReview" id="detailedReview" placeholder="Write here"
-                            class="style-font fontSize16 d-block"></textarea>
-                    </div>
-                    <div class="form-group w100 fxGeneral-card">
-                        <label for="detailedReview" class="style-font darkGreen2 fontSize18">Photo
-                            (Optional)</label>
-                        <div class="dropzone" id="imageDropzone">
-                            <img src="/./images/album-icon.svg" alt="album icon" class="album-icon">
-                            <p class="style-font mb-0">Drag a Photo</p>
-                            <span class=" lightGreen2 font-medium">Browse</span>
-                            <input type="file" id="fileInput" multiple accept="image/*" hidden>
-                        </div>
-                        <div id="preview"></div>
-                    </div>
-                    <button type="submit"
-                        class="btnProducts font-medium letterSpacing fontSize20 colorWhite btn-hover">Submit</button>
-                </form>
-            </div>
-        </section>
-        <section class=" sectionProducts">
-            <div class="sectionProducts-container px-110">
-                <div class="headStyle relatedProducts d-flex justify-content-between">
-                    <div class="headStyle-texts">
-                        <h4 class="fontSize25 darkGreen2 style-font">Related Products</h4>
-                        <h1 class="font-medium darkGreen2 mb-0">Explore <span class="font-medium  lightGreen2">Related
-                                Products</span></h1>
-                    </div>
-                    <button class="btnProducts align-items-center justify-content-center btn-hover">
-                        <span class="colorWhite font-bold fontSize18">View All Products</span>
-                        <img src="./images/arrow-left.svg" alt="arrow-left">
-                    </button>
-                </div>
-                <div class="sliderProducts slickProducts">
-                    <div class="slide">
-                        <a href="./productsDetails.html" class="productCard fxGeneral-card">
-                            <div class="productCard-imgs">
-                                <span class="text-capitalize font-medium">35% OFF</span>
-                                <div class="productImage"><img src="./images/product2.svg" alt="product image" class="">
-                                </div>
-                                <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                    class="favouriteIcon btn-hover">
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between productCard-title">
-                                <h2 class="font-medium mb-0 darkGreen2">Orange</h2>
-                                <div class=" d-flex align-items-center fxRate-card">
-                                    <img src="./images/star.svg" alt="star">
-                                    <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                </div>
-                            </div>
-                            <div class="productCard-Details d-flex  justify-content-between">
-                                <div class=" d-flex flex-column">
-                                    <span class="font-medium letterSpacing mount">1 Kg</span>
-                                    <div class="d-flex align-items-center fxProduct-price">
-                                        <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                    </div>
-                                </div>
-                                <button
-                                    class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                    <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                    <span class="font-medium letterSpacing lightGreen2 mb-0">Add to
-                                        Cart</span>
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="./productsDetails.html" class="productCard fxGeneral-card">
-                            <div class="productCard-imgs">
-                                <span class="text-capitalize font-medium">35% OFF</span>
-                                <div class="productImage"><img src="./images/product3.svg" alt="product image" class="">
-                                </div>
-                                <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                    class="favouriteIcon btn-hover">
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between productCard-title">
-                                <h2 class="font-medium mb-0 darkGreen2">Mango</h2>
-                                <div class=" d-flex align-items-center fxRate-card">
-                                    <img src="./images/star.svg" alt="star">
-                                    <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                </div>
-                            </div>
-                            <div class="productCard-Details d-flex  justify-content-between">
-                                <div class=" d-flex flex-column">
-                                    <span class="font-medium letterSpacing mount">1 Kg</span>
-                                    <div class="d-flex align-items-center fxProduct-price">
-                                        <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                        <p class="mb-0 style-font letterSpacing">$ 5.2</p>
-                                    </div>
-                                </div>
-                                <button
-                                    class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                    <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                    <span class="font-medium letterSpacing lightGreen2 mb-0">Add to
-                                        Cart</span>
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="./productsDetails.html" class="productCard fxGeneral-card">
-                            <div class="productCard-imgs">
-                                <span class="text-capitalize font-medium">35% OFF</span>
-                                <div class="productImage"><img src="./images/product4.svg" alt="product image" class="">
-                                </div>
-                                <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                    class="favouriteIcon btn-hover">
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between productCard-title">
-                                <h2 class="font-medium mb-0 darkGreen2">Strawberry</h2>
-                                <div class=" d-flex align-items-center fxRate-card">
-                                    <img src="./images/star.svg" alt="star">
-                                    <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                </div>
-                            </div>
-                            <div class="productCard-Details d-flex  justify-content-between">
-                                <div class=" d-flex flex-column">
-                                    <span class="font-medium letterSpacing mount">1 Kg</span>
-                                    <div class="d-flex align-items-center fxProduct-price">
-                                        <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                    </div>
-                                </div>
-                                <button
-                                    class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                    <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                    <span class="font-medium letterSpacing lightGreen2 mb-0">Add to
-                                        Cart</span>
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="./productsDetails.html" class="productCard fxGeneral-card">
-                            <div class="productCard-imgs">
-                                <span class="text-capitalize font-medium">35% OFF</span>
-                                <div class="productImage"><img src="./images/product5.svg" alt="product image" class="">
-                                </div>
-                                <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                    class="favouriteIcon btn-hover">
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between productCard-title">
-                                <h2 class="font-medium mb-0 darkGreen2">Cherry tomatoes</h2>
-                                <div class=" d-flex align-items-center fxRate-card">
-                                    <img src="./images/star.svg" alt="star">
-                                    <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                </div>
-                            </div>
-                            <div class="productCard-Details d-flex  justify-content-between">
-                                <div class=" d-flex flex-column">
-                                    <span class="font-medium letterSpacing mount">1 Kg</span>
-                                    <div class="d-flex align-items-center fxProduct-price">
-                                        <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                        <p class="mb-0 style-font letterSpacing">$ 5.2</p>
-                                    </div>
-                                </div>
-                                <button
-                                    class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                    <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                    <span class="font-medium letterSpacing lightGreen2 mb-0">Add to
-                                        Cart</span>
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="./productsDetails.html" class="productCard fxGeneral-card">
-                            <div class="productCard-imgs">
-                                <span class="text-capitalize font-medium">35% OFF</span>
-                                <div class="productImage"><img src="./images/product6.svg" alt="product image" class="">
-                                </div>
-                                <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                    class="favouriteIcon btn-hover">
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between productCard-title">
-                                <h2 class="font-medium mb-0 darkGreen2">onion</h2>
-                                <div class=" d-flex align-items-center fxRate-card">
-                                    <img src="./images/star.svg" alt="star">
-                                    <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                </div>
-                            </div>
-                            <div class="productCard-Details d-flex  justify-content-between">
-                                <div class=" d-flex flex-column">
-                                    <span class="font-medium letterSpacing mount">1 Kg</span>
-                                    <div class="d-flex align-items-center fxProduct-price">
-                                        <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                    </div>
-                                </div>
-                                <button
-                                    class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                    <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                    <span class="font-medium letterSpacing lightGreen2 mb-0">Add to
-                                        Cart</span>
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="controlSlideProducts">
-                    <div class="dots-sliderProducts dots-slickProducts align-items-center justify-content-center">
-                    </div>
-                    <div class="arrows-sliderProducts d-flex">
-                        <img src="./images/arrowLeftSlider.svg" alt="arrow Left Slider" class="leftProduct btn-hover" />
-                        <img src="./images/arrowRightSlider.svg" alt="arrow Right Slider"
-                            class="rightProduct btn-hover" />
-                    </div>
-                </div>
-                <button class="btnProducts btnProducts2 align-items-center justify-content-center btn-hover">
-                    <span class="colorWhite font-bold fontSize18">View All Products</span>
-                    <img src="./images/arrow-left.svg" alt="arrow-left">
-                </button>
-            </div>
         </section>
         <section class="sectionFeatures">
             <div class="sectionFeatures-container">
@@ -1325,7 +1028,6 @@
     <script src="./js/selectImageFile.js"></script>
     <!-- Select Items -->
     <script src="./js/selectItems.js"></script>
-
 </body>
 
 </html>
