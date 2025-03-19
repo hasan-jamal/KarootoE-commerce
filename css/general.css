@@ -109,7 +109,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
     cursor: pointer;
 }
 /* Head Title  Style*/
-.headStyle{position: relative;align-items: end; margin-bottom: 40px;}
+.headStyle{position: relative;align-items: end; margin-bottom: 45px;}
 .headStyle .lineTitle{
   position: absolute;
   bottom: 0rem;
@@ -118,6 +118,20 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 .headStyle .headStyle-texts h1{
   font-size: 40px;
   line-height: 72px;
+}
+.relatedProducts .headStyle-texts h1 span{position: relative;}
+.relatedProducts .headStyle-texts h1 span::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 19px;
+    background-image: url(../images/lineTitle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    bottom: -.5rem;
 }
 .btnProducts{
   display: flex;
@@ -130,12 +144,15 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 .btnProducts2{display: none;}
 @media (min-width:1706.67px) {
   .headStyle .headStyle-texts h1{font-size: 45px;}
+  .relatedProducts .headStyle-texts h1 span::after {width: 300px;}
 }
 @media (min-width:1920px) {
   .headStyle .headStyle-texts h1{font-size: 50px;}
+    .relatedProducts .headStyle-texts h1 span::after {height: 24px;}
 }
 @media (min-width:2048px) {
 .headStyle .headStyle-texts h1{font-size: 55px;}
+    .relatedProducts .headStyle-texts h1 span::after {height: 24px;}
 }
 @media (min-width:2304px) {
 
@@ -241,7 +258,8 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 .darkGreen{color: #123A10;}
 .colorWhite{color: #fff;}
 .darkGreen2{color: #072506;}
-
+.colorGrey{color: #AFAFAF;}
+.colorGrey2{color: #989898;}
 
 /* //////////////////////////////// */
  .coverBack {
