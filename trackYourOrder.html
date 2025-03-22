@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionFeatures.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionTitle.css">
-    <link rel="stylesheet" href="./css/orderCompeleted.css">
+    <link rel="stylesheet" href="./css/trackYourOrder.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -688,139 +687,62 @@
         <section class="sectionTitle">
             <div class="sectionTitle-container">
                 <div class="d-flex flex-column align-items-center justify-content-center fx-sectionTitle">
-                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Order Completed</h1>
+                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Track Your Order</h1>
                     <div class="d-flex align-items-center justify-content-center fx-LinksTitle">
                         <a href="./index.html" class="font-medium darkGreen2">Home</a>
                         <img src="./images/arrowLinks.svg" alt="arrow">
-                        <a href="./orderCompleted.html" class="font-bold darkGreen2">Order Completed</a>
+                        <a href="./trackYourOrder.html" class="font-bold darkGreen2">Track Your Order</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="orderCompleted">
-            <div class="orderCompleted-container ">
-                <div class="d-flex align-items-center justify-content-center flex-column completed">
-                    <img src="./images/orderCompleted.svg" alt="order Completed icon">
-                    <h1 class="font-bold letterSpacing darkGreen2 ">Your order is completed !</h1>
-                    <p class="style-font letterSpacing fontSize25 colorGrey5">Thank you , Your Order has been received.
-                    </p>
+        <section class="trackYourOrder">
+            <div class="orderStatus">
+                <h3 class="font-bold fontSize25 darkGreen2 letterSpacing">Order Status</h3>
+                <p class="style-font colorGrey6 fontSize20 letterSpacing mb-0">Order ID : #Foodas255AZ</p>
+                <div class="box-orderStatus d-flex">
+                    <div class="step-orderStatus d-flex flex-column align-items-center justify-content-center ">
+                        <img src="./images/Confirmed.svg" alt="Confirmed icon">
+                        <h3 class="lightGreen2 font-bold fontSize20 text-center">Confirmed</h3>
+                        <span class="style-font fontSize15 letterSpacing darkGreen2 text-center">30 July 2025</span>
+                        <span class="style-font fontSize15 letterSpacing darkGreen2 text-center">10:20 Am</span>
+                    </div>
+                    <img src="./images/lineStepActive.svg" alt="line Step Active" class="lineStep">
+                    <div class="step-orderStatus d-flex flex-column align-items-center justify-content-center">
+                        <img src="./images/pickingItems.svg" alt="picking Items icon">
+                        <h3 class="lightGreen2 font-bold fontSize20 text-center">Picking Items</h3>
+                        <span class="style-font fontSize15 letterSpacing darkGreen2 text-center">30 July 2025</span>
+                        <span class="style-font fontSize15 letterSpacing darkGreen2 text-center">10:30 Am</span>
+                    </div>
+                    <img src="./images/lineStep.svg" alt="line Step" class="lineStep">
+                    <div class="step-orderStatus d-flex flex-column align-items-center justify-content-center">
+                        <img src="./images/OutForDelivery.svg" alt="Out For Delivery icon">
+                        <h3 class="style-font fontSize20 text-center colorGrey7">Out for delivery</h3>
+                        <span class="style-font fontSize15 letterSpacing colorGrey7 text-center ">Expected</span>
+                        <span class="style-font fontSize15 letterSpacing colorGrey7 text-center">30 July 2025</span>
+                    </div>
+                    <img src="./images/lineStep.svg" alt="line Step" class="lineStep">
+                    <div class="step-orderStatus d-flex flex-column align-items-center justify-content-center">
+                        <img src="./images/Delivered.svg" alt="Delivered icon">
+                        <h3 class="colorGrey7 style-font fontSize20 text-center">Delivered</h3>
+                        <span class="style-font fontSize15 letterSpacing colorGrey7 text-center">Expected</span>
+                        <span class="style-font fontSize15 letterSpacing colorGrey7 text-center">30 July 2025</span>
+                    </div>
                 </div>
-                <div class="d-flex fx-orderDetails">
-                    <div class="d-flex flex-column colOrder">
-                        <p class="font-medium colorWhite fontSize20">Order ID</p>
-                        <h3 class="font-bold colorWhite fontSize20">#Fa2025ZXA</h3>
-                    </div>
-                    <div class="border"></div>
-                    <div class="d-flex flex-column colOrder">
-                        <p class="font-medium colorWhite fontSize20">Payment Method</p>
-                        <h3 class="font-bold colorWhite fontSize20">Edahab</h3>
-                    </div>
-                    <div class="border"></div>
-                    <div class="d-flex flex-column colOrder">
-                        <p class="font-medium colorWhite fontSize20">Transaction ID</p>
-                        <h3 class="font-bold colorWhite fontSize20">AQsal120cc</h3>
-                    </div>
-                    <div class="border"></div>
-                    <div class="d-flex flex-column colOrder">
-                        <p class="font-medium colorWhite fontSize20">Estimated Deliverry Date</p>
-                        <h3 class="font-bold colorWhite fontSize20">29 July 2025</h3>
-                    </div>
-                    <button class="font-medium lightGreen letterSpacing fontSize20 btn-hover downloadInvoice">Download
-                        Invoice</button>
-                </div>
-                <div class="orderDetails-width">
-                    <div class="box-orderDetails">
-                        <h2 class="style-font darkGreen2 letterSpacing fontSize20">Order Details</h2>
-                        <div class="border"></div>
-                        <div class="d-flex justify-content-between align-items-center fxTitles">
-                            <p class="style-font mb-0 letterSpacing fontSize20 darkGreen2">Products</p>
-                            <p class="style-font mb-0 letterSpacing fontSize20 darkGreen2">Sub Total</p>
-                        </div>
-                        <div class="productsColumns d-flex flex-column">
-                            <div class="d-flex justify-content-between align-items-center fxDetails">
-                                <div class="d-flex fx-productImage">
-                                    <div class="productImage"><img src="./images/product3.svg" alt="product image">
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start">
-                                        <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
-                                        <span class="font-medium fontSize15 colorGrey3">1 Kg</span>
-                                    </div>
-                                </div>
-                                <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">$7.98</p>
-                            </div>
-                            <div class="border"></div>
-                            <div class="d-flex justify-content-between align-items-center fxDetails">
-                                <div class="d-flex fx-productImage">
-                                    <div class="productImage"><img src="./images/product3.svg" alt="product image">
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start">
-                                        <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
-                                        <span class="font-medium fontSize15 colorGrey3">1 Kg</span>
-                                    </div>
-                                </div>
-                                <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">$7.98</p>
-                            </div>
-                            <div class="border"></div>
-                            <div class="d-flex justify-content-between align-items-center fxDetails">
-                                <div class="d-flex fx-productImage">
-                                    <div class="productImage"><img src="./images/product3.svg" alt="product image">
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start">
-                                        <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
-                                        <span class="font-medium fontSize15 colorGrey3">1 Kg</span>
-                                    </div>
-                                </div>
-                                <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">$7.98</p>
-                            </div>
-                            <div class="border"></div>
-                            <div class="d-flex justify-content-between align-items-center fxDetails">
-                                <div class="d-flex fx-productImage">
-                                    <div class="productImage"><img src="./images/product3.svg" alt="product image">
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start">
-                                        <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
-                                        <span class="font-medium fontSize15 colorGrey3">1 Kg</span>
-                                    </div>
-                                </div>
-                                <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">$7.98</p>
-                            </div>
-                            <div class="border"></div>
-                            <div class="orderSummary">
-                                <h3 class="fontSize17 font-medium darkGreen2">Order Summary</h3>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <p class="style-font fontSize17 letterSpacing darkGreen2">Items</p>
-                                    <h5 class="darkGreen2 fontSize18 font-bold letterSpacing">5</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <p class="style-font fontSize17 letterSpacing darkGreen2">Sub-Total</p>
-                                    <h5 class="darkGreen2 fontSize18 font-bold letterSpacing">$120.00</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <p class="style-font fontSize17 letterSpacing darkGreen2">Delivery Fee</p>
-                                    <h5 class="darkGreen2 fontSize18 font-bold letterSpacing">$05.00</h5>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <p class="style-font fontSize17 letterSpacing darkGreen2">Discount</p>
-                                    <h5 class="darkGreen2 fontSize18 font-bold letterSpacing">- $35.00</h5>
-                                </div>
-                                <div class="border"></div>
-                                <div class="d-flex align-items-center justify-content-between totalAmount">
-                                    <p class="style-font fontSize17 letterSpacing darkGreen2">Total</p>
-                                    <h5 class="darkGreen2 fontSize18 font-bold letterSpacing">$90.00</h5>
-                                </div>
-                            </div>
+            </div>
+            <div class="deliveryDetails">
+                <h3 class="font-bold fontSize25 darkGreen2 letterSpacing">Delivery details</h3>
+                <div class="box-deliveryDetails">
+                    <div class="userDetails">
+                        <img src="" alt="">
+                        <div class="userDetailsInfo">
+                            <h2 class="fontSize20 darkGreen3 font-bold">James Williams</h2>
+
                         </div>
 
                     </div>
-                    <div class="d-flex buttonsOrder">
-                        <button class="btn-hover btnLinear-gradient font-bold colorWhite fontSize18"
-                            onclick="window.location.href='trackYourOrder.html'">Track
-                            Your
-                            Order</button>
-                        <button class="btn-hover font-bold darkGreen2 btnOutline-black fontSize18"
-                            onclick="window.location.href='shop.html'">Shop</button>
-                    </div>
                 </div>
+            </div>
         </section>
         <section class=" sectionFeatures">
             <div class="sectionFeatures-container">
@@ -929,8 +851,6 @@
     <script>AOS.init();</script>
     <!-- // Plus Minus Weight -->
     <script src="./js/plusMinusWeight.js"></script>
-    <!-- Select Items -->
-    <script src="./js/selectItems.js"></script>
 </body>
 
 </html>

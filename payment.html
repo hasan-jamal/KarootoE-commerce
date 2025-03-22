@@ -688,7 +688,7 @@
         <section class="sectionTitle">
             <div class="sectionTitle-container">
                 <div class="d-flex flex-column align-items-center justify-content-center fx-sectionTitle">
-                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Shopping Cart</h1>
+                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Checkout</h1>
                     <div class="d-flex align-items-center justify-content-center fx-LinksTitle">
                         <a href="./index.html" class="font-medium darkGreen2">Home</a>
                         <img src="./images/arrowLinks.svg" alt="arrow">
@@ -737,7 +737,7 @@
                                             Card</span>
                                     </div>
                                 </label>
-                                <form class="d-flex flex-column gap-formGroup">
+                                <form class="flex-column gap-formGroup">
                                     <div class="d-flex fx-formGroups">
                                         <div class="form-group d-flex flex-column">
                                             <label for="" class="fontSize18 darkGreen2 style-font">Card Holder Name
@@ -768,6 +768,98 @@
                                             <span class="darkGreen2 fontSize15 style-font">Save Card</span></label>
                                     </div>
                                 </form>
+                            </div>
+                            <div class="radio-item">
+                                <label for="Edahab" class="d-flex align-items-center labelRadio">
+                                    <input type="radio" id="Edahab" name="payment" value="Edahab">
+                                    <div class="d-flex align-items-center fxLabel">
+                                        <img src="./images/Edahab.svg" alt="Edahab pay">
+                                        <span
+                                            class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Edahab</span>
+                                    </div>
+                                </label>
+                                <form class="flex-column gap-formGroup">
+                                    <div class="d-flex fx-formGroups">
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="" class="fontSize18 darkGreen2 style-font">Card Holder Name
+                                                *</label>
+                                            <input type="text" class="fontSize16  style-font"
+                                                placeholder="Ex. Floyd Leuschke" />
+                                        </div>
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="" class="fontSize18 darkGreen2 style-font">Card Number *</label>
+                                            <input type="text" class="fontSize16  style-font"
+                                                placeholder="Ex.21455......" />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex fx-formGroups">
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="" class="fontSize18 darkGreen2 style-font">Expiry Date *</label>
+                                            <input type="text" class="fontSize16  style-font" placeholder="Ex. 05/26" />
+                                        </div>
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="" class="fontSize18 darkGreen2 style-font">CVV *</label>
+                                            <input type="text" class="fontSize16  style-font"
+                                                placeholder="Ex.147......" />
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-group d-flex align-items-center">
+                                        <input type="checkbox" class="" id="establish" name="establish">
+                                        <label for="establish" class=" d-block">
+                                            <span class="darkGreen2 fontSize15 style-font">Save Card</span></label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="radio-item">
+                                <label for="wAAFIPay" class="d-flex align-items-center labelRadio">
+                                    <input type="radio" id="wAAFIPay" name="payment" value="wAAFIPay">
+                                    <div class="d-flex align-items-center fxLabel">
+                                        <img src="./images/WAAFIPay.svg" alt="WAAFI Pay">
+                                        <span
+                                            class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">WAAFIPay</span>
+                                    </div>
+                                </label>
+                                <form class="flex-column gap-formGroup">
+                                    <div class="d-flex fx-formGroups">
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="" class="fontSize18 darkGreen2 style-font">Card Holder Name
+                                                *</label>
+                                            <input type="text" class="fontSize16  style-font"
+                                                placeholder="Ex. Floyd Leuschke" />
+                                        </div>
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="" class="fontSize18 darkGreen2 style-font">Card Number *</label>
+                                            <input type="text" class="fontSize16  style-font"
+                                                placeholder="Ex.21455......" />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex fx-formGroups">
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="" class="fontSize18 darkGreen2 style-font">Expiry Date *</label>
+                                            <input type="text" class="fontSize16  style-font" placeholder="Ex. 05/26" />
+                                        </div>
+                                        <div class="form-group d-flex flex-column">
+                                            <label for="" class="fontSize18 darkGreen2 style-font">CVV *</label>
+                                            <input type="text" class="fontSize16  style-font"
+                                                placeholder="Ex.147......" />
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-group d-flex align-items-center">
+                                        <input type="checkbox" class="" id="establish" name="establish">
+                                        <label for="establish" class=" d-block">
+                                            <span class="darkGreen2 fontSize15 style-font">Save Card</span></label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="radio-item">
+                                <label for="Paypal" class="d-flex align-items-center labelRadio">
+                                    <input type="radio" id="Paypal" name="payment" value="Paypal">
+                                    <div class="d-flex align-items-center fxLabel">
+                                        <img src="./images/Paypal.svg" alt="Paypal">
+                                        <span
+                                            class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Paypal</span>
+                                    </div>
+                                </label>
                             </div>
                         </fieldset>
                     </div>
@@ -913,10 +1005,7 @@
     <!-- AOS Animation JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
-    <!-- // Plus Minus Weight -->
-    <script src="./js/plusMinusWeight.js"></script>
-    <!-- Select Items -->
-    <script src="./js/selectItems.js"></script>
+    <script src="./js/selectedPaymentMethod.js"></script>
 </body>
 
 </html>

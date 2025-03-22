@@ -276,11 +276,14 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 .darkGreen{color: #123A10;}
 .colorWhite{color: #fff;}
 .darkGreen2{color: #072506;}
+.darkGreen3{color: #151515;}
 .colorGrey{color: #AFAFAF;}
 .colorGrey2{color: #989898;}
 .colorGrey3{color: #CCC;}
 .colorGrey4{color: #8E8E8E;}
 .colorGrey5{color: #A9A9A9;}
+.colorGrey6{color: #8A8A8A;}
+.colorGrey7{color: #898483;}
 /* //////////////////////////////// */
  .coverBack {
   background-color: rgba(0, 0, 0, 0.6);
@@ -332,6 +335,16 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   gap: 15px;
   padding: 10px 30px;
   justify-content: center;
+}
+.btnOutline-black{
+  border-radius: 20px;
+  border: 2px solid var(--Color5, #072506);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 30px;
+  justify-content: center;
+  background: #fff;
 }
 /* checkbox Style  */
 .checkbox-group input {
@@ -481,7 +494,7 @@ table {
 }
 th, td {
     border: 1px solid transparent;
-    padding: 20px 0;
+    padding: 16px 0;
     text-align: left;
     text-align: center; /* Center text horizontally */
     vertical-align: middle; /* Center text vertically */
@@ -511,6 +524,7 @@ table tr td .productImage img{
 }
 table tr .weightCol .fxAmount-product{gap: 10px;}
 table tr .weightCol button{background: none;}
+table tr .weightCol button:disabled {opacity: 0.5;}
 table tr .weightCol button img{
     width: 35px;
     height: 35px;
@@ -614,7 +628,9 @@ input{
   .pagination{gap: 3px;margin-top: 30px;}
   table tr .weightCol .fxAmount-product{gap: 5px;}
   table tr td .productImage img{width: 40px;height: 40px;}
-  table tr th{padding: 0 10px;}
+  table tr th{padding: 0 10px;white-space: pre;}
+  .divTable table td{padding: 10px;}
+  .divTable {overflow-y: auto;}
   table{overflow-x: auto;}
   .checkbox-group input:checked + label:after {top: 3px;}
 }
