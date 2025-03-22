@@ -87,15 +87,6 @@
     .orderStatus .box-orderStatus .step-orderStatus img{width: 70px;}
     .trackYourOrder .boxProducts .productsColumns{gap: 20px;}
 }
-@media (min-width:2048px) {
-
-}
-@media (min-width:2304px) {
-
-}
-@media (min-width:3072px) {
-
-}
 @media (max-width:1396.36px) {
     .trackYourOrder{width: 75%;}
 }
@@ -135,6 +126,4 @@
     .trackYourOrder .boxProducts h2{font-size: 15px;}
     .orderStatus .box-orderStatus .lineStep{width: 70px;}
     .orderStatus .box-orderStatus .step-orderStatus img{width: 40px;}
-}
-@media (max-width:512px) {
 }
