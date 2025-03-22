@@ -28,7 +28,7 @@ body {
 }
 /* My Library */
 main{position: relative;}a,button{cursor: pointer;}p{margin-bottom: 0px;}.textUnDecoration{text-decoration: none !important;}.mt-0{margin-top: 0 !important;}
-section{position: relative;}a,.btn-hover{transition: 0.3s;cursor: pointer;}input:focus-visible{outline: none ;}.btn-hover:hover{transform: scale(0.9);}
+section{position: relative;}a,.btn-hover{transition: 0.3s;cursor: pointer;}input:focus-visible{outline: none ;}.btn-hover:hover{transform: scale(0.9);}.opacity8{opacity: 0.8;}
 p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom: 0 !important;}.mt-1{margin-top: 0.5rem !important}.mt-2{margin-top:1rem !important;}.mt-3{margin-top:1.5rem !important;}.mt-4{margin-top:2rem !important;}.mt-5{margin-top:2.5rem !important;}
 .gap-0{gap:0!important}.gap-1{gap:.25rem!important}.gap-2{gap:.5rem!important}.gap-3{gap:1rem!important}.gap-4{gap:1.5rem!important}.gap-5{gap:3rem!important}.mx-auto{margin-left: auto !important;margin-right: auto !important;}
 .d-flex{display:flex!important}.align-items-center{align-items:center!important}.align-items-start{align-items:flex-start!important}.align-items-end{align-items:flex-end!important}.w-100{width: 100%;}.text-start{text-align: start !important;}
@@ -284,6 +284,8 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 .colorGrey5{color: #A9A9A9;}
 .colorGrey6{color: #8A8A8A;}
 .colorGrey7{color: #898483;}
+.colorGrey8{color: #9B9B9B;}
+
 /* //////////////////////////////// */
  .coverBack {
   background-color: rgba(0, 0, 0, 0.6);
@@ -510,14 +512,15 @@ table th {
 table td {border-bottom: 1px solid #E1E0E0;}
 table .cancelBlack{cursor: pointer;transition: 0.3s;}
 table .cancelBlack:hover{transform: scale(0.8);}
-table tr .fx-productImage{gap: 15px;}
-.checkout table tr .fx-productImage{justify-content: center;}
-table tr td .productImage{
+.fx-productImage{gap: 15px;}
+.checkout .fx-productImage{justify-content: center;}
+.productImage{
     padding: 6px 4px;
     border-radius: 10px;
     background: #F6F6F6;
+    height: 100%;
 }
-table tr td .productImage img{
+.productImage img{
     width: 76px;
     height: 64px;
     object-fit: cover;
@@ -600,10 +603,10 @@ input{
   fieldset .labelRadio .fxLabel img{width: 40px;}
   fieldset .labelRadio .fxLabel{gap: 10px;}
   fieldset .radio-item-container{gap: 14px;}
-  table tr td .productImage img {width: 56px;height: 44px;}
+  .productImage img {width: 56px;height: 44px;}
   table tr .weightCol button img{width: 25px;height: 25px;}
   table th{height: 70px;font-size: 18px;}
-  table tr td .productImage img {width: 56px;height: 44px;}
+  .productImage img {width: 56px;height: 44px;}
   table tr .weightCol button img{width: 25px;height: 25px;}
 }
 @media (max-width:1024px) {
@@ -627,12 +630,13 @@ input{
 @media (max-width:614.4px) {
   .pagination{gap: 3px;margin-top: 30px;}
   table tr .weightCol .fxAmount-product{gap: 5px;}
-  table tr td .productImage img{width: 40px;height: 40px;}
+  .productImage img{width: 40px;height: 40px;}
   table tr th{padding: 0 10px;white-space: pre;}
   .divTable table td{padding: 10px;}
   .divTable {overflow-y: auto;}
   table{overflow-x: auto;}
   .checkbox-group input:checked + label:after {top: 3px;}
+  .fx-productImage .fontSize20{font-size: 15px;}
 }
 @media (max-width:512px) {
 }
