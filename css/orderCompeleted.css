@@ -1,0 +1,62 @@
+.orderCompleted{margin: 60px 0;}
+.orderCompleted .completed{margin-bottom: 70px;}
+.orderCompleted .completed img{margin-bottom: 20px;}
+.orderCompleted .fx-orderDetails{
+    border-radius: 20px;
+    background:#6DA117;
+    padding: 14px 18px 14px 70px;
+    width: max-content;
+    margin: auto;
+    gap: 30px;
+    width: 70%;
+    margin: auto;
+}
+.orderCompleted .fx-orderDetails p{opacity: 0.8;}
+.orderCompleted .fx-orderDetails .border{
+    height: 60px;
+    width: 1px;
+    background: #FFF;
+    opacity: 0.4;
+}
+.orderCompleted .fx-orderDetails .downloadInvoice{
+    border-radius: 20px;
+    background: #FFF;
+    padding: 19px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orderCompleted .box-orderDetails{
+    border-radius: 20px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    width: 70%;
+    margin: auto;
+}
+.orderCompleted .box-orderDetails h2{
+    padding: 25px 20px 20px 20px;
+}
+.orderCompleted .box-orderDetails .border{height: 1px;width: 97%;
+    margin: auto; background: #E1E0E0;;}
+.orderCompleted .box-orderDetails .fxTitles{padding: 20px 20px 0 20px;}
+.productsColumns{
+    gap: 15px;
+    padding: 20px 0;
+}
+.productsColumns .fxDetails{padding: 0 20px;}
+.productsColumns .fxDetails .fx-productImage{gap: 15px;}
+.productsColumns .fxDetails .fx-productImage .productImage{
+    padding: 0px 4px;  
+    border-radius: 10px;
+    background: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 83px;
+    height: 80.87px;
+}
+.productsColumns .fxDetails .fx-productImage .productImage img{
+    width: 100%;
+    object-fit: cover;
+}

@@ -192,6 +192,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 .fontSize17{font-size: 17px;}
 .fontSize25{font-size: 25px;}
 .fontSize20{font-size: 20px;}
+.fontSize35{font-size: 35px;}
 @media (min-width:1706.67px) {
   .fontSize18{font-size: 21px;}
   .fontSize16{font-size: 18px;}
@@ -199,6 +200,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize20{font-size: 22px;}
   .fontSize17{font-size: 19px;}
   .fontSize15{font-size: 17px;}
+  .fontSize35{font-size: 37px;}
 }
 @media (min-width:1920px) {
   .fontSize18{font-size: 24px;}
@@ -207,17 +209,20 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize20{font-size: 25px;}
   .fontSize17{font-size: 22px;}
   .fontSize15{font-size: 20px;}
+  .fontSize35{font-size: 40px;}
 }
 @media (min-width:2048px) {
   .fontSize25{font-size: 34px;}
   .fontSize20{font-size: 27px;}
   .fontSize17{font-size: 24px;}
+  .fontSize35{font-size: 42px;}
 }
 @media (min-width:2304px) {
   .fontSize18{font-size: 26px;}
   .fontSize16{font-size: 23px;}
   .fontSize15{font-size: 22px;}
   .fontSize17{font-size: 25px;}
+  .fontSize35{font-size: 44px;}
 }
 @media (max-width:1396.36px) {
   .fontSize18{font-size: 16px;}
@@ -226,6 +231,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize25{font-size: 23px;}
   .fontSize20{font-size: 18px;}
   .fontSize17{font-size: 15px;}
+  .fontSize35{font-size: 33px;}
 }
 @media (max-width:1228.8px) {
   .fontSize18{font-size: 15px;}
@@ -234,6 +240,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize25{font-size: 20px;}
   .fontSize20{font-size: 16px;}
   .fontSize17{font-size: 14px;}
+  .fontSize35{font-size: 30px;}
 }
 @media (max-width:1024px) {
   .fontSize18{font-size: 14px;}
@@ -242,6 +249,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize25{font-size: 18px;}
   .fontSize20{font-size: 14px;}
   .fontSize17{font-size: 13px;}
+  .fontSize35{font-size: 26px;}
 }
 @media (max-width:877.71px) {
   .fontSize18{font-size: 13px;}
@@ -250,12 +258,14 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize25{font-size: 16px;}
   .fontSize20{font-size: 12px;}
   .fontSize17{font-size: 12px;}
+  .fontSize35{font-size: 24px;}
 }
 @media (max-width:768px) {
   .fontSize18{font-size: 11px;}
   .fontSize16{font-size: 11px;}
   .fontSize20{font-size: 11px;}
   .fontSize17{font-size: 11px;}
+  .fontSize35{font-size: 20px;}
 }
 @media (max-width:614.4px) {
   .fontSize25{font-size: 15px;}
@@ -270,6 +280,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 .colorGrey2{color: #989898;}
 .colorGrey3{color: #CCC;}
 .colorGrey4{color: #8E8E8E;}
+.colorGrey5{color: #A9A9A9;}
 /* //////////////////////////////// */
  .coverBack {
   background-color: rgba(0, 0, 0, 0.6);
@@ -373,7 +384,7 @@ fieldset {
 	width: 100%;
     margin-top: 16px;
 }
-fieldset label {
+fieldset .labelRadio {
 	cursor: pointer;
 	box-sizing: border-box;
     padding: 11px 20px;
@@ -383,7 +394,7 @@ fieldset label {
     width: 100%;
     position: relative;
 }
-fieldset label .fxLabel{gap: 15px;}
+fieldset .labelRadio .fxLabel{gap: 15px;}
 fieldset .fxDetailsProduct{position: relative;}
 fieldset .fxDetailsProduct .arrowLeftDark{
     width: 10px;
@@ -404,6 +415,7 @@ fieldset input[type="radio"] {
 	transition: linear 0.8s;
 	height: 0;
 	width: 0;
+  padding: 0;
 	-webkit-tap-highlight-color: transparent;
 }
 fieldset input[type="radio"]:after {
@@ -430,7 +442,7 @@ fieldset input[type="radio"]:checked:after {
 	transition: linear 0.2s;
 	cursor: pointer;
 }
-fieldset label.checked {
+fieldset .labelRadio.checked {
     border: 1px solid #6DA117;
 }
 fieldset input[type="radio"]:checked:before {
@@ -462,8 +474,57 @@ fieldset .icon {
 fieldset input[type="radio"]:checked + span > .icon {
 	transform: scale(1.7);
 }
+/* Table Design */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid transparent;
+    padding: 20px 0;
+    text-align: left;
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle; /* Center text vertically */
+}
+table th:first-child{border-radius: 20px 0px 0 20px;}
+table th:last-child {border-radius: 0px 20px 20px 0px;}
+table th {
+    background: #6DA117;
+    font-size: 22px;
+    height: 92px;
+    text-align: center;
+}
+table td {border-bottom: 1px solid #E1E0E0;}
+table .cancelBlack{cursor: pointer;transition: 0.3s;}
+table .cancelBlack:hover{transform: scale(0.8);}
+table tr .fx-productImage{gap: 15px;}
+.checkout table tr .fx-productImage{justify-content: center;}
+table tr td .productImage{
+    padding: 6px 4px;
+    border-radius: 10px;
+    background: #F6F6F6;
+}
+table tr td .productImage img{
+    width: 76px;
+    height: 64px;
+    object-fit: cover;
+}
+table tr .weightCol .fxAmount-product{gap: 10px;}
+table tr .weightCol button{background: none;}
+table tr .weightCol button img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+input{
+  border-radius: 10px;
+  border: 1px solid #E9E9E9;
+  background: #FFF;
+  height: 55px;
+  padding: 0 20px;
+}
 @media (min-width:1706.67px) {
-  fieldset label{padding: 15px 20px;}
+  fieldset .labelRadio{padding: 15px 20px;}
   fieldset .fxDetailsProduct .fxPrice h3{font-size: 16px;}
   fieldset .fxDetailsProduct .fxPrice span{font-size: 13px;}
   fieldset .fxDetailsProduct p{font-size: 14px;}
@@ -475,6 +536,7 @@ fieldset input[type="radio"]:checked + span > .icon {
         height: 15px;
   }
   .pagination button{font-size: 17px;}
+  table th{font-size: 24px;}
 }
 @media (min-width:1920px) {
   fieldset input[type="radio"]:checked:after,
@@ -486,11 +548,12 @@ fieldset input[type="radio"]:checked + span > .icon {
     left: -39px;
     top: -6px;
   }
+  table th{font-size: 27px;}
   fieldset .fxDetailsProduct .typeTitle{line-height: normal;}
   fieldset .fxDetailsProduct .fxPrice h3{font-size: 21px;line-height: normal;}
   fieldset .fxDetailsProduct .fxPrice span{font-size: 18px;}
   fieldset .fxDetailsProduct p{font-size: 19px;}  
-  fieldset label{padding: 18px 22px;}
+  fieldset .labelRadio{padding: 18px 22px;}
   .checkbox-group label:before{padding: 14px;}
   .checkbox-group input:checked + label:after{
     top: 6px;
@@ -502,7 +565,9 @@ fieldset input[type="radio"]:checked + span > .icon {
 }
 @media (min-width:2048px) {
   .checkbox-group input:checked + label:after{left: 10px;}
-   .pagination button{font-size: 22px;}
+  .pagination button{font-size: 22px;}
+  html{  width: 2050px;margin: auto;}
+  table th{font-size: 29px;} 
 }
 @media (min-width:2304px) {
 
@@ -517,19 +582,26 @@ fieldset input[type="radio"]:checked + span > .icon {
   .checkbox-group label{font-size: 15px;}
   .checkbox-group label:before{padding: 9px;}
   .checkbox-group input:checked + label:after{top: 4px;}
-  fieldset label{padding: 8px 15px;}
-  fieldset label .fxLabel img{width: 40px;}
-  fieldset label .fxLabel{gap: 10px;}
+  fieldset .labelRadio{padding: 8px 15px;}
+  fieldset .labelRadio .fxLabel img{width: 40px;}
+  fieldset .labelRadio .fxLabel{gap: 10px;}
   fieldset .radio-item-container{gap: 14px;}
-
+  table tr td .productImage img {width: 56px;height: 44px;}
+  table tr .weightCol button img{width: 25px;height: 25px;}
+  table th{height: 70px;font-size: 18px;}
+  table tr td .productImage img {width: 56px;height: 44px;}
+  table tr .weightCol button img{width: 25px;height: 25px;}
 }
 @media (max-width:1024px) {
   fieldset{margin-top: 8px;}
+  table th{height: 50px;font-size: 15px;padding: 0;}
+  table .cancelBlack{width: 18px;}
+  table td{padding: 10px 0;}
 }
 @media (max-width:877.71px) {
   .btnLinear-gradient{padding: 7px 20px;gap: 10px;}
   .checkbox-group label{font-size: 15px;}
-  fieldset label{padding: 8px 10px;}
+  fieldset .labelRadio{padding: 8px 10px;}
   fieldset .fxDetailsProduct .fxPrice h3{font-size: 12px;}
   fieldset .fxDetailsProduct .fxPrice span{font-size: 9px;}
   fieldset .fxDetailsProduct p{font-size: 10px;line-height: 15px;}
@@ -540,18 +612,14 @@ fieldset input[type="radio"]:checked + span > .icon {
 }
 @media (max-width:614.4px) {
   .pagination{gap: 3px;margin-top: 30px;}
+  table tr .weightCol .fxAmount-product{gap: 5px;}
+  table tr td .productImage img{width: 40px;height: 40px;}
+  table tr th{padding: 0 10px;}
+  table{overflow-x: auto;}
+  .checkbox-group input:checked + label:after {top: 3px;}
 }
 @media (max-width:512px) {
 }
-
-
-
-@media (min-width:2048px) {
-  html{  width: 2050px;margin: auto;}
-}
-
-
-
 /* Just for copy */
 @media (min-width:1706.67px) {
 

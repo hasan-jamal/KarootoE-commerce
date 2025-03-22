@@ -1,0 +1,349 @@
+  
+.shoppingCart{margin: 80px 0 0 0;}
+.shoppingCart .fx-shoppingCart{gap: 75px;}
+.shoppingCart .shoppingCart-part1{width:70%;}
+/* Change Location Style */
+.shoppingCart .shoppingCart-part1 .divChangeLocation{position: relative;}
+.shoppingCart .shoppingCart-part1 .changeLocation{
+    width: 100%;
+    border-radius: 15px;
+    background: #F8F8F8;
+    padding: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.shoppingCart .shoppingCart-part1 .changeLocation .changeBtn{
+    padding: 0 27px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #DFDFDF;
+}
+.shoppingCart .shoppingCart-part1 .itemLocation{gap:16px;height: max-content;}
+.shoppingCart .shoppingCart-part1 .itemLocation img{
+    width: 35px;
+    height: 35px;
+}
+.shoppingCart .shoppingCart-part1 .listChangeLocation{
+    padding: 10px 0;
+    background: #fff;
+    border-radius: 24px;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    position: absolute;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    z-index: 10;
+    top: 70px;
+    display: none;
+}
+.shoppingCart .shoppingCart-part1 .listChangeLocation::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(232, 232, 232, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.shoppingCart .shoppingCart-part1 .listChangeLocation::-webkit-scrollbar
+{
+  width: 3px;
+	background-color: #F5F5F5;
+    object-fit: contain;
+}
+.shoppingCart .shoppingCart-part1 .listChangeLocation::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(235, 235, 235, 0.3);
+	background-color: #48660E ;
+}
+.shoppingCart .shoppingCart-part1 .listChangeLocation .itemLocation{transition: 0.3s;    padding:10px;}
+.shoppingCart .shoppingCart-part1 .listChangeLocation .itemLocation:hover{
+    background: #f0f0f0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.shoppingCart .shoppingCart-part1 .listChangeLocation button{
+    border-radius: 10px;
+    border: 1px dashed #6DA117;
+    background: #F9F9F9;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    transition: 0.3s;
+    width: 300px;
+    margin-top: 16px;
+    margin: auto;
+}
+.shoppingCart .shoppingCart-part1 .listChangeLocation button span {
+    color: #6DA117;
+    letter-spacing: -0.333px;
+}
+/* End Change Location Style */
+.shoppingCart .shoppingCart-part1 h2{margin-bottom: 30px;}
+.shoppingCart .shoppingCart-part1 .form-group{gap: 8px;margin-bottom: 20px;}
+.shoppingCart .shoppingCart-part1 .form-group .w50{width: 50%;}
+.shoppingCart .shoppingCart-part1 .form-group .gap-fxBox{gap: 32px;}
+.shoppingCart .shoppingCart-part1 .form-group .fxBox-input{
+    gap: 8px;
+    border-radius: 10px;
+    border: 1px solid #E9E9E9;
+    background: rgba(250, 250, 250, 0.10);
+    padding: 0 20px;
+    height: 55px;
+    align-items: center;
+         position: relative;
+}
+.shoppingCart .shoppingCart-part1 .form-group .fxBox-input input{
+    height: 100%;
+    width: 100%;
+}
+.shoppingCart .shoppingCart-part1 .form-group .fxBox-input input {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+}
+.shoppingCart .shoppingCart-part1 .form-group .fxBox-input img{
+    width: 24px;
+    height: 24px;
+}
+.shoppingCart .shoppingCart-part1 .form-group .fxBox-input span{
+    color: rgba(7, 37, 6, 0.40);
+}
+.shoppingCart .shoppingCart-part1 .checkbox-group{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E5E5E5; 
+    margin-bottom: 20px;
+}
+.shoppingCart .shoppingCart-part1 .checkbox-group label span{padding: 0 10px;}
+.shoppingCart .shoppingCart-part1 .checkbox-group input{width: 17px;height: 17px;}
+.shoppingCart .about-ShoppingCart {
+    justify-content: space-between;gap: 16px;
+    align-items: center;
+    margin-top: 24px;
+}
+.shoppingCart .about-ShoppingCart .fx-applyCoupon{gap: 18px;}
+.shoppingCart .about-ShoppingCart .fx-applyCoupon button{
+    height: 60px;width: 178px;
+}
+.shoppingCart .about-ShoppingCart .fx-applyCoupon input{
+    border-radius: 20px;
+    border: 1px solid #E1E1E1;
+    background: rgba(239, 239, 239, 0.15);
+    width: 391px;
+    height: 60px;
+    padding: 0 15px;
+}
+ .clearShoppingCart{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 8.5%;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.shoppingCart .shoppingCart-part2{width: 30%;}
+.shoppingCart .shoppingCart-part2 .orderSummary{
+    padding: 20px 15px;
+    border-radius: 20px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+}
+.shoppingCart .shoppingCart-part2 .orderSummary h3{
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #E1E0E0;
+}
+.shoppingCart .shoppingCart-part2 .orderSummary .totalAmount{margin-top: 32px;}
+.shoppingCart .shoppingCart-part2 .form {
+	margin-top: 20px;
+}
+.shoppingCart .shoppingCart-part2 .form .form__group{margin-bottom: 20px;gap: 20px;}
+.shoppingCart .shoppingCart-part2 .form__radio-input {
+	 display: none;
+}
+.shoppingCart .shoppingCart-part2 .form__radio-label {
+	 display: flex;
+	 justify-content: start;
+	 align-items: center;
+	 gap: 10px;
+	 cursor: pointer;
+}
+.shoppingCart .shoppingCart-part2 .form__radio-label span{font-size: 11px;}
+ .shoppingCart .shoppingCart-part2 .form__radio-button {
+	 height: 18px;
+	 width: 18px;
+	 border: 1px solid #6DA117;
+     background: #fff;
+	 border-radius: 50%;
+	 display: inline-block;
+	 position: relative;
+	 transform: translateY(-2px);
+}
+.shoppingCart .shoppingCart-part2 .form__radio-button::after {
+	 content: "";
+	 display: block;
+	 height:8px;
+	 width:8px;
+	 position: absolute;
+	 border-radius: 50%;
+	 top: 50%;
+	 left: 50%;
+	 transition: opacity 0.1s;
+	 transform: translate(-50%, -50%);
+	 background-color: #6DA117;
+	 opacity: 0;
+}
+.shoppingCart .shoppingCart-part2  .form__radio-input:checked + .form__radio-label .form__radio-button{
+    border: 1px solid #6DA117;
+     background: #B9D28F;
+}
+.shoppingCart .shoppingCart-part2  .form__radio-input:checked + .form__radio-label .form__radio-button:after {
+	 opacity: 1;
+}
+ .shoppingCart .shoppingCart-part2 .btnLinear-gradient{height: 60px;border-radius: 20px;}
+ /* Shopping Cart Empty Style */
+.shoppingCartEmpty {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.shoppingCartEmpty .fx-shoppingCartEmpty{
+    align-items: center;
+    justify-content: center;
+}
+.shoppingCartEmpty .fx-shoppingCartEmpty img{width: 35%;object-fit: cover;}
+.shoppingCartEmpty .fx-shoppingCartEmpty h3{font-size: 28px;}
+/* Payments Methods Style  */
+.shoppingCart-part1 .radio-item{
+    flex: 1 1 calc(100% - 18px);
+    max-width: calc(100% - 0px);
+    background: #FBFBFB;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #EDEDED;
+}
+.shoppingCart-part1 fieldset{gap: 20px;display: flex;flex-direction: column;}
+.shoppingCart-part1 fieldset .labelRadio{
+    padding: 15px 20px;   
+    border-radius: 10px;
+}
+.shoppingCart-part1 fieldset .labelRadio input{padding: 0;}
+.shoppingCart-part1 fieldset .labelRadio .fxLabel{gap: 20px;}
+.shoppingCart-part1 .radio-item .gap-formGroup{
+    gap: 20px;
+    border-top: 1px solid #E9E9E9;
+    padding: 20px;
+}
+.shoppingCart-part1 .radio-item .fx-formGroups{gap: 30px;}
+.shoppingCart-part1 .radio-item .fx-formGroups .form-group{
+    width: 50%;
+    margin-bottom: 0;
+}
+.shoppingCart-part1 .radio-item .fx-formGroups .form-group label{padding: 0;}
+.shoppingCart .shoppingCart-part1 fieldset .checkbox-group{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.shoppingCart .shoppingCart-part1 .checkbox-group label span{padding: 0 6px;}
+ @media (min-width:1706.67px) {
+    .shoppingCart .shoppingCart-part2 .form__radio-label span{font-size: 13px;}
+    .shoppingCart .shoppingCart-part2 .btnLinear-gradient{height: 70px;}
+    .shoppingCart .about-ShoppingCart .fx-applyCoupon button{width: max-content;height: 70px;}
+    .shoppingCart .about-ShoppingCart .fx-applyCoupon input{height: 70px;}
+    .shoppingCartEmpty .fx-shoppingCartEmpty h3{font-size: 30px;}
+    .shoppingCart .shoppingCart-part1 .form-group .fxBox-input{height: 65px;}
+    .shoppingCart-part1 fieldset .labelRadio {padding: 20px 25px;}
+}
+@media (min-width:1920px) {
+    .shoppingCart .shoppingCart-part2 .form__radio-label span{font-size: 15px;}
+    .shoppingCart .shoppingCart-part2 .btnLinear-gradient{height: 80px;}
+    .shoppingCart .about-ShoppingCart .fx-applyCoupon input{height: 80px;}
+    .shoppingCartEmpty .fx-shoppingCartEmpty h3{font-size: 33px;}
+    .shoppingCart .shoppingCart-part1 .form-group .fxBox-input{height: 75px;}
+    .shoppingCart .shoppingCart-part1 .form-group .fxBox-input img{width: 32px;height: 32px;}
+    .shoppingCart-part1 fieldset .labelRadio {padding: 25px 30px;}
+    .shoppingCart-part1 .radio-item .gap-formGroup{padding: 30px;gap: 30px;}
+}
+@media (min-width:2048px) { .shoppingCartEmpty .fx-shoppingCartEmpty h3{font-size: 35px;}}
+@media (max-width:1228.8px) {
+
+    .shoppingCart .about-ShoppingCart .fx-applyCoupon button {height: 50px;width: 158px;}
+    .shoppingCart .shoppingCart-part2 .btnLinear-gradient{height: 50px;}
+    .shoppingCart .about-ShoppingCart .fx-applyCoupon input{width: 350px;height: 50px;}
+    .shoppingCart .fx-shoppingCart{gap: 40px;}
+    .shoppingCart .shoppingCart-part2 .form .form__group{gap: 15px;}
+    .shoppingCart .shoppingCart-part1 h2,
+    .shoppingCart .shoppingCart-part1 .changeLocation{margin-bottom: 22px;}
+    .shoppingCart .shoppingCart-part1 .form-group .fxBox-input{height: 45px;}
+}
+@media (max-width:1024px) {
+    .shoppingCart .shoppingCart-part1{width: 65%;}
+    .shoppingCart .shoppingCart-part2{width: 35%;}
+    .shoppingCart .about-ShoppingCart{flex-wrap: wrap;}
+    .shoppingCart .shoppingCart-part2 .form__radio-label h4{line-height: 10px;}
+    .shoppingCart .shoppingCart-part2 .form__radio-label span{font-size: 9px;}
+    .shoppingCartEmpty .fx-shoppingCartEmpty h3{font-size: 24px;}
+    .shoppingCart .shoppingCart-part1 h2,
+    .shoppingCart .shoppingCart-part1 .changeLocation{margin-bottom: 16px;}
+    .payment fieldset .labelRadio .fxLabel img{width: 30px;}
+    .shoppingCart-part1 fieldset .labelRadio .fxLabel{gap: 15px;}
+    .shoppingCart-part1 fieldset .labelRadio{padding: 10px 15px;}
+    .shoppingCart-part1 .radio-item .gap-formGroup{padding: 15px;}
+    .payment .shoppingCart-part1 .radio-item .fx-formGroups .form-group input{height: 45px;}
+    .payment .shoppingCart-part1 .radio-item .fx-formGroups .form-group{gap: 4px;}
+    .payment .shoppingCart-part1 .radio-item .labelRadio{border-radius: 10px;}
+}
+@media (max-width:877.71px) {
+    .shoppingCart .shoppingCart-part1{width: 100%;}
+    .shoppingCart .shoppingCart-part2{width: 40%;}
+    .shoppingCart .fx-shoppingCart{flex-direction: column;gap: 32px;justify-content: center;align-items: center;}
+}
+@media (max-width:768px) {
+    .shoppingCart .shoppingCart-part2{width:70%;}
+}
+@media (max-width:614.4px) {
+    .shoppingCart{margin: 40px 0;}
+    .shoppingCart .shoppingCart-part2{width:100%;}
+    .shoppingCart .about-ShoppingCart .fx-applyCoupon input{width: 190px;height: 40px;}
+    .shoppingCart .about-ShoppingCart .fx-applyCoupon button {height: 40px;width: 110px;}
+    .shoppingCart .shoppingCart-part2 .orderSummary h3{font-size: 16px;}
+    .shoppingCart .shoppingCart-part2 .orderSummary p,
+    .shoppingCart .shoppingCart-part2 .orderSummary h5{font-size: 14px;}
+    .shoppingCart .shoppingCart-part2 .form__radio-label h4{font-size: 14px;}
+    .shoppingCart .shoppingCart-part2 .form .form__group{gap: 24px;}
+    .shoppingCart .shoppingCart-part2 .form__radio-label span{font-size: 10px;}
+    .shoppingCart .shoppingCart-part2 .btnLinear-gradient{font-size: 14px;}
+    .shoppingCart .shoppingCart-part1 .itemLocation img{width: 25px;height: 25px;}
+    .shoppingCart .shoppingCart-part1 .listChangeLocation{gap: 0px;}
+    .shoppingCart .shoppingCart-part1 .listChangeLocation button{height: 45px;width: 55%;}
+    .shoppingCart .shoppingCart-part1 .form-group{gap: 4px;}
+    .shoppingCart .shoppingCart-part1 .form-group .fxBox-input{height: 40px;}
+    .shoppingCart .shoppingCart-part1 .form-group .fxBox-input img{height: 16px;width: 16px;}
+    .shoppingCart .shoppingCart-part1 .changeLocation .changeBtn{padding: 15px;}
+    .shoppingCart .shoppingCart-part1 .changeLocation{padding: 12px;}
+    .shoppingCart-part1 .radio-item .fx-formGroups .form-group{width: 100%;}
+    .shoppingCart-part1 .radio-item .fx-formGroups{flex-direction: column;gap: 16px;}
+    .payment .shoppingCart-part1 fieldset .labelRadio{padding: 10px;}
+    .payment .shoppingCart-part1 fieldset .labelRadio .fxLabel{gap: 12px;}
+    .payment fieldset .labelRadio .fxLabel img{width: 25px;}
+    .payment .shoppingCart-part1 fieldset{gap: 12px;}
+    .payment .shoppingCart-part1 .radio-item .labelRadio span{text-transform: capitalize;font-size: 14px;}
+    .payment .shoppingCart-part1 .radio-item .fx-formGroups .form-group label,
+    .payment  .shoppingCart .shoppingCart-part1 .checkbox-group label span{font-size: 13px;}
+    .payment .shoppingCart-part1 .radio-item .gap-formGroup{gap: 12px;padding: 15px;}
+    .payment .checkbox-group label:before{padding: 7px;}
+    .payment .checkbox-group input:checked + label:after{
+        left: 6px;
+        width: 3px;
+        height: 9px;
+        top: 4px;
+    }
+}

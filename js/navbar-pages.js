@@ -105,16 +105,16 @@ $(document).ready(function () {
     const link = boxLink.querySelector(".linkBtn");
     const targetId = link.getAttribute("data-target");
     const list = document.getElementById(targetId);
-    const divCoverBack = document.getElementById("coverBack");
+    // const divCoverBack = document.getElementById("coverBack");
 
     if (list) {
       const showList = () => list.classList.add("active");
-      const showCoverBack = () => divCoverBack.classList.add("coverBack");
+      // const showCoverBack = () => divCoverBack.classList.add("coverBack");
 
       const hideList = () => list.classList.remove("active");
-      const hideCoverBack = () => divCoverBack.classList.remove("coverBack");
+      // const hideCoverBack = () => divCoverBack.classList.remove("coverBack");
       boxLink.addEventListener("mouseenter", showList);
-      boxLink.addEventListener("mouseenter", showCoverBack);
+      // boxLink.addEventListener("mouseenter", showCoverBack);
 
       boxLink.addEventListener("mouseleave", (event) => {
         hideList();

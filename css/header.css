@@ -264,6 +264,7 @@ header .header-part2 .headerlLinksIcons{gap: 20px;padding-left: 50px;}
   background: none;
   width:95%;
   color: #fff;
+  border: none;
 }
 .fxHeaderForm input::placeholder{color: rgba(255, 255, 255, 0.60);}
 .divCategories{
