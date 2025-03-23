@@ -552,7 +552,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .favoritesSection .clearShoppingCart{margin-top: 16px;font-size: 14px;}
     .shoppingCart .fxGuote-text span{font-size: 14px;}
     .shoppingCart .fxGuote-text img{width: 20px;}
-    .boxQuote{width: 95%;}
+    .boxQuote{width: 95%;height: max-content; padding: 20px 16px;}
     .boxQuote .form-boxQuote .fx-formGroup{flex-direction: column;}
     .boxQuote .form-boxQuote .fx-formGroup .form-group{width: 100%;}
     .boxQuote .fx-buttons button{width: 50%;font-size: 13px;}
