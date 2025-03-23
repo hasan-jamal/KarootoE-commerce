@@ -528,7 +528,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .shoppingCart .shoppingCart-part1 .form-group{gap: 4px;}
     .shoppingCart .shoppingCart-part1 .form-group .fxBox-input{height: 40px;}
     .shoppingCart .shoppingCart-part1 .form-group .fxBox-input img{height: 16px;width: 16px;}
-    .shoppingCart .shoppingCart-part1 .changeLocation .changeBtn{padding: 15px;}
+    .shoppingCart .shoppingCart-part1 .changeLocation .changeBtn{padding: 0px 12px;}
     .shoppingCart .shoppingCart-part1 .changeLocation{padding: 12px;}
     .shoppingCart-part1 .radio-item .fx-formGroups .form-group{width: 100%;}
     .shoppingCart-part1 .radio-item .fx-formGroups{flex-direction: column;gap: 16px;}

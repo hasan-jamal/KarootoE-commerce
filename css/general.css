@@ -261,9 +261,9 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize35{font-size: 24px;}
 }
 @media (max-width:768px) {
-  .fontSize18{font-size: 11px;}
+  .fontSize18{font-size: 12px;}
   .fontSize16{font-size: 11px;}
-  .fontSize20{font-size: 11px;}
+  .fontSize20{font-size: 13px;}
   .fontSize17{font-size: 11px;}
   .fontSize35{font-size: 20px;}
 }
@@ -533,7 +533,7 @@ table tr .weightCol button img{
     height: 35px;
     object-fit: cover;
 }
-input{
+input[type="text"]{
   border-radius: 10px;
   border: 1px solid #E9E9E9;
   background: #FFF;
@@ -554,7 +554,7 @@ input{
   }
   .pagination button{font-size: 17px;}
   table th{font-size: 24px;}
-  input{height: 70px;}
+  input[type="text"]{height: 70px;}
 }
 @media (min-width:1920px) {
   fieldset input[type="radio"]:checked:after,
@@ -580,14 +580,14 @@ input{
     height: 19px;
   }
   .pagination button{font-size: 20px;padding: 5px 15px;}
-    input{height: 70px;}
+    input[type="text"]{height: 70px;}
 }
 @media (min-width:2048px) {
   .checkbox-group input:checked + label:after{left: 10px;}
   .pagination button{font-size: 22px;}
   html{  width: 2050px;margin: auto;}
   table th{font-size: 29px;} 
-  input{height:80px;}
+  input[type="text"]{height:80px;}
 }
 @media (min-width:2304px) {
 
@@ -611,14 +611,14 @@ input{
   table th{height: 70px;font-size: 18px;}
   .fx-productImage .productImage img {width: 56px;height: 44px;}
   table tr .weightCol button img{width: 25px;height: 25px;}
-  input{height: 45px;}
+  input[type="text"]{height: 45px;}
 }
 @media (max-width:1024px) {
   fieldset{margin-top: 8px;}
   table th{height: 50px;font-size: 15px;padding: 0;}
   table .cancelBlack{width: 18px;}
   table td{padding: 10px 0;}
-  input{height: 40px;}
+  input[type="text"]{height: 40px;}
 }
 @media (max-width:877.71px) {
   .btnLinear-gradient{padding: 7px 20px;gap: 10px;}
@@ -642,7 +642,7 @@ input{
   table{overflow-x: auto;}
   .checkbox-group input:checked + label:after {top: 3px;}
   .fx-productImage .fontSize20{font-size: 15px;}
-  input{padding: 0 10px;}
+  input[type="text"]{padding: 0 10px;}
 }
 @media (max-width:512px) {
 }
