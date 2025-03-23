@@ -72,18 +72,18 @@
     background: #E1E0E0;
 }
 @media (min-width:1706.67px) {
-  .trackYourOrder{width: 75%;}
   .deliveryDetails .box-deliveryDetails .userInformation,
   .orderStatus .box-orderStatus{justify-content: space-between;}
-  .orderStatus .box-orderStatus{padding: 20px 30px;}
+  .orderStatus .box-orderStatus{padding: 40px 60px;}
   .deliveryDetails .box-deliveryDetails{padding:20px 40px;}
   .trackYourOrder .boxProducts{padding: 30px;}
+      .deliveryDetails .userDetails .fx-reviewsOrder p{font-size: 15px;}
+    .deliveryDetails .userDetails .fx-reviewsOrder .fxRate span{font-size: 14px;}
+    .deliveryDetails .userDetails .fx-reviewsOrder{margin-top: 6px;}
 }
 @media (min-width:1920px) {
     .deliveryDetails .userDetails .userImage {width: 90px;height: 90px;}
-    .deliveryDetails .userDetails .fx-reviewsOrder p{font-size: 15px;}
-    .deliveryDetails .userDetails .fx-reviewsOrder .fxRate span{font-size: 14px;}
-    .deliveryDetails .userDetails .fx-reviewsOrder{margin-top: 12px;}
+
     .orderStatus .box-orderStatus .step-orderStatus img{width: 70px;}
     .trackYourOrder .boxProducts .productsColumns{gap: 20px;}
 }

@@ -208,7 +208,16 @@
 .shoppingCart .shoppingCart-part2  .form__radio-input:checked + .form__radio-label .form__radio-button:after {
 	 opacity: 1;
 }
- .shoppingCart .shoppingCart-part2 .btnLinear-gradient{height: 60px;border-radius: 20px;}
+ .shoppingCart .shoppingCart-part2 .fx-buttons{gap: 16px;}
+ .shoppingCart .shoppingCart-part2 .btnLinear-gradient,
+  .shoppingCart .shoppingCart-part2 .btnOutline-black{
+    height: 55px;
+    border-radius: 20px;
+    padding: 0 16px;
+}
+ .shoppingCart .shoppingCart-part2 .btnLinear-gradient{width: 60%;}
+  .shoppingCart .shoppingCart-part2 .btnOutline-black{width: 40%;}
+  .shoppingCart .fxGuote-text{gap: 6px;margin-top: 20px;}
  /* Shopping Cart Empty Style */
 .shoppingCartEmpty {
     margin-top: 40px;
@@ -268,19 +277,161 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     height: 50px;
  }
   .favoritesSection .clearShoppingCart{text-align: end;display: block;margin-top: 30px;}
+  /* Box Quote Style */
+    .boxQuote{
+        position: fixed;
+        padding:24px 30px;
+        border-radius: 20px;
+        background: #FFF;
+        width: 900px;
+        z-index: 9999;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        overflow-y: scroll;
+        height: 90vh;
+    }
+    .boxQuote::-webkit-scrollbar-track{
+        -webkit-box-shadow: inset 0 0 6px rgba(232, 232, 232, 0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    .boxQuote::-webkit-scrollbar{
+        width: 3px;
+        background-color: #F5F5F5;
+    }
+    .boxQuote::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(235, 235, 235, 0.3);
+        background-color: #48660E ;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+    .boxQuote .title-boxQuote{
+        padding-bottom: 16px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #E1E0E0;
+    }
+    .boxQuote .title-boxQuote h1{font-size: 30px;}
+    .boxQuote .title-boxQuote button{background: none;}
+    .boxQuote .title-boxQuote button img{
+        width: 24px;
+        height: 24px;
+    }
+    .boxQuote .form-boxQuote .fx-formGroup{gap:14px ;margin-bottom: 20px;}
+    .boxQuote .form-boxQuote .fx-formGroup .form-group{width: 50%;}
+    .boxQuote .form-boxQuote .form-group textarea{
+        border-radius: 10px;
+        border: 1px solid #E9E9E9;
+        background: #FFF;
+        height: 232px;
+        width: 100%;
+        padding:20px;
+    }
+    .phone-input-container{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 10px;
+        border: 1px solid #E9E9E9;
+        background: #FFF;
+        height: 55px;
+        padding: 0 20px;
+    }
+    .phone-input-container input{
+        background: none;
+        width: 80%;
+        border: none;
+    }  
+    .dropdown-phone-btn{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+} 
+.dropdown-phone-btn span{font-size: 13px;}
+.phone-input-container .dropdown-phone-list img,
+.flag-size{
+    width: 31.304px;
+    height: 22.174px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.phone-input-container .dropdown-phone-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: max-content;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+.phone-input-container .dropdown-phone-btn {
+    cursor: pointer;
+}
+.phone-input-container .dropdown-phone-btn p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.phone-input-container .dropdown-phone-btn .arrow-down2{width: 15px;} 
+.phone-input-container .dropdown-phone-list p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #a5a5a5;
+}
+.phone-input-container .dropdown-phone-list p span{
+    font-size: 16px;
+}
+.phone-input-container .dropdown-phone-list p:hover {
+    background-color: #f0f0f0;
+}
+.phone-input-container .border-input{
+    height: 40px;
+    width: 0.5px;
+    background: #072506;
+}
+ .boxQuote .fx-buttons{
+    justify-content: end;
+    margin-top: 20px;
+    gap:20px ;
+ }
+  .boxQuote .fx-buttons button{
+    width: 230px;
+    height: 60px;
+  }
  @media (min-width:1706.67px) {
     .shoppingCart .shoppingCart-part2 .form__radio-label span{font-size: 13px;}
-    .shoppingCart .shoppingCart-part2 .btnLinear-gradient{height: 70px;}
+    .shoppingCart .shoppingCart-part2 .btnLinear-gradient,
+    .shoppingCart .shoppingCart-part2 .btnOutline-black{height: 70px;}
     .shoppingCart .about-ShoppingCart .fx-applyCoupon button{width: max-content;height: 70px;}
     .shoppingCart .about-ShoppingCart .fx-applyCoupon input{height: 70px;}
     .shoppingCartEmpty .fx-shoppingCartEmpty h3{font-size: 30px;}
     .shoppingCart .shoppingCart-part1 .form-group .fxBox-input{height: 65px;}
     .shoppingCart-part1 fieldset .labelRadio {padding: 20px 25px;}
     .favoritesSection .divTable .btnLinear-gradient{width: 176px;height: 55px;}
+    .boxQuote .title-boxQuote h1{font-size: 32px;}
+    .boxQuote{width: 1000px;height: 95vh;}
+    .phone-input-container{height: 70px;}
+    .dropdown-phone-btn span{font-size: 15px;}
 }
 @media (min-width:1920px) {
     .shoppingCart .shoppingCart-part2 .form__radio-label span{font-size: 15px;}
-    .shoppingCart .shoppingCart-part2 .btnLinear-gradient{height: 80px;}
+    .shoppingCart .shoppingCart-part2 .btnLinear-gradient,
+    .shoppingCart .shoppingCart-part2 .btnOutline-black{height: 80px;}
     .shoppingCart .about-ShoppingCart .fx-applyCoupon input{height: 80px;}
     .shoppingCartEmpty .fx-shoppingCartEmpty h3{font-size: 33px;}
     .shoppingCart .shoppingCart-part1 .form-group .fxBox-input{height: 75px;}
@@ -288,12 +439,28 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .shoppingCart-part1 fieldset .labelRadio {padding: 25px 30px;}
     .shoppingCart-part1 .radio-item .gap-formGroup{padding: 30px;gap: 30px;}
     .favoritesSection .divTable .btnLinear-gradient{width: 196px;height:60px;}
+    .boxQuote .title-boxQuote h1{font-size: 35px;}
+    .boxQuote{height: 85vh;width: 1100px;}
+    .dropdown-phone-btn span{font-size: 18px;}
+    .phone-input-container .dropdown-phone-list img, .flag-size{width: 36px;height: 28px;}
 }
-@media (min-width:2048px) { .shoppingCartEmpty .fx-shoppingCartEmpty h3{font-size: 35px;}}
+@media (min-width:2048px) { .shoppingCartEmpty .fx-shoppingCartEmpty h3{font-size: 35px;}.boxQuote{height: 80vh;}.phone-input-container{height: 80px;}}
+@media (min-width:2304px) {
+    .boxQuote{height:73vh;width: 1200px;}
+}
+@media (min-width:3072px) {
+    .boxQuote{height:55vh;width: 1300px;}
+}
+@media (min-width:4608px) {
+    .boxQuote{height:37vh;}
+}
+@media (min-width:6144px) {
+    .boxQuote{height:27vh;}
+}
 @media (max-width:1228.8px) {
-
     .shoppingCart .about-ShoppingCart .fx-applyCoupon button {height: 50px;width: 158px;}
-    .shoppingCart .shoppingCart-part2 .btnLinear-gradient{height: 50px;}
+    .shoppingCart .shoppingCart-part2 .btnLinear-gradient,
+  .shoppingCart .shoppingCart-part2 .btnOutline-black{height: 50px;}
     .shoppingCart .about-ShoppingCart .fx-applyCoupon input{width: 350px;height: 50px;}
     .shoppingCart .fx-shoppingCart{gap: 40px;}
     .shoppingCart .shoppingCart-part2 .form .form__group{gap: 15px;}
@@ -301,6 +468,11 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .shoppingCart .shoppingCart-part1 .changeLocation{margin-bottom: 22px;}
     .shoppingCart .shoppingCart-part1 .form-group .fxBox-input{height: 45px;}
     .favoritesSection .divTable .btnLinear-gradient{width: 136px;height: 45px;}
+    .boxQuote{width: 800px;}
+    .boxQuote .title-boxQuote h1{font-size: 25px;}
+    .boxQuote .title-boxQuote{margin-bottom: 20px;padding-bottom: 12px;}
+    .boxQuote .fx-buttons button{height: 50px;width:180px;}
+    .boxQuote .form-boxQuote .form-group textarea{height: 200px;}
 }
 @media (max-width:1024px) {
     .shoppingCart .shoppingCart-part1{width: 65%;}
@@ -319,6 +491,11 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .payment .shoppingCart-part1 .radio-item .fx-formGroups .form-group{gap: 4px;}
     .payment .shoppingCart-part1 .radio-item .labelRadio{border-radius: 10px;}
     .favoritesSection .divTable .btnLinear-gradient{width: 126px;height: 40px;}
+    .boxQuote .title-boxQuote{margin-bottom: 16px;padding-bottom: 10px;}
+    .boxQuote{width: 700px;}
+     .boxQuote .title-boxQuote h1{font-size: 23px;}
+     .boxQuote .fx-buttons{gap: 12px;}
+     .boxQuote .form-boxQuote .form-group textarea{height: 170px;}
 }
 @media (max-width:877.71px) {
     .shoppingCart .shoppingCart-part1{width: 100%;}
@@ -326,6 +503,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .shoppingCart .fx-shoppingCart{flex-direction: column;gap: 32px;justify-content: center;align-items: center;}
     .favoritesSection .divTable .btnLinear-gradient{width: 106px;height: 38px;}
     .favoritesSection .favoritesSection-container{width: 80%;}
+    .boxQuote .fx-buttons button{height: 45px;width:150px;}
 }
 @media (max-width:768px) {
     .shoppingCart .shoppingCart-part2{width:70%;}
@@ -342,7 +520,8 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .shoppingCart .shoppingCart-part2 .form__radio-label h4{font-size: 14px;}
     .shoppingCart .shoppingCart-part2 .form .form__group{gap: 24px;}
     .shoppingCart .shoppingCart-part2 .form__radio-label span{font-size: 10px;}
-    .shoppingCart .shoppingCart-part2 .btnLinear-gradient{font-size: 14px;}
+    .shoppingCart .shoppingCart-part2 .btnLinear-gradient,
+    .shoppingCart .shoppingCart-part2 .btnOutline-black{font-size: 14px;}
     .shoppingCart .shoppingCart-part1 .itemLocation img{width: 25px;height: 25px;}
     .shoppingCart .shoppingCart-part1 .listChangeLocation{gap: 0px;}
     .shoppingCart .shoppingCart-part1 .listChangeLocation button{height: 45px;width: 55%;}
@@ -371,4 +550,15 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .favoritesSection .favoritesSection-container{width: 97%;}
     .favoritesSection .divTable .btnLinear-gradient{width: 96px;}
     .favoritesSection .clearShoppingCart{margin-top: 16px;font-size: 14px;}
+    .shoppingCart .fxGuote-text span{font-size: 14px;}
+    .shoppingCart .fxGuote-text img{width: 20px;}
+    .boxQuote{width: 95%;}
+    .boxQuote .form-boxQuote .fx-formGroup{flex-direction: column;}
+    .boxQuote .form-boxQuote .fx-formGroup .form-group{width: 100%;}
+    .boxQuote .fx-buttons button{width: 50%;font-size: 13px;}
+    .phone-input-container{padding: 0 10px;height: 40px;}
+    .phone-input-container .border-input{height: 27px;}
+    .phone-input-container .dropdown-phone-list img, .flag-size{width: 25px;height: 18px;}
+    .phone-input-container .dropdown-phone-list p span{font-size: 12px;}
+    .phone-input-container .dropdown-phone-list{padding: 6px;}
 }
