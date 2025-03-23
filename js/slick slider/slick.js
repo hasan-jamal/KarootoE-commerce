@@ -287,28 +287,3 @@ $(document).ready(function () {
     $(".slickProducts3").slick("slickGoTo", slideIndex);
   });
 });
-// StartSlider 6
-$(document).ready(function () {
-  $(".SliderBanner").slick({
-    dots: false,
-    appendDots: $(".dots-SliderBanner"),
-    customPaging: function (slider, i) {
-      return "<div></div>";
-    },
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-
-  $(".SliderBanner").on("afterChange", function (event, slick, currentSlide) {
-    $(".dots-SliderBanner div").removeClass("active");
-    $(".dots-SliderBanner div").eq(currentSlide).addClass("active");
-  });
-
-  $(".dots-SliderBanner div").first().addClass("active");
-});
-//  End Slider 6

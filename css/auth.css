@@ -1,0 +1,105 @@
+ .phone-input-container{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 10px;
+        border: 1px solid #E9E9E9;
+        background: #FFF;
+        height: 55px;
+        padding: 0 20px;
+    }
+    .phone-input-container input{
+        background: none;
+        width: 80%;
+        border: none;
+    }  
+    .dropdown-phone-btn{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+} 
+.dropdown-phone-btn span{font-size: 13px;}
+.phone-input-container .dropdown-phone-list img,
+.flag-size{
+    width: 31.304px;
+    height: 22.174px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.phone-input-container .dropdown-phone-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: max-content;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+.phone-input-container .dropdown-phone-btn {
+    cursor: pointer;
+}
+.phone-input-container .dropdown-phone-btn p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.phone-input-container .dropdown-phone-btn .arrow-down2{width: 15px;} 
+.phone-input-container .dropdown-phone-list p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #a5a5a5;
+}
+.phone-input-container .dropdown-phone-list p span{
+    font-size: 16px;
+}
+.phone-input-container .dropdown-phone-list p:hover {
+    background-color: #f0f0f0;
+}
+.phone-input-container .border-input{
+    height: 40px;
+    width: 0.5px;
+    background: #072506;
+}
+@media (min-width:1706.67px) {
+ .phone-input-container{height: 70px;}
+}
+@media (min-width:1920px) {
+ .phone-input-container .dropdown-phone-list img, .flag-size{width: 36px;height: 28px;}
+}
+@media (min-width:2048px) {
+
+}
+@media (min-width:2304px) {
+
+}
+@media (min-width:3072px) {
+
+}
+@media (max-width:1396.36px) {
+
+}
+@media (max-width:1228.8px) {
+
+}
+@media (max-width:1024px) {
+
+}
+@media (max-width:877.71px) {
+
+}
+@media (max-width:768px) {
+
+}
+@media (max-width:614.4px) {
+    .phone-input-container{padding: 0 10px;height: 40px;}
+    .phone-input-container .border-input{height: 27px;}
+    .phone-input-container .dropdown-phone-list img, .flag-size{width: 25px;height: 18px;}
+    .phone-input-container .dropdown-phone-list p span{font-size: 12px;}
+    .phone-input-container .dropdown-phone-list{padding: 6px;}
+}
+@media (max-width:512px) {
+}

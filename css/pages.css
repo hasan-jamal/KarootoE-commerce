@@ -129,6 +129,7 @@
     align-items: center;
     margin-top: 24px;
 }
+.shoppingCart .shoppingCart-part1 .checkbox-group input:checked + label:after{top: 3px;}
 .shoppingCart .about-ShoppingCart .fx-applyCoupon{gap: 18px;}
 .shoppingCart .about-ShoppingCart .fx-applyCoupon button{
     height: 60px;width: 178px;
