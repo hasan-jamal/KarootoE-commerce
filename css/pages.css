@@ -151,6 +151,7 @@
     text-underline-position: from-font;
 }
 .shoppingCart .shoppingCart-part2{width: 30%;}
+
 .shoppingCart .shoppingCart-part2 .orderSummary{
     padding: 20px 15px;
     border-radius: 20px;
@@ -562,4 +563,5 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .phone-input-container .dropdown-phone-list img, .flag-size{width: 25px;height: 18px;}
     .phone-input-container .dropdown-phone-list p span{font-size: 12px;}
     .phone-input-container .dropdown-phone-list{padding: 6px;}
+   
 }

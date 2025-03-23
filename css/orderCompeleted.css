@@ -134,7 +134,7 @@
     .orderCompleted .box-orderDetails h2{padding: 15px 12px 12px 12px;font-size: 16px;}
 }
 @media (max-width:614.4px) {
-    .orderCompleted .fx-orderDetails{flex-wrap: wrap;width: 95%;margin:0px auto 24px auto;}
+    .orderCompleted .fx-orderDetails{flex-wrap: wrap;width: 95%;margin:0px auto 24px auto;gap: 12px;}
     .orderCompleted .orderDetails-width{width: 95%;}
     .productsColumns .fxDetails .fx-productImage .productImage{width: 53px;height:50.87px;}
     .productsColumns .fontSize20,
