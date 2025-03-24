@@ -178,6 +178,8 @@
 .otpModal .dontReceiveOTP{margin-top: 24px;}
 .otpModal .dontReceiveOTP,
 .otpModal .resendCode{font-size: 14px;}
+/* Register Page Style */
+.registerPage 
 @media (min-width:1706.67px) {
     .phone-input-container{height: 70px;}
     .authModal{width: 1000px;height: 88vh;overflow: hidden;}
@@ -202,6 +204,7 @@
     .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 15px;}
     .otpModal .dontReceiveOTP,
     .otpModal .resendCode{font-size: 19px;}
+    .authModal{height: 85vh;}
 }
 @media (min-width:2048px) {
     .authModal{height: 84vh;}
@@ -209,6 +212,7 @@
      .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 17px;}
     .otpModal .dontReceiveOTP,
     .otpModal .resendCode{font-size:21px;}
+    .otpModal{height: 80vh;}
 }
 @media (min-width:2304px) {
     .authModal{height:78vh;width: 1200px;}
@@ -279,6 +283,9 @@
     .otpModal .otp-container{gap: 16px;}
     .otpModal{overflow: hidden;}
     .authModal::-webkit-scrollbar{display: none;}
+    .authModal .fontSize18{font-size: 15px;}
+    .authModal .fontSize17{font-size: 14px;}
+    .phone-input-container input{font-size: 13px;}
 }
 @media (max-width:512px) {
 }
