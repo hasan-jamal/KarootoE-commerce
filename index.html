@@ -1898,7 +1898,7 @@
         </div>
     </footer>
 
-    <div class="authModal">
+    <div class="authModal loginModal">
         <div class="d-flex fx-authModal align-items-center">
             <div class="authModal-texts">
                 <h1 class="darkGreen2 fontSize25 font-bold">Sign In</h1>
@@ -1936,7 +1936,7 @@
                         </div>
                     </div>
                     <div class="form-goup">
-                        <button type="submit"
+                        <button type="button" id="signIn"
                             class="colorWhite fontSize18 font-bold btnLinear-gradient w-100 btn-hover">Sign
                             In</button>
                     </div>
@@ -1968,6 +1968,41 @@
             </div>
         </div>
     </div>
+    <div class="authModal otpModal">
+        <div class="d-flex fx-authModal align-items-center">
+            <div class="authModal-texts">
+                <h1 class="darkGreen2 fontSize25 font-bold">Verify Code</h1>
+                <p class="fontSize16 style-font colorGrey4 p-haed">Please enter the code we just sent to phone number
+                </p>
+                <span class="fontSize16 font-medium  lightGreen2 phoneNumber">+972567408830</span>
+                <form action="">
+                    <div class="otp-container">
+                        <input type="text" maxlength="1" class="otp-input font-medium letterSpacing darkGreen2"
+                            id="otp1">
+                        <input type="text" maxlength="1" class="otp-input font-medium letterSpacing darkGreen2"
+                            id="otp2">
+                        <input type="text" maxlength="1" class="otp-input font-medium letterSpacing darkGreen2"
+                            id="otp3">
+                        <input type="text" maxlength="1" class="otp-input font-medium letterSpacing darkGreen2"
+                            id="otp4">
+                    </div>
+                    <p class="colorGrey4 style-font letterSpacing text-center dontReceiveOTP">Don't receive OTP ?</p>
+                    <a href=""
+                        class="resendCode text-center darkGreen2 letterSpacing font-medium d-block btn-hover">Resend
+                        Code</a>
+                    <div class="form-goup">
+                        <button type="submit"
+                            class="colorWhite fontSize18 font-bold btnLinear-gradient w-100 btn-hover">Verify</button>
+                    </div>
+                </form>
+                <p class="colorGrey4 mb-0 style-font letterSpacing alertSignUp d-block">Don't have an account? <a
+                        href="" class="lightGreen2 font-medium letterSpacing btn-hover">Sign Up</a></p>
+            </div>
+            <div class="authModal-image">
+                <img src="./images/sideImage-login.png" alt="side Image">
+            </div>
+        </div>
+    </div>
     <!-- Jquery Library -->
     <script src="./js/jquery/jquery.min.js"></script>
     <!-- Slick Slider -->
@@ -1981,6 +2016,8 @@
     <script>AOS.init();</script>
     <!-- Login Modal Js -->
     <script src="./js/modals/loginModal.js"></script>
+    <!-- OTP Modal Js -->
+    <script src="./js/modals/otpModal.js"></script>
     <!-- Dropdown Phone Js -->
     <script src="./js/dropdowns/dropdownPhone.js"></script>
 </body>

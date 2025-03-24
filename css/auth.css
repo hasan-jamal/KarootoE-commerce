@@ -36,7 +36,7 @@
     border: 4px solid #6DA117;
     padding: 20px;
 }
-.authModal .fx-authModal .authModal-image img{width: 100%;object-fit: cover;}
+.authModal .fx-authModal .authModal-image img{width: 100%;object-fit: cover;border-radius: 28px;height: 100%;}
 .authModal .fx-authModal .authModal-texts{width: 50%;}
 .authModal .p-haed{margin-bottom: 30px;}
 .authModal form .form-group  label{margin-bottom: 12px;}
@@ -152,6 +152,32 @@
     font-size: 14px;
 }
 .authModal .alertSignUp a{font-size: 14px;}
+/* OTP Modal  */
+.otpModal .p-haed{margin-bottom: 20px;}
+.otpModal .phoneNumber{margin-bottom: 32px; display: block;}
+.otpModal .otp-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.otpModal .otp-container .otp-input {
+    width: 25%;
+    height: 79.876px;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    padding: 0;
+}
+.otpModal .otp-container .otp-input:focus {
+    border-color: #6DA117;
+    outline: none;
+}
+.otpModal .btnLinear-gradient{margin-top: 30px;}
+.otpModal .dontReceiveOTP{margin-top: 24px;}
+.otpModal .dontReceiveOTP,
+.otpModal .resendCode{font-size: 14px;}
 @media (min-width:1706.67px) {
     .phone-input-container{height: 70px;}
     .authModal{width: 1000px;height: 88vh;overflow: hidden;}
@@ -159,6 +185,8 @@
     .authModal .alertSignUp,
     .authModal .alertSignUp a{font-size: 16px;}
     .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 12px;}
+    .otpModal .dontReceiveOTP,
+    .otpModal .resendCode{font-size: 16px;}
 }
 @media (min-width:1920px) {
     .phone-input-container .dropdown-phone-list img, .flag-size{width: 36px;height: 28px;}
@@ -172,15 +200,21 @@
     .authModal .alertSignUp,
     .authModal .alertSignUp a{font-size: 19px;}
     .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 15px;}
+    .otpModal .dontReceiveOTP,
+    .otpModal .resendCode{font-size: 19px;}
 }
 @media (min-width:2048px) {
     .authModal{height: 84vh;}
     .authModal form .form-group{margin-bottom: 30px;}
      .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 17px;}
+    .otpModal .dontReceiveOTP,
+    .otpModal .resendCode{font-size:21px;}
 }
 @media (min-width:2304px) {
     .authModal{height:78vh;width: 1200px;}
     .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 19px;}
+    .otpModal .dontReceiveOTP,
+    .otpModal .resendCode{font-size:23px;}
 }
 @media (min-width:3072px) {
     .authModal{height:64vh;width: 1300px;}
@@ -195,6 +229,9 @@
     .authModal .fx-authModal .authModal-texts .btnLinear-gradient,
     .authModal .fx-authModal .authModal-texts .signInBy-list button{height: 50px;}
     .phone-input-container{height: 50px;}
+    .otpModal .otp-container .otp-input{height: 69px;font-size: 24px;}
+    .authModal .fx-authModal .authModal-image{height: 529px;}
+    .otpModal{overflow: hidden;}
 }
 @media (max-width:1228.8px) {
     .authModal{width: 800px;}
@@ -202,6 +239,10 @@
     .phone-input-container .border-input{height: 25px;}
     .authModal .fx-authModal .authModal-texts .btnLinear-gradient,
     .authModal .fx-authModal .authModal-texts .signInBy-list button{height: 45px;}
+    .authModal .fx-authModal .authModal-image{padding: 16px;}
+    .authModal .fx-authModal .authModal-image{height: 466px;}
+    .otpModal .otp-container .otp-input{height: 59px;}
+    .otpModal .phoneNumber{margin-bottom:24px;}
 }
 @media (max-width:1024px) {
     .authModal{width: 700px;}
@@ -209,13 +250,17 @@
     .authModal .alertSignUp{font-size: 13px;}
     .authModal .p-haed{margin-bottom: 20px;}
     .authModal form .form-group label{margin-bottom: 8px;}
+    .otpModal .fx-authModal .authModal-image{padding: 14px;height: max-content;}
+    .otpModal{overflow: scroll;}
+    .otpModal .phoneNumber{margin-bottom:18px;}
 }
 @media (max-width:877.71px) {
     .authModal .alertSignUp{font-size: 12px;}
     .authModal .fx-authModal .authModal-texts{width: 45%;}
-    .authModal .fx-authModal .authModal-image{width: 55%;}
+    .authModal .fx-authModal .authModal-image{width: 55%;padding: 12px;}
     .authModal .p-haed{margin-bottom: 16px;}
     .authModal form .form-group label{margin-bottom: 6px;}
+     .otpModal .phoneNumber{margin-bottom:16px;}
 }
 @media (max-width:768px) {
 
@@ -231,6 +276,9 @@
     .authModal .fx-authModal .authModal-image{width: 55%;display: none;}
     .authModal h1{font-size: 25px;}
     .authModal .p-haed{font-size: 13px;}
+    .otpModal .otp-container{gap: 16px;}
+    .otpModal{overflow: hidden;}
+    .authModal::-webkit-scrollbar{display: none;}
 }
 @media (max-width:512px) {
 }
