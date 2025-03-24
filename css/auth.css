@@ -1,19 +1,104 @@
- .phone-input-container{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border-radius: 10px;
-        border: 1px solid #E9E9E9;
-        background: #FFF;
-        height: 55px;
-        padding: 0 20px;
-    }
-    .phone-input-container input{
-        background: none;
-        width: 80%;
-        border: none;
-    }  
-    .dropdown-phone-btn{
+
+
+.authModal{
+    padding: 20px 20px 20px 30px;
+    width: 900px;   
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    overflow-y: scroll;
+    height: 90vh;
+    z-index: 9999;
+    background: #FFF;
+    border-radius: 20px;
+}
+.authModal::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(232, 232, 232, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+.authModal::-webkit-scrollbar{
+    width: 3px;
+    background-color: #F5F5F5;
+}
+.authModal::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(235, 235, 235, 0.3);
+    background-color: #48660E ;
+}
+.authModal .fx-authModal{gap: 20px;}
+.authModal .fx-authModal .authModal-image{
+    width:50%;
+    border-radius: 28px;
+    border: 4px solid #6DA117;
+    padding: 20px;
+}
+.authModal .fx-authModal .authModal-image img{width: 100%;object-fit: cover;}
+.authModal .fx-authModal .authModal-texts{width: 50%;}
+.authModal .p-haed{margin-bottom: 30px;}
+.authModal form .form-group  label{margin-bottom: 12px;}
+.authModal form .form-group{margin-bottom: 20px;}
+.authModal .fx-authModal .authModal-texts .btnLinear-gradient{
+    border-radius: 20px;
+    height: 60px;
+}
+.authModal .fx-authModal .authModal-texts .chooseSignUp{
+    margin: 20px 0;
+    gap: 5px;
+}
+.authModal .fx-authModal .authModal-texts .chooseSignUp .border{
+    height: 0.5px;
+    width: 100%;
+    background: #8E8E8E;
+}
+.authModal .fx-authModal .authModal-texts .chooseSignUp span{white-space: pre;font-size: 10px;}
+.authModal .fx-authModal .authModal-texts .signInBy-list{
+    gap: 15px;
+}
+.authModal .fx-authModal .authModal-texts .signInBy-list button{
+    height: 60px;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    gap: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+.authModal .fx-authModal .authModal-texts .signInBy-list button:hover,
+.authModal .fx-authModal .authModal-texts .btnLinear-gradient:hover{transform: scale(0.99);}
+.authModal .fx-authModal .authModal-texts .signInBy-list .signIn-facebook{
+    background: #1877F2; 
+}
+.authModal .fx-authModal .authModal-texts .signInBy-list .signIn-google{
+    background: #FFF;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08), 0px 2px 3px 0px rgba(0, 0, 0, 0.17);
+}
+.authModal .fx-authModal .authModal-texts .signInBy-list .signIn-google span{
+    color: rgba(0, 0, 0, 0.54);
+}
+.authModal .fx-authModal .authModal-texts .signInBy-list .signIn-apple{
+    background: #000;
+}
+.phone-input-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    border: 1px solid #E9E9E9;
+    background: #FFF;
+    height: 55px;
+    padding: 0 20px;
+}
+.phone-input-container input{
+    background: none;
+    width: 80%;
+    border: none;
+}  
+.dropdown-phone-btn{
     display: flex;
     align-items: center;
     gap: 4px;
@@ -53,43 +138,84 @@
     cursor: pointer;
     border-bottom: 1px solid #a5a5a5;
 }
-.phone-input-container .dropdown-phone-list p span{
-    font-size: 16px;
-}
-.phone-input-container .dropdown-phone-list p:hover {
-    background-color: #f0f0f0;
-}
+.phone-input-container .dropdown-phone-list p span{font-size: 16px;}
+.phone-input-container .dropdown-phone-list p:hover {background-color: #f0f0f0;}
 .phone-input-container .border-input{
     height: 40px;
     width: 0.5px;
     background: #072506;
+    opacity: 0.5;
 }
+.authModal .alertSignUp{
+    margin: 20px auto 0 auto;
+    text-align: center;
+    font-size: 14px;
+}
+.authModal .alertSignUp a{font-size: 14px;}
 @media (min-width:1706.67px) {
- .phone-input-container{height: 70px;}
+    .phone-input-container{height: 70px;}
+    .authModal{width: 1000px;height: 88vh;overflow: hidden;}
+    .dropdown-phone-btn span{font-size: 15px;}
+    .authModal .alertSignUp,
+    .authModal .alertSignUp a{font-size: 16px;}
+    .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 12px;}
 }
 @media (min-width:1920px) {
- .phone-input-container .dropdown-phone-list img, .flag-size{width: 36px;height: 28px;}
+    .phone-input-container .dropdown-phone-list img, .flag-size{width: 36px;height: 28px;}
+    .authModal{width: 1100px;}
+    .authModal .fx-authModal .authModal-texts .btnLinear-gradient,
+    .authModal .fx-authModal .authModal-texts .signInBy-list button{height: 70px;}
+     .authModal .fx-authModal .authModal-texts .signInBy-list button img{width: 35px;}
+     .authModal .fx-authModal .authModal-texts .signInBy-list{gap: 20px;}
+    .dropdown-phone-btn span{font-size: 18px;}
+    .authModal .fx-authModal .authModal-texts .chooseSignUp{margin: 30px 0;}
+    .authModal .alertSignUp,
+    .authModal .alertSignUp a{font-size: 19px;}
+    .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 15px;}
 }
 @media (min-width:2048px) {
-
+    .authModal{height: 84vh;}
+    .authModal form .form-group{margin-bottom: 30px;}
+     .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 17px;}
 }
 @media (min-width:2304px) {
-
+    .authModal{height:78vh;width: 1200px;}
+    .authModal .fx-authModal .authModal-texts .chooseSignUp span{font-size: 19px;}
 }
 @media (min-width:3072px) {
-
+    .authModal{height:64vh;width: 1300px;}
+}
+@media (min-width:4608px) {
+    .authModal{height:42vh;}
+}
+@media (min-width:6144px) {
+    .authModal{height:32vh;}
 }
 @media (max-width:1396.36px) {
-
+    .authModal .fx-authModal .authModal-texts .btnLinear-gradient,
+    .authModal .fx-authModal .authModal-texts .signInBy-list button{height: 50px;}
+    .phone-input-container{height: 50px;}
 }
 @media (max-width:1228.8px) {
-
+    .authModal{width: 800px;}
+    .phone-input-container{height: 45px;padding: 10px;}
+    .phone-input-container .border-input{height: 25px;}
+    .authModal .fx-authModal .authModal-texts .btnLinear-gradient,
+    .authModal .fx-authModal .authModal-texts .signInBy-list button{height: 45px;}
 }
 @media (max-width:1024px) {
-
+    .authModal{width: 700px;}
+    .authModal .fx-authModal .authModal-texts .chooseSignUp{margin: 15px 0;}
+    .authModal .alertSignUp{font-size: 13px;}
+    .authModal .p-haed{margin-bottom: 20px;}
+    .authModal form .form-group label{margin-bottom: 8px;}
 }
 @media (max-width:877.71px) {
-
+    .authModal .alertSignUp{font-size: 12px;}
+    .authModal .fx-authModal .authModal-texts{width: 45%;}
+    .authModal .fx-authModal .authModal-image{width: 55%;}
+    .authModal .p-haed{margin-bottom: 16px;}
+    .authModal form .form-group label{margin-bottom: 6px;}
 }
 @media (max-width:768px) {
 
@@ -100,6 +226,11 @@
     .phone-input-container .dropdown-phone-list img, .flag-size{width: 25px;height: 18px;}
     .phone-input-container .dropdown-phone-list p span{font-size: 12px;}
     .phone-input-container .dropdown-phone-list{padding: 6px;}
+     .authModal{width: 95%;height: max-content; padding: 20px 16px;}
+    .authModal .fx-authModal .authModal-texts{width: 100%;}
+    .authModal .fx-authModal .authModal-image{width: 55%;display: none;}
+    .authModal h1{font-size: 25px;}
+    .authModal .p-haed{font-size: 13px;}
 }
 @media (max-width:512px) {
 }
