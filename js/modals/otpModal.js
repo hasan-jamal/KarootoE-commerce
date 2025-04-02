@@ -1,13 +1,13 @@
 $(document).ready(function () {
   $("#signIn").click(function () {
     $(".overlay, .otpModal").fadeIn();
-    $("body").css("overflow", "hidden");
+    $("body").css("overflow-y", "hidden");
     $(".loginModal").css("display", "none");
   });
 
   $(".overlay").click(function () {
     $(".overlay, .otpModal").fadeOut();
-    $("body").css("overflow", "auto");
+    $("body").css("overflow-y", "auto");
   });
 });
 

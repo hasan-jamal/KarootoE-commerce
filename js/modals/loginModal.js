@@ -1,11 +1,11 @@
 $(document).ready(function () {
-  $(".addAddress").click(function () {
+  $(".addAddress,.signIn").click(function () {
     $(".overlay, .loginModal").fadeIn();
-    $("body").css("overflow", "hidden");
+    $("body").css("overflow-y", "hidden");
   });
 
   $(".overlay").click(function () {
     $(".overlay, .loginModal").fadeOut();
-    $("body").css("overflow", "auto");
+    $("body").css("overflow-y", "auto");
   });
 });

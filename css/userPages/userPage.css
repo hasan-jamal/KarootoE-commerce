@@ -1,0 +1,111 @@
+.userPage{margin: 90px 0;}
+.userPage .fx-userPage{gap: 50px;}
+.userPage .tabsList{
+    gap: 20px;
+    width: 26%;
+    display: flex;
+}
+.userPage .tabsList .tabButton{
+    border-radius: 20px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    height: 70px;
+    padding: 0 20px;
+    gap: 20px;
+    align-items: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+.userPage .tabsList .tabButton:hover{
+    transform: scale(1.03);
+    background: #6DA117;
+}
+.userPage .tabsList .tabButton:hover span,
+.userPage .tabsList .tabButton.active span{
+    color: #fff;
+}
+.userPage .tabsList .tabButton:hover img,
+.userPage .tabsList .tabButton.active img{
+    filter: brightness(0) invert(1);
+}
+.userPage .tabsList .tabButton.active{
+    background: #6DA117;
+}
+.userPage .userPage-content{
+    width: 74%;
+}
+.btnTabs{
+    display: none;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid var(--Color5, #d1d1d1);
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.btnTabs span{text-transform: capitalize;font-size: 15px;}
+.btnTabs img{transform: rotate(90deg);}
+.btnTabs:hover{transform: scale(0.98);}
+.fxHead-btns{display: none;}
+@media (min-width:1706.67px) {
+    .userPage .tabsList .tabButton{height: 84px;}
+}
+@media (min-width:1920px) {
+    .userPage .tabsList .tabButton{height: 94px;padding: 0 30px;}
+    .userPage .tabsList .tabButton img{width: 36px;}
+    .userPage .tabsList .tabButton span{font-size: 26px;}
+}
+@media (min-width:2048px) {
+ .userPage .tabsList .tabButton span{font-size:27px;}
+}
+@media (max-width:1396.36px) {
+.userPage .tabsList .tabButton{height: 65px;}
+}
+@media (max-width:1228.8px) {
+.userPage .tabsList .tabButton span{font-size: 17px;}
+.userPage .tabsList{gap: 16px;}
+.userPage .fx-userPage{gap: 32px;}
+}
+@media (max-width:1024px) {
+.userPage .tabsList .tabButton{height: 55px;gap: 12px;}
+.userPage .tabsList .tabButton img{width: 22px;}
+}
+@media (max-width:877.71px) {
+    .userPage .tabsList {width: 30%;gap: 12px;}
+    .userPage .userPage-content{width: 70%;}
+    .userPage .tabsList .tabButton{border-radius: 15px;}
+    .userPage .tabsList .tabButton span{font-size: 14px;}
+    .userPage .tabsList .tabButton img{width: 18px;}
+    .userPage .fx-userPage{gap: 24px;}
+}
+@media (max-width:614.4px) {
+    .userPage .tabsList{display: none;}
+    .userPage .userPage-content{width: 100%;}
+    .userPage{margin: 50px 0;}
+    .btnTabs{
+        display:flex;
+    }
+    #tabsListSide{
+        height: 100vh;
+        position: fixed;
+        overflow-y: auto;
+        width: 100%;
+        background: #fff;
+        padding: 30px 24px;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+    }
+    #tabsListSide .tabButton{width: 100%;padding: 20px;}
+    .userPage .tabsList .tabButton span{font-size: 16px;}
+    .fxHead-btns{
+        display: flex;
+        margin-bottom:16px;
+        align-items: center;
+    }
+    .fxHead-btns h2{font-size: 24px;}
+}
+@media (max-width:512px) {
+}

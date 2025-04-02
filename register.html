@@ -10,94 +10,250 @@
     <!---Style CSS-->
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/auth.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="./css/slick slider/animate.min.css">
+    <link rel="stylesheet" href="./css/slick slider/slick.min.css">
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-
+    <div class="overlay"></div>
     <main>
         <section class="authModal registerPage">
-            <div class="d-flex fx-authModal align-items-center">
+            <div class="d-flex fx-authModal">
                 <div class="authModal-texts">
-                    <h1 class="darkGreen2 fontSize25 font-bold">Sign In</h1>
-                    <p class="fontSize16 style-font colorGrey4 p-haed">Welcome back! We're happy to see you again</p>
-                    <form action="">
-                        <div class="form-group">
-                            <label class="style-font fontSize18 text-capitalize darkGreen2 d-block" for="phone">Phone
-                                Number
-                                <span>*</span></label>
-                            <div class="phone-input-container">
-                                <!-- Dropdown Container -->
-                                <div class="dropdown-phone-container">
-                                    <div class="dropdown-phone-btn">
-                                        <p class="style-font initl-phone">
-                                            <img src="./images/علم-الصومال.png" alt="علم-الصومال" class="flag-size">
-                                            <span>+252</span>
-                                        </p>
-                                        <img src="./images/CaretDown-black.svg" alt="Arrow-Down2" class="arrow-down2">
-                                    </div>
-                                    <div class="dropdown-phone-list">
-                                        <p class="style-font" data-code="+252">
-                                            <img src="./images/علم-الصومال.png" alt="علم-الصومال">
-                                            <span class="style-font">+252</span>
-                                        </p>
-                                        <p class="style-font" data-code="+1">
-                                            <img src="./images/flag-usa.png" alt="علم-أمريكا">
-                                            <span>+1</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="border-input"></div>
-                                <!-- Input Field -->
-                                <input type="tel" id="phone-number" class="style-font fontSize16" name="phone-number"
-                                    placeholder="Enter the Phone Number" required>
+                    <div class="karootoLogo"><img src="./images/karootoBlack.svg" alt="logo Icon"></div>
+                    <div class="regsiterWidth">
+                        <h1 class="darkGreen2 font-bold text-center fontSize36">Sign Up</h1>
+                        <p class="fontSize16 style-font colorGrey4 p-haed text-center">Welcome back, you’ve been missed!
+                        </p>
+                        <form action="">
+                            <div class="form-group d-flex flex-column">
+                                <label for="fullName" class="style-font fontSize18 text-capitalize darkGreen2">Full name
+                                    *</label>
+                                <input type="text" class="input-public style-font fontSize16"
+                                    placeholder=" Enter your Full name" id="fullName" name="fullName">
                             </div>
+                            <div class="form-group">
+                                <label class="style-font fontSize18 text-capitalize darkGreen2 d-block"
+                                    for="phone">Phone
+                                    Number
+                                    <span>*</span></label>
+                                <div class="phone-input-container">
+                                    <!-- Dropdown Container -->
+                                    <div class="dropdown-phone-container">
+                                        <div class="dropdown-phone-btn">
+                                            <p class="style-font initl-phone">
+                                                <img src="./images/علم-الصومال.png" alt="علم-الصومال" class="flag-size">
+                                                <span class="fontSize16 style-font">+252</span>
+                                            </p>
+                                            <img src="./images/CaretDown-black.svg" alt="Arrow-Down2"
+                                                class="arrow-down2">
+                                        </div>
+                                        <div class="dropdown-phone-list">
+                                            <p class="style-font" data-code="+252">
+                                                <img src="./images/علم-الصومال.png" alt="علم-الصومال">
+                                                <span class="style-font fontSize16">+252</span>
+                                            </p>
+                                            <p class="style-font" data-code="+1">
+                                                <img src="./images/flag-usa.png" alt="علم-أمريكا">
+                                                <span class="style-font fontSize16">+1</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="border-input"></div>
+                                    <!-- Input Field -->
+                                    <input type="tel" id="phone-number" class="style-font fontSize16"
+                                        name="phone-number" placeholder="Enter the Phone Number" required>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-column">
+                                <label for="email" class="style-font fontSize18 text-capitalize darkGreen2">E-mail
+                                    *</label>
+                                <input type="email" class="input-public style-font fontSize16"
+                                    placeholder=" Enter your E-mail" id="email" name="email">
+                            </div>
+                            <div class="form-goup">
+                                <button type="button" id="signIn"
+                                    class="colorWhite fontSize18 font-bold btnLinear-gradient w-100 btn-hover">Sign
+                                    Up</button>
+                            </div>
+                        </form>
+                        <div class="d-flex align-items-center chooseSignUp">
+                            <div class="border"></div>
+                            <span class="style-font letterSpacing colorGrey4">Or Sign in with</span>
+                            <div class="border"></div>
                         </div>
-                        <div class="form-goup">
-                            <button type="button" id="signIn"
-                                class="colorWhite fontSize18 font-bold btnLinear-gradient w-100 btn-hover">Sign
-                                In</button>
+                        <div class="signInBy-list d-flex flex-column">
+                            <button class="signIn-facebook btn-hover">
+                                <img src="./images/FacebookLogo.svg" alt="Facebook Logo">
+                                <span class="fontSize17 style-font colorWhite">Sign In with Facebook</span>
+                            </button>
+                            <button class="signIn-google btn-hover">
+                                <img src="./images/GoogleLogo.svg" alt="Google Logo">
+                                <span class="fontSize17 style-font colorWhite">Sign In with Google</span>
+                            </button>
+                            <button class="signIn-apple btn-hover">
+                                <img src="./images/AppleLogo.svg" alt="Apple Logo">
+                                <span class="fontSize17 style-font colorWhite">Sign In with Apple</span>
+                            </button>
                         </div>
-                    </form>
-                    <div class="d-flex align-items-center chooseSignUp">
-                        <div class="border"></div>
-                        <span class="style-font letterSpacing colorGrey4">Or Sign up with</span>
-                        <div class="border"></div>
+                        <p class="colorGrey4 mb-0 style-font letterSpacing d-block fontSize18 alreadyHaveAccount">
+                            Already have
+                            an account?
+                            <a href="#" class="lightGreen2 font-medium letterSpacing btn-hover fontSize18 signIn">Sign
+                                In</a>
+                        </p>
+
                     </div>
-                    <div class="signInBy-list d-flex flex-column">
-                        <button class="signIn-facebook btn-hover">
-                            <img src="./images/FacebookLogo.svg" alt="Facebook Logo">
-                            <span class="fontSize17 style-font colorWhite">Sign In with Facebook</span>
-                        </button>
-                        <button class="signIn-google btn-hover">
-                            <img src="./images/GoogleLogo.svg" alt="Google Logo">
-                            <span class="fontSize17 style-font colorWhite">Sign In with Google</span>
-                        </button>
-                        <button class="signIn-apple btn-hover">
-                            <img src="./images/AppleLogo.svg" alt="Apple Logo">
-                            <span class="fontSize17 style-font colorWhite">Sign In with Apple</span>
-                        </button>
-                    </div>
-                    <p class="colorGrey4 mb-0 style-font letterSpacing alertSignUp d-block">Don't have an account? <a
-                            href="" class="lightGreen2 font-medium letterSpacing btn-hover">Sign Up</a></p>
                 </div>
                 <div class="authModal-image">
-                    <img src="./images/sideImage-login.png" alt="side Image">
+                    <a href="./index.html" class="d-flex align-items-center btn-hover">
+                        <img src="./images/arrowLeftDark.svg" alt="">
+                        <span class="fontSize25 font-medium darkGreen2">Home</span>
+                    </a>
+                    <div class="sliderInRegister">
+                        <div class="slide">
+                            <div class="slideRegisterDiv d-flex flex-column align-items-center justify-content-center">
+                                <img src="./images/slideRegister.png" alt="slide Register Image" class="slideRegister ">
+                                <div class="slideText">
+                                    <h1 class="text-center text-capitalize fontSize36 font-bold darkGreen4">Elevate Your
+                                        Style,
+                                        Simplify
+                                        Your Shopping</h1>
+                                    <p class="mb-0 fontSize16 style-font colorGrey9 text-center d-block">Grab this
+                                        opportunity! Register now
+                                        and enjoy
+                                        our wide
+                                        range of food
+                                        and other products</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slideRegisterDiv d-flex flex-column align-items-center justify-content-center">
+                                <img src="./images/slideRegister.png" alt="slide Register Image" class="slideRegister ">
+                                <div class="slideText">
+                                    <h1 class="text-center text-capitalize fontSize36 font-bold darkGreen4">Elevate Your
+                                        Style,
+                                        Simplify
+                                        Your Shopping</h1>
+                                    <p class="mb-0 fontSize16 style-font colorGrey9 text-center d-block">Grab this
+                                        opportunity! Register now
+                                        and enjoy
+                                        our wide
+                                        range of food
+                                        and other products</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slideRegisterDiv d-flex flex-column align-items-center justify-content-center">
+                                <img src="./images/slideRegister.png" alt="slide Register Image" class="slideRegister ">
+                                <div class="slideText">
+                                    <h1 class="text-center text-capitalize fontSize36 font-bold darkGreen4">Elevate Your
+                                        Style,
+                                        Simplify
+                                        Your Shopping</h1>
+                                    <p class="mb-0 fontSize16 style-font colorGrey9 text-center d-block">Grab this
+                                        opportunity! Register now
+                                        and enjoy
+                                        our wide
+                                        range of food
+                                        and other products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
+    <div class="authModal loginModal">
+        <div class="d-flex fx-authModal align-items-center">
+            <div class="authModal-texts">
+                <h1 class="darkGreen2 fontSize25 font-bold">Sign In</h1>
+                <p class="fontSize16 style-font colorGrey4 p-haed">Welcome back! We're happy to see you again</p>
+                <form action="">
+                    <div class="form-group">
+                        <label class="style-font fontSize18 text-capitalize darkGreen2 d-block" for="phone">Phone
+                            Number
+                            <span>*</span></label>
+                        <div class="phone-input-container">
+                            <!-- Dropdown Container -->
+                            <div class="dropdown-phone-container">
+                                <div class="dropdown-phone-btn">
+                                    <p class="style-font initl-phone">
+                                        <img src="./images/علم-الصومال.png" alt="علم-الصومال" class="flag-size">
+                                        <span>+252</span>
+                                    </p>
+                                    <img src="./images/CaretDown-black.svg" alt="Arrow-Down2" class="arrow-down2">
+                                </div>
+                                <div class="dropdown-phone-list">
+                                    <p class="style-font" data-code="+252">
+                                        <img src="./images/علم-الصومال.png" alt="علم-الصومال">
+                                        <span class="style-font">+252</span>
+                                    </p>
+                                    <p class="style-font" data-code="+1">
+                                        <img src="./images/flag-usa.png" alt="علم-أمريكا">
+                                        <span>+1</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="border-input"></div>
+                            <!-- Input Field -->
+                            <input type="tel" id="phone-number" class="style-font fontSize16" name="phone-number"
+                                placeholder="Enter the Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="form-goup">
+                        <button type="button" id="signIn"
+                            class="colorWhite fontSize18 font-bold btnLinear-gradient w-100 btn-hover">Sign
+                            In</button>
+                    </div>
+                </form>
+                <div class="d-flex align-items-center chooseSignUp">
+                    <div class="border"></div>
+                    <span class="style-font letterSpacing colorGrey4">Or Sign up with</span>
+                    <div class="border"></div>
+                </div>
+                <div class="signInBy-list d-flex flex-column">
+                    <button class="signIn-facebook btn-hover">
+                        <img src="./images/FacebookLogo.svg" alt="Facebook Logo">
+                        <span class="fontSize17 style-font colorWhite">Sign In with Facebook</span>
+                    </button>
+                    <button class="signIn-google btn-hover">
+                        <img src="./images/GoogleLogo.svg" alt="Google Logo">
+                        <span class="fontSize17 style-font colorWhite">Sign In with Google</span>
+                    </button>
+                    <button class="signIn-apple btn-hover">
+                        <img src="./images/AppleLogo.svg" alt="Apple Logo">
+                        <span class="fontSize17 style-font colorWhite">Sign In with Apple</span>
+                    </button>
+                </div>
+                <p class="colorGrey4 mb-0 style-font letterSpacing alertSignUp d-block">Don't have an account? <a
+                        href="" class="lightGreen2 font-medium letterSpacing btn-hover">Sign Up</a></p>
+            </div>
+            <div class="authModal-image">
+                <img src="./images/sideImage-login.png" alt="side Image">
+            </div>
+        </div>
+    </div>
     <!-- Jquery Library -->
     <script src="./js/jquery/jquery.min.js"></script>
     <!--Navbar JS-->
-    <script src="./js/navbar-pages.js"></script>
     <!-- AOS Animation JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <!-- Dropdown Phone Js -->
     <script src="./js/dropdowns/dropdownPhone.js"></script>
+    <!-- Slick Slider -->
+    <script src="./js/slick slider/slick.min.js"></script>
+    <script src="./js/slick slider/slick-animation.min.js"></script>
+    <script src="./js/slick slider/slickRegister.js"></script>
+    <!-- Login Modal Js -->
+    <script src="./js/modals/loginModal.js"></script>
 </body>
 
 </html>

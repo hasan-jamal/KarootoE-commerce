@@ -10,21 +10,18 @@
     <!---Style CSS-->
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/pages.css">
+    <link rel="stylesheet" href="./css/userPages/userPage.css">
+    <link rel="stylesheet" href="./css/userPages/customOrders.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionFeatures.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionTitle.css">
-    <link rel="stylesheet" href="./css/sectionsPublic/sectionProducts.css">
-    <link rel="stylesheet" href="./css/filter.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <!-- Slick Slider -->
-    <link rel="stylesheet" href="./css/slick slider/animate.min.css">
-    <link rel="stylesheet" href="./css/slick slider/slick.min.css">
-    <link rel="stylesheet" href="./css/slick slider/slickSlider.css">
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <div class="overlay"></div>
     <nav class="navbar">
         <div class="d-flex flex-column">
             <div class="d-flex navbarPart1 align-items-center justify-content-between">
@@ -525,7 +522,7 @@
             </div>
             <div class="linksHeader d-flex">
                 <a href="./index.html" class="fontSize18 style-font btn-hover ">Home</a>
-                <a href="./shop.html" class="fontSize18 style-font btn-hover active">Shop</a>
+                <a href="./shop.html" class="fontSize18 style-font btn-hover ">Shop</a>
                 <div class="divLink">
                     <a class="fontSize18 style-font btn-hover linkBtn" data-target="Fruits-list">Fruits</a>
                     <div class="listlinks" id="Fruits-list">
@@ -559,7 +556,7 @@
                     </div>
                 </div>
                 <div class="divLink">
-                    <a class="fontSize18 style-font btn-hover linkBtn" data-target="Vegetable-list">Vegetable</a>
+                    <a class="fontSize18 style-font btn-hover linkBtn active" data-target="Vegetable-list">Vegetable</a>
                     <div class="listlinks" id="Vegetable-list">
                         <div class="listFromPart d-flex flex-column">
                             <h5 class="font-bold darkGreen2">Leafy Greens</h5>
@@ -693,726 +690,619 @@
         <section class="sectionTitle">
             <div class="sectionTitle-container">
                 <div class="d-flex flex-column align-items-center justify-content-center fx-sectionTitle">
-                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Shop</h1>
+                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Custom Orders</h1>
                     <div class="d-flex align-items-center justify-content-center fx-LinksTitle">
                         <a href="./index.html" class="font-medium darkGreen2">Home</a>
                         <img src="./images/arrowLinks.svg" alt="arrow">
-                        <a href="./shop.html" class="font-bold darkGreen2">Shop</a>
+                        <a href="./productsDetails.html" class="font-bold darkGreen2 active">Custom Orders</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="filterProducts">
-            <div class="filterProducts-container px-110">
-                <div class="d-flex fx-filterProducts">
-                    <div class="filter flex-column" id="filter">
-                        <div class="d-flex justify-content-between fxHead-Filter">
-                            <h2 class="font-medium letterSpacing fontSize25">Filter Options</h2>
-                            <button class="btnCloseFilter"><img src="./images/cancel-icon.svg"
-                                    alt="cancel icon"></button>
+        <section class="userPage">
+            <div class="userPage-container px-110">
+                <div class="d-flex fx-userPage">
+                    <div class="tabsList flex-column" id="tabsListSide">
+                        <div class=" justify-content-between fxHead-btns">
+                            <h2 class="font-medium letterSpacing fontSize25">Tabs Options</h2>
+                            <button class="btnClose"><img src="./images/cancel-icon.svg" alt="cancel icon"></button>
                         </div>
-                        <div class="filterStyle filterCategories">
-                            <h4 class="style-font letterSpacing">Categories</h4>
-                            <form action="" class="list-checkbox d-flex flex-column">
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="Fruits">
-                                    <label for="Fruits" class="style-font letterSpacing">Fruits</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="Vegetable">
-                                    <label for="Vegetable" class="style-font letterSpacing">Vegetable</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="Electronics">
-                                    <label for="Electronics" class="style-font letterSpacing">Electronics</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="Compo">
-                                    <label for="Compo" class="style-font letterSpacing">Compo</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="Milk">
-                                    <label for="Milk" class="style-font letterSpacing">Milk & egg</label>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="filterStyle filterPrice">
-                            <h4 class="style-font letterSpacing">Price</h4>
-                            <div class="price-input">
-                                <div class="field">
-                                    <span class="style-font">$</span>
-                                    <input type="number" class="input-min letterSpacing style-font" value="250">
-                                </div>
-                                <div class="separator">-</div>
-                                <div class="field">
-                                    <span class="style-font">$</span>
-                                    <input type="number" class="input-max letterSpacing style-font" value="750">
-                                </div>
-                            </div>
-                            <div class="slider">
-                                <div class="progress"></div>
-                            </div>
-                            <div class="range-input">
-                                <input type="range" class="range-min" min="0" max="1000" value="250" step="25">
-                                <input type="range" class="range-max" min="0" max="1000" value="750" step="25">
-                            </div>
-                        </div>
-                        <div class="filterStyle filterReviews">
-                            <h4 class="style-font letterSpacing">Reviews</h4>
-                            <form action="" class="list-checkbox d-flex flex-column">
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="4.9">
-                                    <label for="4.9" class="labelRate">
-                                        <img src="./images/star.svg" alt="star icon"> <span
-                                            class="font-medium letterSpacing">4.9 and adove</span>
-                                    </label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="4.0_4.8">
-                                    <label for="4.0_4.8" class="labelRate">
-                                        <img src="./images/star.svg" alt="star icon"> <span
-                                            class="font-medium letterSpacing">4.0 _ 4.8</span>
-                                    </label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="3.0_3.9">
-                                    <label for="3.0_3.9" class="labelRate">
-                                        <img src="./images/star.svg" alt="star icon"> <span
-                                            class="font-medium letterSpacing">3.0 _ 3.9</span>
-                                    </label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="2.0_2.9">
-                                    <label for="2.0_2.9" class="labelRate">
-                                        <img src="./images/star.svg" alt="star icon"> <span
-                                            class="font-medium letterSpacing">2.0 _ 2.9</span>
-                                    </label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="1.0_1.9">
-                                    <label for="1.0_1.9" class="labelRate">
-                                        <img src="./images/star.svg" alt="star icon"> <span
-                                            class="font-medium letterSpacing">1.0 _ 1.9</span>
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="filterStyle filterBrand">
-                            <h4 class="style-font letterSpacing">Brand</h4>
-                            <form action="" class="list-checkbox d-flex flex-column">
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="Nestle">
-                                    <label for="Nestle" class="style-font letterSpacing">Nestle</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="Coca-Cola">
-                                    <label for="Coca-Cola" class="style-font letterSpacing">Coca-Cola</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="Samsung">
-                                    <label for="Samsung" class="style-font letterSpacing">Samsung</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="LG">
-                                    <label for="LG" class="style-font letterSpacing">LG</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="Adidas">
-                                    <label for="Adidas" class="style-font letterSpacing">Adidas</label>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="filterStyle filterBrand">
-                            <h4 class="style-font letterSpacing">Producr Type</h4>
-                            <form action="" class="list-checkbox d-flex flex-column">
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="PackagedGoods">
-                                    <label for="PackagedGoods" class="style-font letterSpacing">Packaged Goods</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="freshProduce">
-                                    <label for="freshProduce" class="style-font letterSpacing">Fresh Produce</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="frozenFoods">
-                                    <label for="frozenFoods" class="style-font letterSpacing">Frozen Foods</label>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="filterStyle filterBrand">
-                            <h4 class="style-font letterSpacing">Availability</h4>
-                            <form action="" class="list-checkbox d-flex flex-column">
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="InStock">
-                                    <label for="InStock" class="style-font letterSpacing">In Stock</label>
-                                </div>
-                                <div class="checkbox-group d-flex">
-                                    <input type="checkbox" id="OutOfStocks">
-                                    <label for="OutOfStocks" class="style-font letterSpacing">Out of Stocks</label>
-                                </div>
-                            </form>
-                        </div>
+                        <button type="button" onclick="window.location.href='profile.html'"
+                            class="d-flex align-items-center tabButton ">
+                            <img src="./images/MyAccount-icon.svg" alt="My Account icon">
+                            <span class="darkGreen2 style-font fontSize20">My account</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='myOrders.html'"
+                            class="d-flex align-items-center tabButton ">
+                            <img src="./images/MyOrders-icon.svg" alt="My Orders icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">My Orders</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='customOrders.html'"
+                            class="d-flex align-items-center tabButton active">
+                            <img src="./images/CustomOrders-icon.svg" alt="Custom Orders icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Custom Orders</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='manageAddress.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/ManageAddress-icon.svg" alt="Manage Address icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Manage Address</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='paymentMethods.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/PaymentMethods-icon.svg" alt="Payment Methods icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Payment Methods</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='myWallet.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/MyWallet-icon.svg" alt="My Wallet icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">My Wallet</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='myCoupons.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/MyCoupons-icon.svg" alt="My Coupons icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">My Coupons</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='settings.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/Settings-icon.svg" alt="Settings icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Settings</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='helpCenter.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/HelpCenter-icon.svg" alt="Help Center icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Help Center</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='privacyPolicy.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/privacyPolicy-icon.svg" alt="privacy policy icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">privacy policy</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='termsAndConditions.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/TermsAndConditions-icon.svg" alt="Terms and conditions icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Terms and conditions</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='aboutUs.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/aboutUs-icon.svg" alt="about us icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">about us</span>
+                        </button>
+                        <button type="button" onclick="window.location.href=''"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/Logout-icon.svg" alt="Logout icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Logout</span>
+                        </button>
                     </div>
-                    <div class="products">
-                        <div class="d-flex fx-pages">
-                            <h3 class="font-medium letterSpacing darkGreen2 fontSize20">Showing 1-12 of 2580 results
-                            </h3>
-                            <div class="d-flex fx-sorting align-items-center">
-                                <h3 class="font-medium letterSpacing darkGreen2 fontSize20">Sort by :</h3>
-                                <div class="divSort">
-                                    <div class="btnSort btn-hover">
-                                        <span class="style-font letterSpacing darkGreen2 ">Default
-                                            Sorting</span>
-                                        <img src="./images/Arrow-DownSort.svg" alt="Arrow Down Sort">
+                    <div class="userPage-content">
+                        <button class="btnTabs btn-hover" type="button" id="btnTabs">
+                            <span class="fontSize20 font-medium darkGreen2">Custom Orders</span>
+                            <img src="./images/arrowLeftDark.svg" alt="arrow">
+                        </button>
+                        <div class="customOrdersDiv">
+                            <div class="tabsDiv d-flex align-items-center">
+                                <div class=" tabLink active" id="tabOne"><button type="button"
+                                        class="fontSize25 darkGreen2 letterSpacing font-medium ">Get a
+                                        Quote</button></div>
+                                <div class="tabLink" id="tabTwo"><button type="button"
+                                        class="fontSize25 darkGreen2 letterSpacing font-medium">Scheduled Order</button>
+                                </div>
+                            </div>
+                            <div class="contentTab" data-tab="tabOne">
+                                <div class="d-flex fx-sorting align-items-center">
+                                    <h3 class="font-medium letterSpacing darkGreen2 fontSize20">Sort by :</h3>
+                                    <div class="divSort">
+                                        <div class="btnSort btn-hover">
+                                            <span class="style-font letterSpacing darkGreen2 fontSize20">All</span>
+                                            <img src="./images/Arrow-DownSort.svg" alt="Arrow Down Sort">
+                                        </div>
+                                        <div class="listSorting">
+                                            <button class="style-font fontSize18">sortOne</button>
+                                            <button class="style-font fontSize18">sortTwo</button>
+                                            <button class="style-font fontSize18">sortThree</button>
+                                            <button class="style-font fontSize18">sortFour</button>
+                                        </div>
                                     </div>
-                                    <div class="listSorting">
-                                        <button class="style-font">sortOne</button>
-                                        <button class="style-font">sortTwo</button>
-                                        <button class="style-font">sortThree</button>
-                                        <button class="style-font">sortFour</button>
+                                </div>
+                                <div class="gabBoxProducts d-flex flex-column">
+                                    <div class=" boxProducts">
+                                        <div class="d-flex fx-orderDetails">
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">ID</p>
+                                                <h3 class="font-bold colorWhite fontSize20">#Fa2025ZXA</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Items</p>
+                                                <h3 class="font-bold colorWhite fontSize20">2</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Expected cost</p>
+                                                <h3 class="font-bold colorWhite fontSize20">$200.00</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Total Payment</p>
+                                                <h3 class="font-bold colorWhite fontSize20">$00.00</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Application deadline</p>
+                                                <h3 class="font-bold colorWhite fontSize20">25 July 2025</h3>
+                                            </div>
+                                        </div>
+                                        <div class="box-orderDetails">
+                                            <div class="productsColumns d-flex flex-column">
+                                                <div class="d-flex justify-content-between align-items-center fxTitles">
+                                                    <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">
+                                                        Items
+                                                    </p>
+                                                    <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">
+                                                        Price
+                                                    </p>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center fxDetails">
+                                                    <div class="d-flex fx-productImage">
+                                                        <div class="productImage"><img src="./images/product3.svg"
+                                                                alt="product image">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column justify-content-center text-start">
+                                                            <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">
+                                                                Mango
+                                                            </h3>
+                                                            <span class="font-medium fontSize15 colorGrey3">2 Kg | 10
+                                                                Qty</span>
+                                                        </div>
+                                                    </div>
+                                                    <p
+                                                        class="font-medium mb-0 letterSpacing fontSize18 processingColor">
+                                                        processing...</p>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center fxDetails">
+                                                    <div class="d-flex fx-productImage">
+                                                        <div class="productImage"><img src="./images/product3.svg"
+                                                                alt="product image">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column justify-content-center text-start">
+                                                            <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">
+                                                                Mango
+                                                            </h3>
+                                                            <span class="font-medium fontSize15 colorGrey3">2 Kg | 10
+                                                                Qty</span>
+                                                        </div>
+                                                    </div>
+                                                    <p
+                                                        class="font-medium mb-0 letterSpacing fontSize18 processingColor">
+                                                        processing...</p>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div class="orderSummary">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="style-font fontSize15 letterSpacing colorGrey4">
+                                                            Sub-Total
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$00.00
+                                                        </h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="style-font fontSize15 letterSpacing colorGrey4">
+                                                            Delivery
+                                                            Fee
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$00.00
+                                                        </h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="style-font fontSize15 letterSpacing colorGrey4">
+                                                            Discount
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$00.00
+                                                        </h5>
+                                                    </div>
+                                                    <div class="border"></div>
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between totalAmount">
+                                                        <p class="style-font fontSize17 letterSpacing colorGrey4">Total
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$00.00
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="boxProducts">
+                                        <div class="d-flex fx-orderDetails">
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">ID</p>
+                                                <h3 class="font-bold colorWhite fontSize20">#Fa2025ZXA</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Items</p>
+                                                <h3 class="font-bold colorWhite fontSize20">2</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Expected cost</p>
+                                                <h3 class="font-bold colorWhite fontSize20">$200.00</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Total Payment</p>
+                                                <h3 class="font-bold colorWhite fontSize20">$00.00</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Application deadline</p>
+                                                <h3 class="font-bold colorWhite fontSize20">25 July 2025</h3>
+                                            </div>
+                                        </div>
+                                        <div class="box-orderDetails">
+                                            <div class="productsColumns d-flex flex-column">
+                                                <div class="d-flex justify-content-between align-items-center fxTitles">
+                                                    <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">
+                                                        Items
+                                                    </p>
+                                                    <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">
+                                                        Price
+                                                    </p>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center fxDetails">
+                                                    <div class="d-flex fx-productImage">
+                                                        <div class="productImage"><img src="./images/product3.svg"
+                                                                alt="product image">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column justify-content-center text-start">
+                                                            <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">
+                                                                Mango
+                                                            </h3>
+                                                            <span class="font-medium fontSize15 colorGrey3">2 Kg | 10
+                                                                Qty</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gapCost">
+                                                        <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">
+                                                            $2.99
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center fxDetails">
+                                                    <div class="d-flex fx-productImage">
+                                                        <div class="productImage"><img src="./images/product3.svg"
+                                                                alt="product image">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column justify-content-center text-start">
+                                                            <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">
+                                                                Mango
+                                                            </h3>
+                                                            <span class="font-medium fontSize15 colorGrey3">2 Kg | 10
+                                                                Qty</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gapCost">
+                                                        <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">
+                                                            $2.99
+                                                        </p>
+                                                        <span class="oldCost style-font letterSpacing colorGrey2 ">$
+                                                            3.0</span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="border"></div>
+                                                <div class="orderSummary">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="style-font fontSize15 letterSpacing colorGrey4">
+                                                            Sub-Total
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">
+                                                            $300.00
+                                                        </h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="style-font fontSize15 letterSpacing colorGrey4">
+                                                            Delivery
+                                                            Fee
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$10.00
+                                                        </h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="style-font fontSize15 letterSpacing colorGrey4">
+                                                            Discount
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">-
+                                                            $35.00
+                                                        </h5>
+                                                    </div>
+                                                    <div class="border"></div>
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between totalAmount">
+                                                        <p class="style-font fontSize17 letterSpacing colorGrey4">Total
+                                                        </p>
+                                                        <h5 class="lightGreen2 fontSize16 font-bold letterSpacing">
+                                                            $250.00
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="divButton">
+                                            <button
+                                                class="btn-hover btnLinear-gradient font-bold colorWhite fontSize18 h60px w250px">Make
+                                                order</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="lines" id="lines">
-                                <div class="div1"></div>
-                                <div class="div2"></div>
-                                <div class="div3"></div>
-                            </div>
-                        </div>
-                        <div class=" featuresCheck">
-                            <div class="d-flex fx-featureBoxs align-items-center">
-                                <h4 class="fontSize20 font-medium letterSpacing darkGreen2 ">Active Filter</h4>
-                                <div class="featureBox d-flex">
-                                    <span class="fontSize18 colorWhite letterSpacing style-font">Price : $25.00 -
-                                        $150.00</span>
-                                    <img src="./images/cancel-icon.svg" alt="cancel icon">
-                                </div>
-                                <div class="featureBox d-flex">
-                                    <span class="fontSize18 colorWhite letterSpacing style-font">Categories :
-                                        Vegetable</span>
-                                    <img src="./images/cancel-icon.svg" alt="cancel icon">
+                            <div class="contentTab" data-tab="tabTwo">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h2 class="colorBlack fontSize25 font-medium letterSpacing">Scheduled Order (2)</h2>
+                                    <div class=" d-flex fx-sorting align-items-center">
+                                        <h3 class="font-medium letterSpacing darkGreen2 fontSize20">Sort by :</h3>
+                                        <div class="divSort">
+                                            <div class="btnSort btn-hover">
+                                                <span class="style-font letterSpacing darkGreen2 fontSize20">All</span>
+                                                <img src="./images/Arrow-DownSort.svg" alt="Arrow Down Sort">
+                                            </div>
+                                            <div class="listSorting">
+                                                <button class="style-font fontSize18">sortOne</button>
+                                                <button class="style-font fontSize18">sortTwo</button>
+                                                <button class="style-font fontSize18">sortThree</button>
+                                                <button class="style-font fontSize18">sortFour</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="featureBox d-flex">
-                                    <span class="fontSize18 colorWhite letterSpacing style-font">Reviews : 5 Star</span>
-                                    <img src="./images/cancel-icon.svg" alt="cancel icon">
-                                </div>
-                                <a href=""
-                                    class="lightGreen2 font-medium fontSize20 letterSpacing btn-hover clearAll">Clear
-                                    All</a>
-                            </div>
-                        </div>
-                        <div class="fxProducts fxGeneral-cards">
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product1.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Banana</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                            <p class="mb-0 style-font letterSpacing">$ 5.2</p>
+                                <div class="gabBoxProducts d-flex flex-column">
+                                    <div class=" boxProducts">
+                                        <div class="d-flex fx-orderDetails">
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">ID</p>
+                                                <h3 class="font-bold colorWhite fontSize20">#Fa2025ZXA</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Items</p>
+                                                <h3 class="font-bold colorWhite fontSize20">2</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Expected cost</p>
+                                                <h3 class="font-bold colorWhite fontSize20">$200.00</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Total Payment</p>
+                                                <h3 class="font-bold colorWhite fontSize20">$00.00</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Application deadline</p>
+                                                <h3 class="font-bold colorWhite fontSize20">25 July 2025</h3>
+                                            </div>
+                                        </div>
+                                        <div class="box-orderDetails">
+                                            <div class="productsColumns d-flex flex-column">
+                                                <div class="d-flex justify-content-between align-items-center fxTitles">
+                                                    <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">
+                                                        Items
+                                                    </p>
+                                                    <p class="font-medium mb-0 letterSpacing fontSize20 darkGreen2">
+                                                        Price
+                                                    </p>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center fxDetails">
+                                                    <div class="d-flex fx-productImage">
+                                                        <div class="productImage"><img src="./images/product3.svg"
+                                                                alt="product image">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column justify-content-center text-start">
+                                                            <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">
+                                                                Mango
+                                                            </h3>
+                                                            <span class="font-medium fontSize15 colorGrey3">2 Kg | 10
+                                                                Qty</span>
+                                                        </div>
+                                                    </div>
+                                                    <p
+                                                        class="font-medium mb-0 letterSpacing fontSize18 processingColor">
+                                                        processing...</p>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center fxDetails">
+                                                    <div class="d-flex fx-productImage">
+                                                        <div class="productImage"><img src="./images/product3.svg"
+                                                                alt="product image">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column justify-content-center text-start">
+                                                            <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">
+                                                                Mango
+                                                            </h3>
+                                                            <span class="font-medium fontSize15 colorGrey3">2 Kg | 10
+                                                                Qty</span>
+                                                        </div>
+                                                    </div>
+                                                    <p
+                                                        class="font-medium mb-0 letterSpacing fontSize18 processingColor">
+                                                        processing...</p>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div class="orderSummary">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="style-font fontSize15 letterSpacing colorGrey4">
+                                                            Sub-Total
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$00.00
+                                                        </h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="style-font fontSize15 letterSpacing colorGrey4">
+                                                            Delivery
+                                                            Fee
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$00.00
+                                                        </h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="style-font fontSize15 letterSpacing colorGrey4">
+                                                            Discount
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$00.00
+                                                        </h5>
+                                                    </div>
+                                                    <div class="border"></div>
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between totalAmount">
+                                                        <p class="style-font fontSize17 letterSpacing colorGrey4">Total
+                                                        </p>
+                                                        <h5 class="darkGreen2 fontSize16 font-bold letterSpacing">$00.00
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product2.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Orange</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
+                                    <div class="boxProducts">
+                                        <div class="d-flex fx-orderDetails">
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">ID</p>
+                                                <h3 class="font-bold colorWhite fontSize20">#Fa2025ZXA</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Items</p>
+                                                <h3 class="font-bold colorWhite fontSize20">2</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Expected cost</p>
+                                                <h3 class="font-bold colorWhite fontSize20">$200.00</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Total Payment</p>
+                                                <h3 class="font-bold colorWhite fontSize20">$00.00</h3>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="d-flex flex-column colOrder">
+                                                <p class="font-medium colorWhite fontSize20">Application deadline</p>
+                                                <h3 class="font-bold colorWhite fontSize20">25 July 2025</h3>
+                                            </div>
+                                        </div>
+                                        <div class="box-orderDetails">
+                                            <div class="productsColumns d-flex flex-column">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center fxDetails">
+                                                    <div class="d-flex fx-productImage">
+                                                        <div class="productImage"><img src="./images/product3.svg"
+                                                                alt="product image">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column justify-content-center text-start">
+                                                            <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">
+                                                                Mango
+                                                            </h3>
+                                                            <span class="font-medium fontSize15 colorGrey3">2 Kg | 10
+                                                                Qty</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center fxDetails">
+                                                    <div class="d-flex fx-productImage">
+                                                        <div class="productImage"><img src="./images/product3.svg"
+                                                                alt="product image">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex flex-column justify-content-center text-start">
+                                                            <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">
+                                                                Mango
+                                                            </h3>
+                                                            <span class="font-medium fontSize15 colorGrey3">2 Kg | 10
+                                                                Qty</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="border"></div>
+                                                <div class="regularSubmission">
+                                                    <h4 class="style-font fontSize18 darkGreen2 letterSpacing ">Regular
+                                                        submission schedule</h4>
+                                                    <div class="d-flex fxMonthSchedule">
+                                                        <button
+                                                            class="active fontSize18 style-font text-capitalize">weekly</button>
+                                                        <button
+                                                            class="fontSize18 style-font text-capitalize">monthly</button>
+                                                        <button class="fontSize18 style-font text-capitalize">Stop
+                                                            order</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="divButton d-flex ">
+                                            <button
+                                                class="btn-hover btnLinear-gradient font-bold colorWhite fontSize18 h60px w250px">Make
+                                                order</button>
+                                            <button
+                                                class="btn-hover redOutlineBtn font-bold colorRed fontSize18 h60px w250px">Delete
+                                                order</button>
                                         </div>
                                     </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
                                 </div>
                             </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product3.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Mango</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                            <p class="mb-0 style-font letterSpacing">$ 5.2</p>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product4.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Strawberry</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product5.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Cherry tomatoes</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                            <p class="mb-0 style-font letterSpacing">$ 5.2</p>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product6.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">onion</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product7.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Pepper</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product8.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Lemon</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                            <p class="mb-0 style-font letterSpacing">$ 5.2</p>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product1.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Banana</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                            <p class="mb-0 style-font letterSpacing">$ 5.2</p>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product2.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Orange</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product3.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Mango</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                            <p class="mb-0 style-font letterSpacing">$ 5.2</p>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product4.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Strawberry</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product5.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Cherry tomatoes</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                            <p class="mb-0 style-font letterSpacing">$ 5.2</p>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product6.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">onion</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="productCard fxGeneral-card">
-                                <div class="productCard-imgs">
-                                    <span class="text-capitalize font-medium">35% OFF</span>
-                                    <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
-                                            src="./images/product7.svg" alt="product image" class="">
-                                    </div>
-                                    <img src="./images/favouriteIcon.svg" alt="favourite Icon"
-                                        class="favouriteIcon btn-hover">
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between productCard-title">
-                                    <h2 class="font-medium mb-0 darkGreen2"
-                                        onclick="window.location.href='productsDetails.html'">Pepper</h2>
-                                    <div class=" d-flex align-items-center fxRate-card">
-                                        <img src="./images/star.svg" alt="star">
-                                        <span class="font-medium darkGreen2 letterSpacing">4.5</span>
-                                    </div>
-                                </div>
-                                <div class="productCard-Details d-flex  justify-content-between">
-                                    <div class=" d-flex flex-column">
-                                        <span class="font-medium letterSpacing mount">1 Kg</span>
-                                        <div class="d-flex align-items-center fxProduct-price">
-                                            <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                        <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                        <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pagination d-flex align-items-center justify-content-center">
-                            <button class="btnImageLeft"><img src="./images/arrowPagination.svg" alt="arrow Pagination"
-                                    class="arrowPaginationLeft"></button>
-                            <button class="active font-medium darkGreen2">1</button>
-                            <button class="font-medium darkGreen2">2</button>
-                            <button class="font-medium darkGreen2">3</button>
-                            <button class="font-medium darkGreen2">4</button>
-                            <button class="font-medium darkGreen2">....</button>
-                            <button class="btnImageRight"><img src="./images/arrowPagination.svg" alt="arrow Pagination"
-                                    class="arrowPaginationLeft"></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sectionFeatures">
+        <section class=" sectionFeatures">
             <div class="sectionFeatures-container">
                 <div class="d-flex fx-sectionFeatures">
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/FreeDelivery.svg" alt="Free Delivery icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">Free Delivery</h1>
-                            <p class="mb-0 style-font letterSpacing">Free Delivery for order $30</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">Free Delivery
+                            </h1>
+                            <p class="mb-0 style-font letterSpacing">Free Delivery for order
+                                $30</p>
                         </div>
                     </div>
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/FlexiblePayment.svg" alt="Flexible Payment icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">Flexible Payment</h1>
-                            <p class="mb-0 style-font letterSpacing">Multiple secure payment options</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">Flexible
+                                Payment</h1>
+                            <p class="mb-0 style-font letterSpacing">Multiple secure payment
+                                options
+                            </p>
                         </div>
                     </div>
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/24x7Support.svg" alt="24 x 7 Support icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">24x7 Support</h1>
-                            <p class="mb-0 style-font letterSpacing">we support online all days</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">24x7 Support
+                            </h1>
+                            <p class="mb-0 style-font letterSpacing">we support online all
+                                days</p>
                         </div>
                     </div>
                 </div>
@@ -1491,19 +1381,31 @@
     </footer>
     <!-- Jquery Library -->
     <script src="./js/jquery/jquery.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="./js/slick slider/slick.min.js"></script>
-    <script src="./js/slick slider/slick-animation.min.js"></script>
-    <script src="./js/slick slider/slick.js"></script>
     <!--Navbar JS-->
     <script src="./js/navbar-pages.js"></script>
     <!-- AOS Animation JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- Btn Tabs JS -->
+    <script src="./js/userPages/btnTabs.js"></script>
+    <!-- Sort Button JS -->
+    <script src="./js/dropdowns/sortButton.js"></script>
     <script>
-        AOS.init();
+        $(document).ready(function () {
+            $('.tabLink').click(function () {
+                const tabId = $(this).attr('id');
+
+                $('.tabLink').removeClass('active');
+                $('.contentTab').removeClass('active');
+
+                $(this).addClass('active');
+
+                $(`.contentTab[data-tab="${tabId}"]`).addClass('active');
+            });
+
+            $('.contentTab[data-tab="tabOne"]').addClass('active');
+        });
     </script>
-    <script src="./js/rangerPrice.js"></script>
-    <script src="./js/filter.js"></script>
 </body>
 
 </html>

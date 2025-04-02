@@ -178,8 +178,7 @@
 .otpModal .dontReceiveOTP{margin-top: 24px;}
 .otpModal .dontReceiveOTP,
 .otpModal .resendCode{font-size: 14px;}
-/* Register Page Style */
-.registerPage 
+
 @media (min-width:1706.67px) {
     .phone-input-container{height: 70px;}
     .authModal{width: 1000px;height: 88vh;overflow: hidden;}
@@ -270,7 +269,7 @@
 
 }
 @media (max-width:614.4px) {
-    .phone-input-container{padding: 0 10px;height: 40px;}
+    .phone-input-container{padding: 0 10px;height: 45px;}
     .phone-input-container .border-input{height: 27px;}
     .phone-input-container .dropdown-phone-list img, .flag-size{width: 25px;height: 18px;}
     .phone-input-container .dropdown-phone-list p span{font-size: 12px;}
@@ -286,6 +285,165 @@
     .authModal .fontSize18{font-size: 15px;}
     .authModal .fontSize17{font-size: 14px;}
     .phone-input-container input{font-size: 13px;}
+}
+@media (max-width:512px) {
+}
+/* Regsiter Page Style */
+.registerPage {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    width: 100% !important;
+    box-shadow: none;
+    overflow: auto;
+    height: 100%;
+    padding: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+.registerPage .fx-authModal{align-items: normal;}
+.registerPage .fx-authModal .authModal-texts{padding: 50px;}
+.registerPage .fx-authModal .authModal-texts .karootoLogo{margin-bottom: 40px;width: 85%;}
+.registerPage .fx-authModal .authModal-texts .karootoLogo img{width: 100%;height: 100%;}
+.registerPage .fx-authModal .authModal-texts .regsiterWidth{
+    width: 70%;
+    margin: auto;
+}
+.registerPage .fx-authModal form .form-group label{margin-bottom: 8px;}
+.registerPage .fx-authModal .alreadyHaveAccount{
+    margin: 48px auto 0 auto;
+    text-align: center;
+}
+.registerPage .fx-authModal .authModal-image{
+    height: initial;
+    background-image: url(../images/backRegister.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+.registerPage .fx-authModal .authModal-image a{
+    text-decoration: none;
+    gap: 10px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.registerPage .fx-authModal .authModal-image a img{
+    width: 12px;
+    transform: rotate(180deg);
+    justify-content: center;
+}
+.registerPage .fx-authModal .sliderInRegister{width: 100%;}
+.registerPage .fx-authModal .sliderInRegister .slide .slideRegister{
+    width: 95%;
+    height: 100%;
+    max-width: auto;
+}
+.registerPage .fx-authModal .sliderInRegister .slideText{
+    width: 70%;
+    margin: auto;
+}
+.registerPage .fx-authModal .sliderInRegister .slideText h1{
+    line-height: 40px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+/* Style the default state of the dots */
+.registerPage .fx-authModal .slick-dots{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.registerPage .fx-authModal .slick-dots li{
+    list-style: none;
+    opacity: 0.4;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid #6DA117;
+    position: relative;
+    background-color: transparent;
+}
+.registerPage .fx-authModal .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+}
+/* Style the active dot */
+.registerPage .fx-authModal .slick-dots li.slick-active{
+    border: 3px solid #6DA117;
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+}
+.registerPage .fx-authModal .slick-dots li.slick-active button {
+    background-color: #6DA117;
+     position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (min-width:1706.67px) {
+
+}
+@media (min-width:1920px) {
+
+}
+@media (min-width:2048px) {
+
+}
+@media (min-width:2304px) {
+
+}
+@media (min-width:3072px) {
+
+}
+@media (max-width:1396.36px) {
+ .registerPage .fx-authModal .authModal-texts{padding: 40px;}
+}
+@media (max-width:1228.8px) {
+ .registerPage .fx-authModal .authModal-texts{padding: 30px;}
+}
+@media (max-width:1024px) {
+ .registerPage .fx-authModal .authModal-texts{padding: 20px;}
+ .registerPage .fx-authModal .authModal-texts .regsiterWidth{width: 80%;}
+}
+@media (max-width:877.71px) {
+ .registerPage .fx-authModal .authModal-texts .regsiterWidth{width: 90%;}
+ .registerPage .fx-authModal .authModal-texts,
+ .registerPage .fx-authModal .authModal-image{width: 50%;}
+ .registerPage .fx-authModal .authModal-image a img{width: 8px;}
+ .registerPage .fx-authModal .authModal-image a{gap: 6px;}
+}
+@media (max-width:768px) {
+
+}
+@media (max-width:614.4px) {
+    .registerPage .fx-authModal{flex-direction: column;}
+    .registerPage .fx-authModal .authModal-texts,
+    .registerPage .fx-authModal .authModal-image{width: 100% !important;}
+    .registerPage .fx-authModal .authModal-texts{order: 1;}
+    .registerPage .fx-authModal .authModal-image{
+        height: 80vh;
+        justify-content: end;
+        order: 2;
+        padding-bottom: 2rem;
+    }
+    .registerPage .fx-authModal .authModal-image a{top: 24px;left: 24px;}
 }
 @media (max-width:512px) {
 }

@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  $("#lines").click(function () {
-    if ($("#filter").is(":visible")) {
-      $("#filter").animate(
+  $("#btnTabs").click(function () {
+    if ($("#tabsListSide").is(":visible")) {
+      $("#tabsListSide").animate(
         {
           width: "0",
           height: "0",
@@ -13,9 +13,9 @@ $(document).ready(function () {
         }
       );
     } else {
-      $("#filter")
+      $("#tabsListSide")
         .css({
-          display: "block",
+          display: "flex", // Change to flex instead of block
           width: "0",
           height: "0",
           opacity: 0,
@@ -31,8 +31,8 @@ $(document).ready(function () {
     }
   });
 
-  $(".btnCloseFilter").click(function () {
-    $("#filter").animate(
+  $(".btnClose").click(function () {
+    $("#tabsListSide").animate(
       {
         width: "0",
         height: "0",
@@ -46,16 +46,3 @@ $(document).ready(function () {
   });
 });
 ///////////////////////////////////////////
-
-/////////////////////////////////////
-$(document).ready(function () {
-  $(".featureBox img").click(function () {
-    $(this).closest(".featureBox").remove();
-  });
-
-  $(".clearAll").click(function (e) {
-    e.preventDefault();
-    $(".featureBox").remove();
-    $(this).remove();
-  });
-});

@@ -1,11 +1,11 @@
 $(document).ready(function () {
-  $(".btnOutline-black").click(function () {
-    $(".overlay, .boxQuote").fadeIn();
+  $("#reOrder").click(function () {
+    $(".overlay, .returnOrder").fadeIn();
     $("body").css("overflow-y", "hidden");
   });
 
   $(".close-btn, .overlay, #cancel").click(function () {
-    $(".overlay, .boxQuote").fadeOut();
+    $(".overlay, .returnOrder").fadeOut();
     $("body").css("overflow-y", "auto");
   });
 });
