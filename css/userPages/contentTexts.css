@@ -1,0 +1,53 @@
+.contantTexts h2{
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+.contantTexts p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.50);
+    white-space:initial;
+    padding-bottom: 30px;
+    display: block;
+}
+.contantTexts img{margin-bottom: 30px;}
+@media (min-width:1706.67px) {
+ .contantTexts p{font-size: 25px;}
+.contantTexts h2{font-size: 33px;}
+}
+@media (min-width:1920px) {
+ .contantTexts p{font-size: 27px;}
+.contantTexts h2{font-size: 36px;}
+}
+@media (min-width:2048px) {
+
+}
+@media (min-width:2304px) {
+
+}
+@media (min-width:3072px) {
+
+}
+@media (max-width:1396.36px) {
+
+}
+@media (max-width:1228.8px) {
+.contantTexts p{padding-bottom: 20px;font-size: 18px;}
+}
+@media (max-width:1024px) {
+.contantTexts img{margin-bottom: 20px;}
+.contantTexts p{padding-bottom: 20px;font-size: 16px;}
+.contantTexts h2{margin-bottom: 16px; font-size: 24px;}
+}
+@media (max-width:877.71px) {
+.contantTexts h2{margin-bottom: 16px; font-size: 20px;}
+}
+@media (max-width:768px) {
+
+}
+@media (max-width:614.4px) {
+.contantTexts img{margin-bottom: 16px;}
+.contantTexts p{padding-bottom: 16px;font-size: 14px;}
+.contantTexts h2{margin-bottom: 14px;}
+}
+@media (max-width:512px) {
+}

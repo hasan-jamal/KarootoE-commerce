@@ -1,0 +1,28 @@
+.logoutDiv{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.logoutDiv button{width: 208px;}
+@media (min-width:1706.67px) {
+   .logoutDiv button{width: 220px}
+}
+@media (min-width:1920px) {
+   .logoutDiv button{width: 240px}
+}
+@media (max-width:1228.8px) {
+.logoutDiv button{width: 170px;}
+}
+@media (max-width:1024px) {
+.logoutDiv button{width: 130px;}
+}
+@media (max-width:877.71px) {
+ .logoutDiv button{width: 130px;}
+}
+@media (max-width:614.4px) {
+    .fontSize35{font-size: 30px;}
+    .fontSize20{font-size: 18px;}
+    .logoutDiv button{width: max-content;padding: 0 24px;}
+}
+@media (max-width:512px) {
+}

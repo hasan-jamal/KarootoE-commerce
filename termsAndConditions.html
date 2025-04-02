@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/userPages/userPage.css">
-    <link rel="stylesheet" href="./css/userPages/paymentMethods.css">
+    <link rel="stylesheet" href="./css/userPages/contentTexts.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionFeatures.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionTitle.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -689,11 +689,11 @@
         <section class="sectionTitle">
             <div class="sectionTitle-container">
                 <div class="d-flex flex-column align-items-center justify-content-center fx-sectionTitle">
-                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Payment Methods</h1>
+                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Terms and conditions</h1>
                     <div class="d-flex align-items-center justify-content-center fx-LinksTitle">
                         <a href="./index.html" class="font-medium darkGreen2">Home</a>
                         <img src="./images/arrowLinks.svg" alt="arrow">
-                        <a href="./paymentMethods.html" class="font-bold darkGreen2 active">Payment Methods</a>
+                        <a href="./termsAndConditions.html" class="font-bold darkGreen2 active">Terms and conditions</a>
                     </div>
                 </div>
             </div>
@@ -727,22 +727,22 @@
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">Manage Address</span>
                         </button>
                         <button type="button" onclick="window.location.href='paymentMethods.html'"
-                            class="d-flex align-items-center tabButton active">
+                            class="d-flex align-items-center tabButton ">
                             <img src="./images/PaymentMethods-icon.svg" alt="Payment Methods icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">Payment Methods</span>
                         </button>
                         <button type="button" onclick="window.location.href='myWallet.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <img src="./images/MyWallet-icon.svg" alt="My Wallet icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">My Wallet</span>
                         </button>
                         <button type="button" onclick="window.location.href='myCoupons.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <img src="./images/MyCoupons-icon.svg" alt="My Coupons icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">My Coupons</span>
                         </button>
                         <button type="button" onclick="window.location.href='settings.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <img src="./images/Settings-icon.svg" alt="Settings icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">Settings</span>
                         </button>
@@ -757,7 +757,7 @@
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">privacy policy</span>
                         </button>
                         <button type="button" onclick="window.location.href='termsAndConditions.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton active">
                             <img src="./images/TermsAndConditions-icon.svg" alt="Terms and conditions icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">Terms and conditions</span>
                         </button>
@@ -774,218 +774,107 @@
                     </div>
                     <div class="userPage-content">
                         <button class="btnTabs btn-hover" type="button" id="btnTabs">
-                            <span class="fontSize20 font-medium darkGreen2">Payment Methods</span>
+                            <span class="fontSize20 font-medium darkGreen2">Terms and conditions</span>
                             <img src="./images/arrowLeftDark.svg" alt="arrow">
                         </button>
-                        <div class="paymentMethods">
-                            <fieldset>
-                                <div class="radio-item">
-                                    <label for="addCard"
-                                        class="d-flex align-items-center labelRadio justify-content-between">
-                                        <input type="radio" id="addCard" name="payment" value="addCard">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/credit-card-pos.svg" alt="credit card">
-                                            <span
-                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Add
-                                                Card</span>
-                                        </div>
-                                        <div class="buttons d-flex align-items-center">
-                                            <button type="button" class="arrowBtn bg-none"><img
-                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
-                                        </div>
-                                    </label>
-                                    <form class="flex-column gap-formGroup">
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Holder
-                                                    Name
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. Floyd Leuschke" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Number
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.21455......" />
-                                            </div>
-                                        </div>
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Expiry Date
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. 05/26" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">CVV *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.147......" />
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-group d-flex align-items-center">
-                                            <input type="checkbox" class="" id="establish" name="establish">
-                                            <label for="establish" class=" d-block">
-                                                <span class="darkGreen2 fontSize15 style-font">Save
-                                                    Card</span></label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="radio-item">
-                                    <label for="Edahab"
-                                        class="d-flex align-items-center labelRadio justify-content-between">
-                                        <input type="radio" id="Edahab" name="payment" value="Edahab">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/Edahab.svg" alt="Edahab pay">
-                                            <span
-                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Edahab</span>
-                                            <p class="mb-0 colorGrey11 fontSize20 style-font letterSpacing">
-                                                +97256740****</p>
-                                        </div>
-                                        <div class="buttons d-flex align-items-center">
-                                            <button
-                                                class="bg-none lightGreen2 fontSize20 font-medium btn-hover">Edit</button>
-                                            <button
-                                                class="bg-none colorRed fontSize20 font-medium btn-hover">Delete</button>
-                                            <button type="button" class="arrowBtn bg-none"><img
-                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
-                                        </div>
-                                    </label>
-                                    <form class=" flex-column gap-formGroup">
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Holder
-                                                    Name
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. Floyd Leuschke" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Number
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.21455......" />
-                                            </div>
-                                        </div>
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Expiry Date
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. 05/26" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">CVV *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.147......" />
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-group d-flex align-items-center">
-                                            <input type="checkbox" class="" id="establish" name="establish">
-                                            <label for="establish" class=" d-block">
-                                                <span class="darkGreen2 fontSize15 style-font">Save
-                                                    Card</span></label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="radio-item">
-                                    <label for="wAAFIPay"
-                                        class="d-flex align-items-center labelRadio justify-content-between">
-                                        <input type="radio" id="wAAFIPay" name="payment" value="wAAFIPay">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/WAAFIPay.svg" alt="WAAFI Pay">
-                                            <span
-                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">WAAFIPay</span>
-                                        </div>
-                                        <div class="buttons d-flex align-items-center">
-                                            <button type="button" class="arrowBtn bg-none"><img
-                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
-                                        </div>
-                                    </label>
-                                    <form class="flex-column gap-formGroup">
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card
-                                                    Holder
-                                                    Name
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. Floyd Leuschke" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card
-                                                    Number
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.21455......" />
-                                            </div>
-                                        </div>
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Expiry
-                                                    Date
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. 05/26" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">CVV
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.147......" />
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-group d-flex align-items-center">
-                                            <input type="checkbox" class="" id="establish" name="establish">
-                                            <label for="establish" class=" d-block">
-                                                <span class="darkGreen2 fontSize15 style-font">Save
-                                                    Card</span></label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="radio-item">
-                                    <label for="Paypal"
-                                        class="d-flex align-items-center labelRadio justify-content-between">
-                                        <input type="radio" id="Paypal" name="payment" value="Paypal">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/Paypal.svg" alt="Paypal">
-                                            <span
-                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Paypal</span>
-                                        </div>
-                                        <div class="buttons d-flex align-items-center">
-                                            <button type="button" class="arrowBtn bg-none"><img
-                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
-                                        </div>
-                                    </label>
-                                </div>
-                            </fieldset>
+                        <div class="contantTexts">
+                            <h2 class="fontSize25 letterSpacing darkGreen2 text-capitalize  font-bold">Terms and
+                                Conditions</h2>
+                            <p class="mb-0 style-font letterSpacing">
+                                Iaculis euismod a euismod dictum sit dictum arcu, neque. Consequat fusce laoreet
+                                accumsan, vestibulum. Turpis sed eu
+                                tortor massa pellentesque lectus tortor viverra sed. Nulla dignissim quis dolor nunc id
+                                bibendum vel. Dignissim sit sed
+                                viverra rhoncus pulvinar blandit massa. Eu aenean eu est non nibh suscipit pretium,
+                                pellentesque. Dolor vitae, amet,
+                                ornare suspendisse.
+                                Sit ac varius libero egestas ullamcorper lacinia et viverra auctor. Semper lobortis
+                                vitae vitae in malesuada molestie.
+                                Ante elementum massa pretium, sit arcu. Porta blandit tincidunt urna magna.
+                            </p>
+                            <p class="mb-0 style-font letterSpacing">Orci, et ipsum gravida eget risus. Nunc velit quam
+                                pellentesque viverra. Feugiat mi purus ornare vitae aliquet cras
+                                tellus velit sociis. Ut augue tellus sed at. Duis morbi lorem nibh amet, mus urna, purus
+                                velit. Mi condimentum laoreet
+                                sed iaculis nunc vestibulum nunc diam tortor. Pulvinar orci, non lectus nec duis.
+                                Adipiscing vitae augue sed sapien
+                                purus.
+                                Porttitor at eu mi, non enim nunc diam. Vel nisl cursus nam risus morbi ac venenatis
+                                faucibus ac. Enim ullamcorper
+                                nullam in aliquam, curabitur dapibus risus interdum cursus. Arcu et quis egestas
+                                scelerisque tempor, mauris. Dictum amet
+                                odio pellentesque dis euismod diam arcu, pellentesque. Leo sem pellentesque pretium
+                                volutpat quam consequat. Eu nec
+                                consectetur mus consectetur eget. Vitae eu ultrices adipiscing commodo. Interdum vivamus
+                                enim ut diam nisl.</p>
+                            <p class="mb-0 style-font letterSpacing">Lacus dapibus urna blandit turpis pulvinar
+                                adipiscing eu aliquam. Lectus scelerisque arcu
+                                aliquet feugiat velit ut nunc
+                                massa in. Sed sapien ut molestie ipsum. Sed tristique ullamcorper ornare vitae accumsan
+                                malesuada ac facilisis. Posuere
+                                lorem duis adipiscing cras nisl.</p>
+                            <p class="mb-0 style-font letterSpacing">Eget gravida orci congue quis etiam condimentum
+                                mattis. Nibh morbi aliquam et, lectus
+                                rhoncus. Nullam lacus, urna quis
+                                tempus varius. Amet, venenatis, scelerisque dignissim sed. Tellus fermentum.</p>
+                            <h2 class="fontSize25 letterSpacing darkGreen2 text-capitalize  font-bold">Est sem
+                                adipiscing commodo cursus.</h2>
+                            <p class="mb-0 style-font letterSpacing">Sagittis eleifend tincidunt semper eget venenatis
+                                nulla viverra. Pharetra, nascetur sit turpis feugiat vestibulum semper
+                                orci. Lacus pretium in aliquet tristique. Eget mollis nam eu, sem mattis suspendisse ac.
+                                Dictum ultrices dolor
+                                suspendisse donec elit integer.</p>
+                            <h2 class="fontSize25 letterSpacing darkGreen2 text-capitalize  font-bold">Tincidunt</h2>
+                            <p class="mb-0 style-font letterSpacing">Amet, elit fames quis consequat. Vel, mattis tellus
+                                in turpis elementum tellus id vitae. Nibh quis ut bibendum cursus
+                                amet, vitae metus scelerisque quam. Nibh bibendum augue urna, sed nulla ultrices
+                                molestie aenean id. Consequat tortor
+                                vestibulum feugiat vulputate. Ipsum mattis morbi.</p>
+                            <h2 class="fontSize25 letterSpacing darkGreen2 text-capitalize  font-bold">Odio.</h2>
+                            <p class="mb-0 style-font letterSpacing">Tellus consectetur sed et cras nec gravida sit. Ut
+                                euismod egestas amet vel viverra lectus id id arcu. Ultrices in magna
+                                id tincidunt luctus amet. Porttitor pulvinar integer justo, eget amet, vitae aliquam
+                                aliquam. Mi tellus in nisi, augue
+                                nibh faucibus adipiscing vitae orci. Risus urna consequat in pellentesque nec imperdiet
+                                fringilla. Convallis faucibus
+                                egestas urna enim, urna vivamus et. In arcu vitae sed massa. Sed amet eu, neque non urna
+                                a amet id libero. Ut quisque
+                                sed pretium sodales in felis dictumst elit viverra. Sed in quisque risus orci quis urna.
+                                Enim ullamcorper orci amet arcu
+                                turpis.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sectionFeatures">
+        <section class=" sectionFeatures">
             <div class="sectionFeatures-container">
                 <div class="d-flex fx-sectionFeatures">
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/FreeDelivery.svg" alt="Free Delivery icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">Free Delivery</h1>
-                            <p class="mb-0 style-font letterSpacing">Free Delivery for order $30</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">Free Delivery
+                            </h1>
+                            <p class="mb-0 style-font letterSpacing">Free Delivery for order
+                                $30</p>
                         </div>
                     </div>
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/FlexiblePayment.svg" alt="Flexible Payment icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">Flexible Payment</h1>
-                            <p class="mb-0 style-font letterSpacing">Multiple secure payment options</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">Flexible
+                                Payment</h1>
+                            <p class="mb-0 style-font letterSpacing">Multiple secure payment
+                                options</p>
                         </div>
                     </div>
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/24x7Support.svg" alt="24 x 7 Support icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">24x7 Support</h1>
-                            <p class="mb-0 style-font letterSpacing">we support online all days</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">24x7 Support
+                            </h1>
+                            <p class="mb-0 style-font letterSpacing">we support online all
+                                days</p>
                         </div>
                     </div>
                 </div>
@@ -1071,8 +960,8 @@
     <script>AOS.init();</script>
     <!-- Btn Tabs JS -->
     <script src="./js/userPages/btnTabs.js"></script>
-    <!-- Selected Payment Method JS -->
-    <script src="./js/selectedPaymentMethod.js"></script>
+    <script>
+    </script>
 </body>
 
 </html>

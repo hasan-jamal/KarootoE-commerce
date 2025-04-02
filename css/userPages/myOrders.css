@@ -337,4 +337,5 @@
     .returnOrder .form-returnOrder .fx-formGroup .form-group{width: 100%;}
     .returnOrder .fx-buttons button{width: 50%;font-size: 13px;}
     .fxHead h2{font-size: 20px;}
+    .statusFx .delivered{padding: 5px 10px;}
 }

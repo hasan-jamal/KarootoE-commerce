@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/userPages/userPage.css">
-    <link rel="stylesheet" href="./css/userPages/paymentMethods.css">
+    <link rel="stylesheet" href="./css/userPages/contentTexts.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionFeatures.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionTitle.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -689,11 +689,11 @@
         <section class="sectionTitle">
             <div class="sectionTitle-container">
                 <div class="d-flex flex-column align-items-center justify-content-center fx-sectionTitle">
-                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Payment Methods</h1>
+                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Privacy Policy</h1>
                     <div class="d-flex align-items-center justify-content-center fx-LinksTitle">
                         <a href="./index.html" class="font-medium darkGreen2">Home</a>
                         <img src="./images/arrowLinks.svg" alt="arrow">
-                        <a href="./paymentMethods.html" class="font-bold darkGreen2 active">Payment Methods</a>
+                        <a href="./privacyPolicy.html" class="font-bold darkGreen2 active">Privacy Policy</a>
                     </div>
                 </div>
             </div>
@@ -727,22 +727,22 @@
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">Manage Address</span>
                         </button>
                         <button type="button" onclick="window.location.href='paymentMethods.html'"
-                            class="d-flex align-items-center tabButton active">
+                            class="d-flex align-items-center tabButton ">
                             <img src="./images/PaymentMethods-icon.svg" alt="Payment Methods icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">Payment Methods</span>
                         </button>
                         <button type="button" onclick="window.location.href='myWallet.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <img src="./images/MyWallet-icon.svg" alt="My Wallet icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">My Wallet</span>
                         </button>
                         <button type="button" onclick="window.location.href='myCoupons.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <img src="./images/MyCoupons-icon.svg" alt="My Coupons icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">My Coupons</span>
                         </button>
                         <button type="button" onclick="window.location.href='settings.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <img src="./images/Settings-icon.svg" alt="Settings icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">Settings</span>
                         </button>
@@ -752,7 +752,7 @@
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">Help Center</span>
                         </button>
                         <button type="button" onclick="window.location.href='privacyPolicy.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton active">
                             <img src="./images/privacyPolicy-icon.svg" alt="privacy policy icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">privacy policy</span>
                         </button>
@@ -774,218 +774,114 @@
                     </div>
                     <div class="userPage-content">
                         <button class="btnTabs btn-hover" type="button" id="btnTabs">
-                            <span class="fontSize20 font-medium darkGreen2">Payment Methods</span>
+                            <span class="fontSize20 font-medium darkGreen2">Privacy Policy</span>
                             <img src="./images/arrowLeftDark.svg" alt="arrow">
                         </button>
-                        <div class="paymentMethods">
-                            <fieldset>
-                                <div class="radio-item">
-                                    <label for="addCard"
-                                        class="d-flex align-items-center labelRadio justify-content-between">
-                                        <input type="radio" id="addCard" name="payment" value="addCard">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/credit-card-pos.svg" alt="credit card">
-                                            <span
-                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Add
-                                                Card</span>
-                                        </div>
-                                        <div class="buttons d-flex align-items-center">
-                                            <button type="button" class="arrowBtn bg-none"><img
-                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
-                                        </div>
-                                    </label>
-                                    <form class="flex-column gap-formGroup">
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Holder
-                                                    Name
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. Floyd Leuschke" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Number
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.21455......" />
-                                            </div>
-                                        </div>
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Expiry Date
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. 05/26" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">CVV *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.147......" />
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-group d-flex align-items-center">
-                                            <input type="checkbox" class="" id="establish" name="establish">
-                                            <label for="establish" class=" d-block">
-                                                <span class="darkGreen2 fontSize15 style-font">Save
-                                                    Card</span></label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="radio-item">
-                                    <label for="Edahab"
-                                        class="d-flex align-items-center labelRadio justify-content-between">
-                                        <input type="radio" id="Edahab" name="payment" value="Edahab">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/Edahab.svg" alt="Edahab pay">
-                                            <span
-                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Edahab</span>
-                                            <p class="mb-0 colorGrey11 fontSize20 style-font letterSpacing">
-                                                +97256740****</p>
-                                        </div>
-                                        <div class="buttons d-flex align-items-center">
-                                            <button
-                                                class="bg-none lightGreen2 fontSize20 font-medium btn-hover">Edit</button>
-                                            <button
-                                                class="bg-none colorRed fontSize20 font-medium btn-hover">Delete</button>
-                                            <button type="button" class="arrowBtn bg-none"><img
-                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
-                                        </div>
-                                    </label>
-                                    <form class=" flex-column gap-formGroup">
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Holder
-                                                    Name
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. Floyd Leuschke" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Number
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.21455......" />
-                                            </div>
-                                        </div>
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Expiry Date
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. 05/26" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">CVV *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.147......" />
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-group d-flex align-items-center">
-                                            <input type="checkbox" class="" id="establish" name="establish">
-                                            <label for="establish" class=" d-block">
-                                                <span class="darkGreen2 fontSize15 style-font">Save
-                                                    Card</span></label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="radio-item">
-                                    <label for="wAAFIPay"
-                                        class="d-flex align-items-center labelRadio justify-content-between">
-                                        <input type="radio" id="wAAFIPay" name="payment" value="wAAFIPay">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/WAAFIPay.svg" alt="WAAFI Pay">
-                                            <span
-                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">WAAFIPay</span>
-                                        </div>
-                                        <div class="buttons d-flex align-items-center">
-                                            <button type="button" class="arrowBtn bg-none"><img
-                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
-                                        </div>
-                                    </label>
-                                    <form class="flex-column gap-formGroup">
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card
-                                                    Holder
-                                                    Name
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. Floyd Leuschke" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Card
-                                                    Number
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.21455......" />
-                                            </div>
-                                        </div>
-                                        <div class="d-flex fx-formGroups">
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">Expiry
-                                                    Date
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex. 05/26" />
-                                            </div>
-                                            <div class="form-group d-flex flex-column">
-                                                <label for="" class="fontSize18 darkGreen2 style-font">CVV
-                                                    *</label>
-                                                <input type="text" class="fontSize16  style-font"
-                                                    placeholder="Ex.147......" />
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-group d-flex align-items-center">
-                                            <input type="checkbox" class="" id="establish" name="establish">
-                                            <label for="establish" class=" d-block">
-                                                <span class="darkGreen2 fontSize15 style-font">Save
-                                                    Card</span></label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="radio-item">
-                                    <label for="Paypal"
-                                        class="d-flex align-items-center labelRadio justify-content-between">
-                                        <input type="radio" id="Paypal" name="payment" value="Paypal">
-                                        <div class="d-flex align-items-center fxLabel">
-                                            <img src="./images/Paypal.svg" alt="Paypal">
-                                            <span
-                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Paypal</span>
-                                        </div>
-                                        <div class="buttons d-flex align-items-center">
-                                            <button type="button" class="arrowBtn bg-none"><img
-                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
-                                        </div>
-                                    </label>
-                                </div>
-                            </fieldset>
+                        <div class="contantTexts">
+                            <h2 class="fontSize25 letterSpacing darkGreen2 text-capitalize  font-bold">Cancelation
+                                Policy</h2>
+                            <p class="mb-0 style-font letterSpacing">
+                                Deep within the uncharted expanse of the South Pacific, lies an island shrouded in
+                                mystery. Known only as 'Illusion',
+                                this speck of land has captivated explorers and dreamers for centuries. Its name is a
+                                testament to the mirage-like
+                                qualities that seem to distort reality for those who venture near.
+                                Legend speaks of an ancient civilization that once thrived on Illusion, possessing
+                                knowledge and technology far beyond
+                                their time. They are said to have harnessed the power of the island's unique energy
+                                field to create a society of
+                                unparalleled harmony and prosperity. However, a cataclysmic event, perhaps a volcanic
+                                eruption or a devastating tsunami,
+                                is believed to have brought about their sudden demise.
+                                The island's isolation has ensured that much of its secrets remain buried beneath layers
+                                of time and vegetation. Over
+                                the years, intrepid explorers and treasure hunters have risked life and limb in search
+                                of the lost city, lured by tales
+                                of untold riches and artifacts of unimaginable power. Yet, despite numerous expeditions,
+                                none have returned with
+                                concrete evidence of the civilization's existence.
+                                One such explorer, Dr. Evelyn Carter, a renowned archaeologist with a penchant for the
+                                obscure, became obsessed with
+                                Illusion. After years of meticulous research and preparation, she assembled a team of
+                                experts to embark on an expedition
+                                to the island. Among them was Dr. Benjamin Thorne, a geologist with a deep understanding
+                                of the island's unique
+                                geological formations, and Anya Petrova, a linguist with a keen interest in ancient
+                                languages.
+                                As they approached the island, strange phenomena began to occur. Compasses spun wildly,
+                                electronic equipment
+                                malfunctioned, and the very air seemed to shimmer and distort. The island's energy field
+                                was clearly having a profound
+                                effect on their senses. Despite these ominous signs, the team pressed on, determined to
+                                unravel the island's mysteries.
+                                Upon reaching the island's shores, they discovered ruins that hinted at the grandeur of
+                                the lost civilization. Elaborate
+                                stone structures, adorned with intricate carvings and hieroglyphics, emerged from the
+                                jungle. As they ventured deeper
+                                into the ruins, they encountered a series of underground tunnels and chambers, each more
+                                awe-inspiring than the last.
+                                One such chamber held a central crystal, pulsing with an otherworldly light. Dr. Carter
+                                recognized it as the heart of
+                                the island's energy field. As she reached out to touch it, a blinding flash of light
+                                enveloped her. When she regained
+                                consciousness, she found herself standing in a bustling marketplace, surrounded by
+                                people dressed in strange garments.
+                                She had been transported back in time, to the height of the lost civilization.
+                                With the help of a friendly local, Dr. Carter learned that the civilization had indeed
+                                possessed advanced technology,
+                                but had used it wisely and responsibly. They had lived in harmony with nature and had
+                                achieved a level of spiritual
+                                enlightenment that was unparalleled. However, their peaceful existence had been
+                                threatened by a neighboring tribe, who
+                                sought to conquer the island and exploit its resources.
+                                As Dr. Carter explored the city, she realized the full extent of the cataclysm that had
+                                befallen the civilization. A
+                                massive tidal wave had swept over the island, destroying everything in its path. The
+                                survivors had retreated to the
+                                underground tunnels, where they had lived for generations, hoping to one day rebuild
+                                their civilization.
+                                With a heavy heart, Dr. Carter returned to her own time, determined to share her
+                                discovery with the world. She knew that
+                                the story of the lost civilization of Illusion was a cautionary tale, a reminder of the
+                                dangers of unchecked ambition
+                                and the importance of living in harmony with nature.
+                                As for the island itself, it remained shrouded in mystery, a tantalizing enigma that
+                                would continue to captivate the
+                                imagination of explorers and dreamers for generations to come."
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sectionFeatures">
+        <section class=" sectionFeatures">
             <div class="sectionFeatures-container">
                 <div class="d-flex fx-sectionFeatures">
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/FreeDelivery.svg" alt="Free Delivery icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">Free Delivery</h1>
-                            <p class="mb-0 style-font letterSpacing">Free Delivery for order $30</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">Free Delivery
+                            </h1>
+                            <p class="mb-0 style-font letterSpacing">Free Delivery for order
+                                $30</p>
                         </div>
                     </div>
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/FlexiblePayment.svg" alt="Flexible Payment icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">Flexible Payment</h1>
-                            <p class="mb-0 style-font letterSpacing">Multiple secure payment options</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">Flexible
+                                Payment</h1>
+                            <p class="mb-0 style-font letterSpacing">Multiple secure payment
+                                options</p>
                         </div>
                     </div>
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/24x7Support.svg" alt="24 x 7 Support icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">24x7 Support</h1>
-                            <p class="mb-0 style-font letterSpacing">we support online all days</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">24x7 Support
+                            </h1>
+                            <p class="mb-0 style-font letterSpacing">we support online all
+                                days</p>
                         </div>
                     </div>
                 </div>
@@ -1071,8 +967,15 @@
     <script>AOS.init();</script>
     <!-- Btn Tabs JS -->
     <script src="./js/userPages/btnTabs.js"></script>
-    <!-- Selected Payment Method JS -->
-    <script src="./js/selectedPaymentMethod.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let paragraphs = document.querySelectorAll("p");
+
+            paragraphs.forEach((p) => {
+                p.innerHTML = p.innerHTML.replace(/\.\s*/g, ".<br>");
+            });
+        });
+    </script>
 </body>
 
 </html>
