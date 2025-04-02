@@ -71,6 +71,7 @@
 @media (max-width:1024px) {
 .userPage .tabsList .tabButton{height: 55px;gap: 12px;}
 .userPage .tabsList .tabButton img{width: 22px;}
+.userPage{margin: 60px 0;}
 }
 @media (max-width:877.71px) {
     .userPage .tabsList {width: 30%;gap: 12px;}

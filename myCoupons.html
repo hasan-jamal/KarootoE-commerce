@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/userPages/userPage.css">
-    <link rel="stylesheet" href="./css/userPages/myWallet.css">
+    <link rel="stylesheet" href="./css/userPages/myCoupons.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionFeatures.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionTitle.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -689,11 +689,11 @@
         <section class="sectionTitle">
             <div class="sectionTitle-container">
                 <div class="d-flex flex-column align-items-center justify-content-center fx-sectionTitle">
-                    <h1 class="text-center font-bold darkGreen2 text-capitalize">My Wallet</h1>
+                    <h1 class="text-center font-bold darkGreen2 text-capitalize">My Coupons</h1>
                     <div class="d-flex align-items-center justify-content-center fx-LinksTitle">
                         <a href="./index.html" class="font-medium darkGreen2">Home</a>
                         <img src="./images/arrowLinks.svg" alt="arrow">
-                        <a href="./myWallet.html" class="font-bold darkGreen2 active">My Wallet</a>
+                        <a href="./myCoupons.html" class="font-bold darkGreen2 active">My Coupons</a>
                     </div>
                 </div>
             </div>
@@ -732,12 +732,12 @@
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">Payment Methods</span>
                         </button>
                         <button type="button" onclick="window.location.href='myWallet.html'"
-                            class="d-flex align-items-center tabButton active">
+                            class="d-flex align-items-center tabButton ">
                             <img src="./images/MyWallet-icon.svg" alt="My Wallet icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">My Wallet</span>
                         </button>
                         <button type="button" onclick="window.location.href='myCoupons.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton active">
                             <img src="./images/MyCoupons-icon.svg" alt="My Coupons icon">
                             <span class="darkGreen2 style-font fontSize20 text-capitalize">My Coupons</span>
                         </button>
@@ -774,91 +774,62 @@
                     </div>
                     <div class="userPage-content">
                         <button class="btnTabs btn-hover" type="button" id="btnTabs">
-                            <span class="fontSize20 font-medium darkGreen2">My Wallet</span>
+                            <span class="fontSize20 font-medium darkGreen2">My Coupons</span>
                             <img src="./images/arrowLeftDark.svg" alt="arrow">
                         </button>
-                        <div class="myWallet">
-                            <div class="walletBalance">
-                                <div class="d-flex justify-content-between align-items-center fx-walletBalance">
-                                    <div class="walletBalance-part1">
-                                        <span class=" fontSize20 style-font colorGrey12">Wallet balance</span>
-                                        <div class="d-flex">
-                                            <span class="fontSize25 darkGreen5 font-medium opacity8">$</span>
-                                            <h2 class="font-medium fontSize50 darkGreen5">16.000</h2>
-                                        </div>
-                                    </div>
-                                    <div class="walletBalance-part2">
-                                        <button class="btn-hover bg-none copyBackGreen"><img
-                                                src="./images/copyBackGreen.svg" alt="copy Back Green"></button>
-                                    </div>
-                                </div>
-                                <form action="">
-                                    <div class="form-group">
-                                        <label for="" class="text-capitalize  fontSize18 style-font darkGreen2">recharge
-                                            pin
-                                            *</label>
-                                        <div class="boxInput">
-                                            <input type="text" placeholder="22Az33Eddd225">
-                                            <img src="./images/checkGreen.svg" alt="checkGreen icon"
-                                                class="fontSize16 style-font ">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <div class=" d-flex flex-column ">
-                                            <p class="mb-0 darkGreen2 font-medium letterSpacing fontSize12">Money Added
-                                                to Wallet
-                                            </p>
-                                            <span class="colorGrey13 style-font letterSpacing fontSize9">22 September |
-                                                8 :30
-                                                Am</span>
-                                        </div>
-                                        <div class=" d-flex flex-column ">
-                                            <p class="lightGreen2 fontSize15 font-bold letterSpacing">+ $420.00</p>
-                                            <span class="colorGrey13 style-font letterSpacing fontSize9">22 September |
-                                                8 :30
-                                                Am</span>
+                        <div class="myCoupons">
+                            <h2 class="fontSize25 letterSpacing darkGreen2 font-medium">Best offers for you</h2>
+                            <div class="listMyCoupons d-flex flex-column">
+                                <div class="boxCoupon">
+                                    <div class="boxCoupon-texts">
+                                        <h3 class="fontSize20 letterSpacing darkGreen2 font-medium">WELCOME150</h3>
+                                        <p class="mb-0 fontSize12 colorGrey13 letterSpacing style-font">Add items worth
+                                            $5
+                                            more to Cart</p>
+                                        <div class="d-flex fx-boxCoupon">
+                                            <img src="./images/discount-icon.svg" alt="discount icon">
+                                            <span class="fontSize15 letterSpacing darkGreen2 font-medium">Get 50%
+                                                OFF</span>
                                         </div>
                                     </div>
                                     <button
-                                        class="btn-hover h60px btnLinear-gradient fontSize20 letterSpacing colorWhite font-medium">Add
-                                        Money</button>
-                                </form>
+                                        class="w-100 fontSize15 font-bold letterSpacing text-uppercase lightGreen2">Copy
+                                        Code</button>
+                                </div>
+                                <div class="boxCoupon">
+                                    <div class="boxCoupon-texts">
+                                        <h3 class="fontSize20 letterSpacing darkGreen2 font-medium">ARA254A</h3>
+                                        <p class="mb-0 fontSize12 colorGrey13 letterSpacing style-font">Add items worth
+                                            $5
+                                            more to Cart</p>
+                                        <div class="d-flex fx-boxCoupon">
+                                            <img src="./images/discount-icon.svg" alt="discount icon">
+                                            <span class="fontSize15 letterSpacing darkGreen2 font-medium">Up to $12.00
+                                                cashback</span>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="w-100 fontSize15 font-bold letterSpacing text-uppercase lightGreen2">Copy
+                                        Code</button>
+                                </div>
+                                <div class="boxCoupon">
+                                    <div class="boxCoupon-texts">
+                                        <h3 class="fontSize20 letterSpacing darkGreen2 font-medium">ZXA4S</h3>
+                                        <p class="mb-0 fontSize12 colorGrey13 letterSpacing style-font">Add items worth
+                                            $5
+                                            more to Cart</p>
+                                        <div class="d-flex fx-boxCoupon">
+                                            <img src="./images/discount-icon.svg" alt="discount icon">
+                                            <span class="fontSize15 letterSpacing darkGreen2 font-medium">Get 50%
+                                                OFF</span>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="w-100 fontSize15 font-bold letterSpacing text-uppercase lightGreen2">Copy
+                                        Code</button>
+                                </div>
                             </div>
-                            <div class="financialTransactions">
-                                <div class=" transactionBox">
-                                    <h5 class="day fontSize18 darkGreen2 style-font letterSpacing">Today</h5>
-                                    <div class="d-flex flex-column boxInfo">
-                                        <h4 class="fontSize20 darkGreen2 font-medium letterSpacing">Money Added to
-                                            Wallet</h4>
-                                        <p class="mb-0 colorGrey13 letterSpacing style-font">22 September | 8 :30 Am</p>
-                                    </div>
-                                </div>
-                                <div class=" transactionBox">
-                                    <h5 class="day fontSize18 darkGreen2 style-font letterSpacing">Yesterday</h5>
-                                    <div class="d-flex flex-column boxInfo">
-                                        <h4 class="fontSize20 darkGreen2 font-medium letterSpacing">Refund for Order No
-                                            #2024co16</h4>
-                                        <p class="mb-0 colorGrey13 letterSpacing style-font">20 September | 7 :30 Am</p>
-                                    </div>
-                                </div>
-                                <div class=" transactionBox">
-                                    <h5 class="day fontSize18 darkGreen2 style-font letterSpacing">20 September 2024
-                                    </h5>
-                                    <div class="d-flex flex-column boxInfo">
-                                        <h4 class="fontSize20 darkGreen2 font-medium letterSpacing">Order No #2024Fo25
-                                        </h4>
-                                        <p class="mb-0 colorGrey13 letterSpacing style-font">21 September | 8 :30 Am</p>
-                                    </div>
-                                    <div class="d-flex flex-column boxInfo">
-                                        <h4 class="fontSize20 darkGreen2 font-medium letterSpacing">Money Added to
-                                            Wallet</h4>
-                                        <p class="mb-0 colorGrey13 letterSpacing style-font">22 September | 8 :30 Am</p>
-                                    </div>
-                                </div>
-                                <div class=" transactionBox">
 
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

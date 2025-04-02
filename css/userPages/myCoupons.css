@@ -1,0 +1,43 @@
+.myCoupons .listMyCoupons{
+    gap: 20px;
+}
+.myCoupons .boxCoupon .boxCoupon-texts{padding: 10px;}
+.myCoupons h2{
+    margin-bottom: 10px;
+}
+.myCoupons .boxCoupon .fx-boxCoupon{
+    margin-top: 10px;
+    gap: 8px;
+    align-items: center;
+}
+.myCoupons .boxCoupon button{
+    border-radius: 0px 0px 10px 10px;
+    background: #F3F3F3;
+    height: 48px;
+    transition: 0.2s;
+}
+.myCoupons .boxCoupon button:hover{
+    transform: scale(0.98);
+    background-color: #6DA117;
+    color: #F3F3F3;
+}
+@media (min-width:1706.67px) {
+    .myCoupons .boxCoupon button{height: 57px;}
+    .myCoupons .listMyCoupons{gap:42px;}
+}
+@media (min-width:1920px) {
+    .myCoupons .boxCoupon button{height: 65px;}
+    .myCoupons .listMyCoupons{gap:32px;}
+}
+@media (max-width:1024px) {
+.myCoupons .boxCoupon button{height: 42px;}
+}
+@media (max-width:877.71px) {
+.myCoupons .boxCoupon button{height: 38px;}
+}
+@media (max-width:614.4px) {
+    .fontSize15{font-size: 13px;}
+    .fontSize20{font-size: 16px;}
+    .fontSize25{font-size: 20px;}
+    .myCoupons .listMyCoupons{gap: 16px;}
+}
