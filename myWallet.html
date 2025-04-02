@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/userPages/userPage.css">
-    <link rel="stylesheet" href="./css/userPages/paymentMethods.css">
+    <link rel="stylesheet" href="./css/userPages/myWallet.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionFeatures.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionTitle.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -779,11 +779,11 @@
                         </button>
                         <div class="myWallet">
                             <div class="walletBalance">
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center fx-walletBalance">
                                     <div class="walletBalance-part1">
                                         <span class=" fontSize20 style-font colorGrey12">Wallet balance</span>
                                         <div class="d-flex">
-                                            <span class="fontSize25 darkGreen5 font-medium">$</span>
+                                            <span class="fontSize25 darkGreen5 font-medium opacity8">$</span>
                                             <h2 class="font-medium fontSize50 darkGreen5">16.000</h2>
                                         </div>
                                     </div>
@@ -792,34 +792,106 @@
                                                 src="./images/copyBackGreen.svg" alt="copy Back Green"></button>
                                     </div>
                                 </div>
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="" class="text-capitalize  fontSize18 style-font darkGreen2">recharge
+                                            pin
+                                            *</label>
+                                        <div class="boxInput">
+                                            <input type="text" placeholder="22Az33Eddd225">
+                                            <img src="./images/checkGreen.svg" alt="checkGreen icon"
+                                                class="fontSize16 style-font ">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class=" d-flex flex-column ">
+                                            <p class="mb-0 darkGreen2 font-medium letterSpacing fontSize12">Money Added
+                                                to Wallet
+                                            </p>
+                                            <span class="colorGrey13 style-font letterSpacing fontSize9">22 September |
+                                                8 :30
+                                                Am</span>
+                                        </div>
+                                        <div class=" d-flex flex-column ">
+                                            <p class="lightGreen2 fontSize15 font-bold letterSpacing">+ $420.00</p>
+                                            <span class="colorGrey13 style-font letterSpacing fontSize9">22 September |
+                                                8 :30
+                                                Am</span>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn-hover h60px btnLinear-gradient fontSize20 letterSpacing colorWhite font-medium">Add
+                                        Money</button>
+                                </form>
+                            </div>
+                            <div class="financialTransactions">
+                                <div class=" transactionBox">
+                                    <h5 class="day fontSize18 darkGreen2 style-font letterSpacing">Today</h5>
+                                    <div class="d-flex flex-column boxInfo">
+                                        <h4 class="fontSize20 darkGreen2 font-medium letterSpacing">Money Added to
+                                            Wallet</h4>
+                                        <p class="mb-0 colorGrey13 letterSpacing style-font">22 September | 8 :30 Am</p>
+                                    </div>
+                                </div>
+                                <div class=" transactionBox">
+                                    <h5 class="day fontSize18 darkGreen2 style-font letterSpacing">Yesterday</h5>
+                                    <div class="d-flex flex-column boxInfo">
+                                        <h4 class="fontSize20 darkGreen2 font-medium letterSpacing">Refund for Order No
+                                            #2024co16</h4>
+                                        <p class="mb-0 colorGrey13 letterSpacing style-font">20 September | 7 :30 Am</p>
+                                    </div>
+                                </div>
+                                <div class=" transactionBox">
+                                    <h5 class="day fontSize18 darkGreen2 style-font letterSpacing">20 September 2024
+                                    </h5>
+                                    <div class="d-flex flex-column boxInfo">
+                                        <h4 class="fontSize20 darkGreen2 font-medium letterSpacing">Order No #2024Fo25
+                                        </h4>
+                                        <p class="mb-0 colorGrey13 letterSpacing style-font">21 September | 8 :30 Am</p>
+                                    </div>
+                                    <div class="d-flex flex-column boxInfo">
+                                        <h4 class="fontSize20 darkGreen2 font-medium letterSpacing">Money Added to
+                                            Wallet</h4>
+                                        <p class="mb-0 colorGrey13 letterSpacing style-font">22 September | 8 :30 Am</p>
+                                    </div>
+                                </div>
+                                <div class=" transactionBox">
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sectionFeatures">
+        <section class=" sectionFeatures">
             <div class="sectionFeatures-container">
                 <div class="d-flex fx-sectionFeatures">
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/FreeDelivery.svg" alt="Free Delivery icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">Free Delivery</h1>
-                            <p class="mb-0 style-font letterSpacing">Free Delivery for order $30</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">Free Delivery
+                            </h1>
+                            <p class="mb-0 style-font letterSpacing">Free Delivery for order
+                                $30</p>
                         </div>
                     </div>
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/FlexiblePayment.svg" alt="Flexible Payment icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">Flexible Payment</h1>
-                            <p class="mb-0 style-font letterSpacing">Multiple secure payment options</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">Flexible
+                                Payment</h1>
+                            <p class="mb-0 style-font letterSpacing">Multiple secure payment
+                                options</p>
                         </div>
                     </div>
                     <div class="boxFeature d-flex align-items-center">
                         <img src="./images/24x7Support.svg" alt="24 x 7 Support icon">
                         <div class="boxFeature-texts d-flex flex-column">
-                            <h1 class="font-medium darkGreen2 letterSpacing">24x7 Support</h1>
-                            <p class="mb-0 style-font letterSpacing">we support online all days</p>
+                            <h1 class="font-medium darkGreen2 letterSpacing">24x7 Support
+                            </h1>
+                            <p class="mb-0 style-font letterSpacing">we support online all
+                                days</p>
                         </div>
                     </div>
                 </div>

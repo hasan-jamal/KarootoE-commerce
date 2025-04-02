@@ -1,0 +1,78 @@
+.myWallet .walletBalance{
+    border-radius: 10px;
+    background: rgba(109, 161, 23, 0.05);
+    padding: 30px;
+}
+.myWallet .walletBalance .fx-walletBalance{margin-bottom: 30px;}
+.myWallet .walletBalance form .form-group{
+    margin-bottom: 13px;
+}
+.myWallet .walletBalance form .fontSize12{font-size: 12px;}
+.myWallet .walletBalance form .fontSize9{font-size: 9px;}
+.myWallet .walletBalance form .btnLinear-gradient{
+    width: 208px;
+    margin-top: 25px;
+}
+.myWallet .financialTransactions{
+    display: flex;
+    flex-direction: column;
+    gap:20px ;
+    margin-top: 30px;
+}
+.myWallet .transactionBox .boxInfo{
+    border-radius: 10px;
+    border: 1.5px solid #EDEDED;
+    background: #F9F9F9;
+    padding: 12px 18px;
+}
+.myWallet .transactionBox{
+    display: flex;
+    flex-direction: column;
+    gap:15px ;
+}
+.myWallet .boxInfo p{
+    font-size: 13px;
+}
+@media (min-width:1706.67px) {
+  .myWallet .walletBalance form .btnLinear-gradient{width: 215px;}
+  .myWallet .walletBalance form .fontSize12{font-size: 14px}
+.myWallet .walletBalance form .fontSize9{font-size: 12px;}
+}
+@media (min-width:1920px) {
+  .myWallet .walletBalance form .btnLinear-gradient{width: 230px;}
+  .myWallet .walletBalance form .fontSize12{font-size: 17px}
+  .myWallet .walletBalance form .fontSize9{font-size: 15px;}
+}
+@media (min-width:2048px) {
+
+}
+@media (min-width:2304px) {
+
+}
+@media (min-width:3072px) {
+
+}
+@media (max-width:1396.36px) {
+
+}
+@media (max-width:1228.8px) {
+    .myWallet .walletBalance{padding: 25px;}
+}
+@media (max-width:1024px) {
+    .myWallet .walletBalance form .btnLinear-gradient{width: 150px;}
+}
+@media (max-width:877.71px) {
+    .myWallet .walletBalance{padding: 20px;}
+    .myWallet .walletBalance form .btnLinear-gradient{width: 130px;}
+    .myWallet .transactionBox{gap: 12px;}
+    .myWallet .financialTransactions{gap: 16px;}
+}
+@media (max-width:768px) {
+
+}
+@media (max-width:614.4px) {
+    .myWallet .walletBalance{padding: 16px;}
+    .myWallet.fontSize15{font-size: 13px;}
+}
+@media (max-width:512px) {
+}
