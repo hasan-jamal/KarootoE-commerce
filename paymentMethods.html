@@ -10,12 +10,14 @@
     <!---Style CSS-->
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/userPages/userPage.css">
+    <link rel="stylesheet" href="./css/userPages/paymentMethods.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionFeatures.css">
     <link rel="stylesheet" href="./css/sectionsPublic/sectionTitle.css">
-    <link rel="stylesheet" href="./css/trackYourOrder.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -687,156 +689,282 @@
         <section class="sectionTitle">
             <div class="sectionTitle-container">
                 <div class="d-flex flex-column align-items-center justify-content-center fx-sectionTitle">
-                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Track Your Order</h1>
+                    <h1 class="text-center font-bold darkGreen2 text-capitalize">Payment Methods</h1>
                     <div class="d-flex align-items-center justify-content-center fx-LinksTitle">
                         <a href="./index.html" class="font-medium darkGreen2">Home</a>
                         <img src="./images/arrowLinks.svg" alt="arrow">
-                        <a href="./trackYourOrder.html" class="font-bold darkGreen2">Track Your Order</a>
+                        <a href="./paymentMethods.html" class="font-bold darkGreen2 active">Payment Methods</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="trackYourOrder">
-            <div class="orderStatus">
-                <h3 class="font-bold fontSize25 darkGreen2 letterSpacing">Order Status</h3>
-                <p class="style-font colorGrey6 fontSize20 letterSpacing mb-0">Order ID : #Foodas255AZ</p>
-                <div class="box-orderStatus d-flex">
-                    <div class="step-orderStatus d-flex flex-column align-items-center justify-content-center ">
-                        <img src="./images/Confirmed.svg" alt="Confirmed icon">
-                        <h3 class="lightGreen2 font-bold fontSize20 text-center">Confirmed</h3>
-                        <span class="style-font fontSize15 letterSpacing darkGreen2 text-center">30 July 2025</span>
-                        <span class="style-font fontSize15 letterSpacing darkGreen2 text-center">10:20 Am</span>
+        <section class="userPage">
+            <div class="userPage-container px-110">
+                <div class="d-flex fx-userPage">
+                    <div class="tabsList flex-column" id="tabsListSide">
+                        <div class=" justify-content-between fxHead-btns">
+                            <h2 class="font-medium letterSpacing fontSize25">Tabs Options</h2>
+                            <button class="btnClose"><img src="./images/cancel-icon.svg" alt="cancel icon"></button>
+                        </div>
+                        <button type="button" onclick="window.location.href='profile.html'"
+                            class="d-flex align-items-center tabButton ">
+                            <img src="./images/MyAccount-icon.svg" alt="My Account icon">
+                            <span class="darkGreen2 style-font fontSize20">My account</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='myOrders.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/MyOrders-icon.svg" alt="My Orders icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">My Orders</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='customOrders.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/CustomOrders-icon.svg" alt="Custom Orders icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Custom Orders</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='manageAddress.html'"
+                            class="d-flex align-items-center tabButton ">
+                            <img src="./images/ManageAddress-icon.svg" alt="Manage Address icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Manage Address</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='paymentMethods.html'"
+                            class="d-flex align-items-center tabButton active">
+                            <img src="./images/PaymentMethods-icon.svg" alt="Payment Methods icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Payment Methods</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='myWallet.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/MyWallet-icon.svg" alt="My Wallet icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">My Wallet</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='myCoupons.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/MyCoupons-icon.svg" alt="My Coupons icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">My Coupons</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='settings.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/Settings-icon.svg" alt="Settings icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Settings</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='helpCenter.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/HelpCenter-icon.svg" alt="Help Center icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Help Center</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='privacyPolicy.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/privacyPolicy-icon.svg" alt="privacy policy icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">privacy policy</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='termsAndConditions.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/TermsAndConditions-icon.svg" alt="Terms and conditions icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Terms and conditions</span>
+                        </button>
+                        <button type="button" onclick="window.location.href='aboutUs.html'"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/aboutUs-icon.svg" alt="about us icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">about us</span>
+                        </button>
+                        <button type="button" onclick="window.location.href=''"
+                            class="d-flex align-items-center tabButton">
+                            <img src="./images/Logout-icon.svg" alt="Logout icon">
+                            <span class="darkGreen2 style-font fontSize20 text-capitalize">Logout</span>
+                        </button>
                     </div>
-                    <img src="./images/lineStepActive.svg" alt="line Step Active" class="lineStep">
-                    <div class="step-orderStatus d-flex flex-column align-items-center justify-content-center">
-                        <img src="./images/pickingItems.svg" alt="picking Items icon">
-                        <h3 class="lightGreen2 font-bold fontSize20 text-center">Picking Items</h3>
-                        <span class="style-font fontSize15 letterSpacing darkGreen2 text-center">30 July 2025</span>
-                        <span class="style-font fontSize15 letterSpacing darkGreen2 text-center">10:30 Am</span>
-                    </div>
-                    <img src="./images/lineStep.svg" alt="line Step" class="lineStep">
-                    <div class="step-orderStatus d-flex flex-column align-items-center justify-content-center">
-                        <img src="./images/OutForDelivery.svg" alt="Out For Delivery icon">
-                        <h3 class="style-font fontSize20 text-center colorGrey7">Out for delivery</h3>
-                        <span class="style-font fontSize15 letterSpacing colorGrey7 text-center ">Expected</span>
-                        <span class="style-font fontSize15 letterSpacing colorGrey7 text-center">30 July 2025</span>
-                    </div>
-                    <img src="./images/lineStep.svg" alt="line Step" class="lineStep">
-                    <div class="step-orderStatus d-flex flex-column align-items-center justify-content-center">
-                        <img src="./images/Delivered.svg" alt="Delivered icon">
-                        <h3 class="colorGrey7 style-font fontSize20 text-center">Delivered</h3>
-                        <span class="style-font fontSize15 letterSpacing colorGrey7 text-center">Expected</span>
-                        <span class="style-font fontSize15 letterSpacing colorGrey7 text-center">30 July 2025</span>
-                    </div>
-                </div>
-            </div>
-            <div class="deliveryDetails">
-                <h3 class="font-bold fontSize25 darkGreen2 letterSpacing">Delivery details</h3>
-                <div class="box-deliveryDetails">
-                    <div class="userDetails d-flex align-items-center">
-                        <img src="./images/userImage.svg" alt="userImage" class="userImage">
-                        <div class="userDetailsInfo d-flex flex-column">
-                            <h2 class=" fontSize20 darkGreen3 font-bold">James Williams</h2>
-                            <div class="d-flex fx-reviewsOrder align-items-center">
-                                <p class="colorGrey8 mb-0 font-bold">Reviews Order</p>
-                                <div class="d-flex align-items-center fxRate">
-                                    <img src="./images/star.svg" alt="star icon">
-                                    <span class="darkGreen3 font-bold">4.8</span>
+                    <div class="userPage-content">
+                        <button class="btnTabs btn-hover" type="button" id="btnTabs">
+                            <span class="fontSize20 font-medium darkGreen2">Payment Methods</span>
+                            <img src="./images/arrowLeftDark.svg" alt="arrow">
+                        </button>
+                        <div class="paymentMethods">
+                            <fieldset>
+                                <div class="radio-item">
+                                    <label for="addCard"
+                                        class="d-flex align-items-center labelRadio justify-content-between">
+                                        <input type="radio" id="addCard" name="payment" value="addCard">
+                                        <div class="d-flex align-items-center fxLabel">
+                                            <img src="./images/credit-card-pos.svg" alt="credit card">
+                                            <span
+                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Add
+                                                Card</span>
+                                        </div>
+                                        <div class="buttons d-flex align-items-center">
+                                            <button type="button" class="arrowBtn bg-none"><img
+                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
+                                        </div>
+                                    </label>
+                                    <form class="flex-column gap-formGroup">
+                                        <div class="d-flex fx-formGroups">
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Holder
+                                                    Name
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex. Floyd Leuschke" />
+                                            </div>
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Number
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex.21455......" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex fx-formGroups">
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">Expiry Date
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex. 05/26" />
+                                            </div>
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">CVV *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex.147......" />
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-group d-flex align-items-center">
+                                            <input type="checkbox" class="" id="establish" name="establish">
+                                            <label for="establish" class=" d-block">
+                                                <span class="darkGreen2 fontSize15 style-font">Save
+                                                    Card</span></label>
+                                        </div>
+                                    </form>
                                 </div>
-                            </div>
-
+                                <div class="radio-item">
+                                    <label for="Edahab"
+                                        class="d-flex align-items-center labelRadio justify-content-between">
+                                        <input type="radio" id="Edahab" name="payment" value="Edahab">
+                                        <div class="d-flex align-items-center fxLabel">
+                                            <img src="./images/Edahab.svg" alt="Edahab pay">
+                                            <span
+                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Edahab</span>
+                                            <p class="mb-0 colorGrey11 fontSize20 style-font letterSpacing">
+                                                +97256740****</p>
+                                        </div>
+                                        <div class="buttons d-flex align-items-center">
+                                            <button
+                                                class="bg-none lightGreen2 fontSize20 font-medium btn-hover">Edit</button>
+                                            <button
+                                                class="bg-none colorRed fontSize20 font-medium btn-hover">Delete</button>
+                                            <button type="button" class="arrowBtn bg-none"><img
+                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
+                                        </div>
+                                    </label>
+                                    <form class=" flex-column gap-formGroup">
+                                        <div class="d-flex fx-formGroups">
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Holder
+                                                    Name
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex. Floyd Leuschke" />
+                                            </div>
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">Card Number
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex.21455......" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex fx-formGroups">
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">Expiry Date
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex. 05/26" />
+                                            </div>
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">CVV *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex.147......" />
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-group d-flex align-items-center">
+                                            <input type="checkbox" class="" id="establish" name="establish">
+                                            <label for="establish" class=" d-block">
+                                                <span class="darkGreen2 fontSize15 style-font">Save
+                                                    Card</span></label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="radio-item">
+                                    <label for="wAAFIPay"
+                                        class="d-flex align-items-center labelRadio justify-content-between">
+                                        <input type="radio" id="wAAFIPay" name="payment" value="wAAFIPay">
+                                        <div class="d-flex align-items-center fxLabel">
+                                            <img src="./images/WAAFIPay.svg" alt="WAAFI Pay">
+                                            <span
+                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">WAAFIPay</span>
+                                        </div>
+                                        <div class="buttons d-flex align-items-center">
+                                            <button type="button" class="arrowBtn bg-none"><img
+                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
+                                        </div>
+                                    </label>
+                                    <form class="flex-column gap-formGroup">
+                                        <div class="d-flex fx-formGroups">
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">Card
+                                                    Holder
+                                                    Name
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex. Floyd Leuschke" />
+                                            </div>
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">Card
+                                                    Number
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex.21455......" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex fx-formGroups">
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">Expiry
+                                                    Date
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex. 05/26" />
+                                            </div>
+                                            <div class="form-group d-flex flex-column">
+                                                <label for="" class="fontSize18 darkGreen2 style-font">CVV
+                                                    *</label>
+                                                <input type="text" class="fontSize16  style-font"
+                                                    placeholder="Ex.147......" />
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-group d-flex align-items-center">
+                                            <input type="checkbox" class="" id="establish" name="establish">
+                                            <label for="establish" class=" d-block">
+                                                <span class="darkGreen2 fontSize15 style-font">Save
+                                                    Card</span></label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="radio-item">
+                                    <label for="Paypal"
+                                        class="d-flex align-items-center labelRadio justify-content-between">
+                                        <input type="radio" id="Paypal" name="payment" value="Paypal">
+                                        <div class="d-flex align-items-center fxLabel">
+                                            <img src="./images/Paypal.svg" alt="Paypal">
+                                            <span
+                                                class="font-medium fontSize20 darkGreen2 letterSpacing text-capitalize">Paypal</span>
+                                        </div>
+                                        <div class="buttons d-flex align-items-center">
+                                            <button type="button" class="arrowBtn bg-none"><img
+                                                    src="./images/Arrow-DownSort.svg" alt=""></button>
+                                        </div>
+                                    </label>
+                                </div>
+                            </fieldset>
                         </div>
-                    </div>
-                    <div class="userInformation d-flex">
-                        <div class="d-flex flex-column col-userInformation">
-                            <p class="font-medium darkGreen2 mb-0 fontSize18 opacity8">Age</p>
-                            <h4 class="font-bold darkGreen2 mb-0 fontSize18 ">30 years old</h4>
-                        </div>
-                        <div class="border"></div>
-                        <div class="d-flex flex-column col-userInformation">
-                            <p class="font-medium darkGreen2 mb-0 fontSize18 opacity8">Nationality</p>
-                            <h4 class="font-bold darkGreen2 mb-0 fontSize18 ">Somali</h4>
-                        </div>
-                        <div class="border"></div>
-                        <div class="d-flex flex-column col-userInformation">
-                            <p class="font-medium darkGreen2 mb-0 fontSize18 opacity8">Phone number</p>
-                            <h4 class="font-bold darkGreen2 mb-0 fontSize18 ">+972567408830</h4>
-                        </div>
-                        <div class="border"></div>
-                        <div class="d-flex flex-column col-userInformation">
-                            <p class="font-medium darkGreen2 mb-0 fontSize18 opacity8">Address</p>
-                            <h4 class="font-bold darkGreen2 mb-0 fontSize18 ">Mogadishu</h4>
-                        </div>
-                        <div class="border"></div>
-                        <div class="d-flex flex-column col-userInformation">
-                            <p class="font-medium darkGreen2 mb-0 fontSize18 opacity8">Experience</p>
-                            <h4 class="font-bold darkGreen2 mb-0 fontSize18 ">5 years in delivery</h4>
-                        </div>
-                        <div class="border"></div>
-                        <div class="d-flex flex-column col-userInformation">
-                            <p class="font-medium darkGreen2 mb-0 fontSize18 opacity8">Driver's license</p>
-                            <h4 class="font-bold darkGreen2 mb-0 fontSize18 ">Valid</h4>
-                        </div>
-                        <div class="border"></div>
-                        <div class="d-flex flex-column col-userInformation">
-                            <p class="font-medium darkGreen2 mb-0 fontSize18 opacity8">Vehicle</p>
-                            <h4 class="font-bold darkGreen2 mb-0 fontSize18 ">Toyota Corolla, 2020</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="boxProducts">
-                <h2 class="darkGreen2 letterSpacing fontSize20 style-font ">Products</h2>
-                <div class="productsColumns d-flex flex-column">
-                    <div class="fxDetails">
-                        <div class="d-flex fx-productImage">
-                            <div class="productImage"><img src="./images/product3.svg" alt="product image">
-                            </div>
-                            <div class="d-flex flex-column justify-content-center text-start">
-                                <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
-                                <span class="font-medium fontSize15 colorGrey3">2 Kg | 2 Qty</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border"></div>
-                    <div class="fxDetails">
-                        <div class="d-flex fx-productImage">
-                            <div class="productImage"><img src="./images/product3.svg" alt="product image">
-                            </div>
-                            <div class="d-flex flex-column justify-content-center text-start">
-                                <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
-                                <span class="font-medium fontSize15 colorGrey3">1 Kg | 1 Qty</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="border"></div>
-                    <div class="fxDetails">
-                        <div class="d-flex fx-productImage">
-                            <div class="productImage"><img src="./images/product3.svg" alt="product image">
-                            </div>
-                            <div class="d-flex flex-column justify-content-center text-start">
-                                <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
-                                <span class="font-medium fontSize15 colorGrey3">1 Kg | 1 Qty</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border"></div>
-                    <div class="fxDetails">
-                        <div class="d-flex fx-productImage">
-                            <div class="productImage"><img src="./images/product3.svg" alt="product image">
-                            </div>
-                            <div class="d-flex flex-column justify-content-center text-start">
-                                <h3 class="fontSize20 darkGreen2 font-medium letterSpacing">Mango</h3>
-                                <span class="font-medium fontSize15 colorGrey3">1 Kg | 1 Qty</span>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </section>
-        <section class=" sectionFeatures">
+        <section class="sectionFeatures">
             <div class="sectionFeatures-container">
                 <div class="d-flex fx-sectionFeatures">
                     <div class="boxFeature d-flex align-items-center">
@@ -941,8 +1069,10 @@
     <!-- AOS Animation JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
-    <!-- // Plus Minus Weight -->
-    <script src="./js/plusMinusWeight.js"></script>
+    <!-- Btn Tabs JS -->
+    <script src="./js/userPages/btnTabs.js"></script>
+    <!-- Selected Payment Method JS -->
+    <script src="./js/selectedPaymentMethod.js"></script>
 </body>
 
 </html>

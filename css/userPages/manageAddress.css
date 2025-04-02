@@ -1,0 +1,114 @@
+/* Manage Address Page */
+.manageAddress form .form__group{
+    margin-bottom: 30px;
+    gap: 20px;
+    border-radius: 20px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    padding: 16px 24px;
+}
+.manageAddress .form__radio-input {
+	 display: none;
+}
+.manageAddress .form__radio-label {
+	 display: flex;
+	 justify-content: start;
+	 align-items: center;
+	 gap: 10px;
+	 cursor: pointer;
+}
+.manageAddress .form__radio-label h4{line-height: 25px;}
+ .manageAddress .form__radio-button {
+	 height: 18px;
+	 width: 18px;
+	 border: 1px solid #6DA117;
+     background: #fff;
+	 border-radius: 50%;
+	 display: inline-block;
+	 position: relative;
+	 transform: translateY(-2px);
+}
+.manageAddress .form__radio-button::after {
+	 content: "";
+	 display: block;
+	 height:8px;
+	 width:8px;
+	 position: absolute;
+	 border-radius: 50%;
+	 top: 50%;
+	 left: 50%;
+	 transition: opacity 0.1s;
+	 transform: translate(-50%, -50%);
+	 background-color: #6DA117;
+	 opacity: 0;
+}
+.manageAddress  .form__radio-input:checked + .form__radio-label .form__radio-button{
+    border: 1px solid #6DA117;
+     background: #B9D28F;
+}
+.manageAddress  .form__radio-input:checked + .form__radio-label .form__radio-button:after {
+	 opacity: 1;
+}
+.manageAddress .locationRow{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E1E0E0;
+}
+.manageAddress .locationRow:last-child{border-bottom: 0;padding-bottom: 0;}
+/* manage Address Style */
+.manageAddressStyle{
+    width: 488px;
+}
+.manageAddressStyle .listInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.manageAddressStyle .listInputs .btnLinear-gradient{
+    margin-top: 10px;
+    width: 208px;
+    border-radius: 20px;
+
+}
+@media (min-width:1706.67px) {
+    .manageAddressStyle{width: 530px;}
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 220px;}
+}
+@media (min-width:1920px) {
+    .manageAddressStyle{width: 550px;}
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 240px;}
+    .manageAddress .form__radio-button{
+        width: 24px;
+        height: 24px;
+    }
+    .manageAddress .form__radio-button::after{width: 12px;height: 12px;}
+    .manageAddress .form__radio-label h4{line-height: 30px;}
+}
+@media (max-width:1396.36px) {
+}
+@media (max-width:1228.8px) {
+}
+@media (max-width:614.4px) {
+}
+@media (min-width:1706.67px) {
+
+}
+@media (min-width:1920px) {
+}
+@media (min-width:2048px) {
+}
+@media (max-width:1228.8px) {
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 170px;}
+}
+@media (max-width:1024px) {
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 140px;}
+}
+@media (max-width:877.71px) {
+    .manageAddressStyle{width: 90%;}
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 120px;}
+}
+@media (max-width:614.4px) {
+    .manageAddressStyle{width: 100%;}
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 140px;margin-top: 0px;}
+     .manageAddress .form__radio-label .fontSize20{font-size: 15px;}
+    .manageAddress form .form__group{padding: 16px;}
+}

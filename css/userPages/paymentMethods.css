@@ -1,0 +1,80 @@
+/* Payments Methods Style  */
+.paymentMethods .radio-item{
+    flex: 1 1 calc(100% - 18px);
+    max-width: calc(100% - 0px);
+    background: #FBFBFB;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #EDEDED;
+     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.radio-item.selected {
+    border: 2px solid, #6DA117;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.paymentMethods fieldset{gap: 20px;display: flex;flex-direction: column;}
+.paymentMethods fieldset .labelRadio{
+    padding: 15px 20px;   
+    border-radius: 10px;
+}
+.paymentMethods fieldset .labelRadio input{padding: 0;display: none;}
+.paymentMethods fieldset .labelRadio .fxLabel{gap: 20px;}
+.paymentMethods .radio-item .gap-formGroup{
+    gap: 20px;
+    border-top: 1px solid #E9E9E9;
+    padding: 20px;
+    display: none;
+}
+.paymentMethods .radio-item .fx-formGroups{gap: 30px;}
+.paymentMethods .radio-item .fx-formGroups .form-group{
+    width: 50%;
+    margin-bottom: 0;
+}
+.paymentMethods .radio-item .fx-formGroups .form-group label{padding: 0;}
+ .paymentMethods fieldset .checkbox-group{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+ .paymentMethods .checkbox-group label span{padding: 0 6px;}
+  .paymentMethods .buttons .arrowBtn img{width: 25px;}
+@media (min-width:1706.67px) {
+    .paymentMethods fieldset .labelRadio {padding: 20px 25px;}
+}
+@media (min-width:1920px) {
+    .paymentMethods fieldset .labelRadio {padding: 25px 30px;}
+    .paymentMethods .radio-item .gap-formGroup{padding: 30px;gap: 30px;}
+}
+@media (min-width:2048px) { 
+}
+@media (min-width:2304px) {
+}
+@media (min-width:3072px) {
+}
+@media (min-width:4608px) {
+}
+@media (min-width:6144px) {
+
+}
+@media (max-width:1228.8px) {
+  .paymentMethods .buttons .arrowBtn img{width: 22px;}
+}
+@media (max-width:1024px) {
+    .paymentMethods fieldset .labelRadio .fxLabel img{width: 30px;}
+    .paymentMethods fieldset .labelRadio .fxLabel{gap: 15px;}
+    .paymentMethods fieldset .labelRadio{padding: 10px 15px;}
+    .paymentMethods .radio-item .gap-formGroup{padding: 15px;}
+}
+@media (max-width:877.71px) {
+   .paymentMethods .buttons .arrowBtn img{width: 20px;}
+}
+@media (max-width:768px) {
+}
+@media (max-width:614.4px) {
+    .paymentMethods .radio-item .fx-formGroups .form-group{width: 100%;}
+    .paymentMethods .radio-item .fx-formGroups{flex-direction: column;gap: 16px;}
+    .paymentMethods fieldset .labelRadio{padding: 10px;}
+    .paymentMethods fieldset .labelRadio .fxLabel{gap: 12px;}
+    .paymentMethods fieldset .labelRadio .fxLabel img{width: 25px;}
+    .paymentMethods fieldset{gap: 12px;}
+    }

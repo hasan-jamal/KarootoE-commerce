@@ -50,10 +50,10 @@
 .btnTabs:hover{transform: scale(0.98);}
 .fxHead-btns{display: none;}
 @media (min-width:1706.67px) {
-    .userPage .tabsList .tabButton{height: 84px;}
+    .userPage .tabsList .tabButton{height: 78px;}
 }
 @media (min-width:1920px) {
-    .userPage .tabsList .tabButton{height: 94px;padding: 0 30px;}
+    .userPage .tabsList .tabButton{height: 84px;padding: 0 30px;}
     .userPage .tabsList .tabButton img{width: 36px;}
     .userPage .tabsList .tabButton span{font-size: 26px;}
 }
