@@ -23,7 +23,7 @@
     width: 81px;
     height: 81px;   
 }
-.sectionOne .sliderCategories h2{white-space: pre;}
+.sectionOne .sliderCategories .styleSlide h2{font-size: 23px;}
 .sectionOne .sliderCategories p{
     color: #5A5555;
     font-size: 12px;
@@ -31,14 +31,17 @@
 @media (max-width:1228.8px) {
     .sectionOne .sliderCategories .slideImage img{width: 70px;height: 70px;}
     .sectionOne .sliderCategories p{font-size: 10px;}
+    .sectionOne .sliderCategories .styleSlide h2{font-size: 20px;}
 }
 @media (max-width:1024px) {
     .sectionOne .sliderCategories .slide{padding: 0 8px;}
     .sectionOne .sliderCategories .slideImage img{width: 50px;height: 50px;}
+     .sectionOne .sliderCategories .styleSlide h2{font-size: 18px;}
 }
 @media (max-width:614.4px) {
     .sectionOne .sliderCategories .slide{padding: 0 5px;}
     .sectionOne .sliderCategories .styleSlide{padding: 10px 8px;}
+    .sectionOne .sliderCategories .styleSlide h2{font-size: 15px;}
 }
 @media (max-width:512px) {
 }
