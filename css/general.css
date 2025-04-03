@@ -656,7 +656,7 @@ border-radius: 0px 0px 10px 10px;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
-.btnClose{
+.btnClose,.btnCloseFilter{
     display: none;
     align-items: center;
     justify-content: center;
@@ -666,9 +666,21 @@ border-radius: 0px 0px 10px 10px;
     height: 30px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.btnClose img{width: 17px;}
+.btnClose img,
+.btnCloseFilter img{width: 17px;}
+.btnProcessing{
+  color: #CE0704;
+  border-radius: 11px;
+  background: rgba(206, 7, 4, 0.10);
+  padding:5px 10px;
+}
+.btnProblemSolved{
+  color: #006C07;
+  border-radius: 11px;
+  background: rgba(0, 108, 7, 0.10);
+  padding:5px 10px;
+}
 .buttons{gap: 29px;}
-
 @media (min-width:1706.67px) {
   fieldset .labelRadio{padding: 15px 20px;}
   fieldset .fxDetailsProduct .fxPrice h3{font-size: 16px;}
@@ -781,13 +793,14 @@ border-radius: 0px 0px 10px 10px;
   input[type="text"], input[type="email"],
   .boxInput{padding: 0 10px;height: 45px;}
   .orderSummary .totalAmount{margin-top: 10px;margin-bottom: 0 !important;}
-  .btnClose{display: flex;}
+  .btnClose,.btnCloseFilter{display: flex;}
   .DivList input,.DivList span,
   input[type="text"], input[type="email"]{font-size: 13px;}
   .list-boxInput{padding: 10px;}
   .buttons{gap: 12px;}
   .buttons .buttons{font-size: 15px }
    .checkbox-group label span{font-size: 14px !important;}
+   .btnProcessing,.btnProblemSolved{font-size: 13px;}
 }
 @media (max-width:512px) {
 }
