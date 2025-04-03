@@ -118,7 +118,7 @@ $(document).ready(function () {
 
       boxLink.addEventListener("mouseleave", (event) => {
         hideList();
-        hideCoverBack();
+        // hideCoverBack();
       });
     }
   });

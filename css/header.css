@@ -483,7 +483,7 @@ header .header-part3 .linksHeader .listlinks::-webkit-scrollbar-thumb
 }
 header .header-part3 .linksHeader .listlinks .listFromPart{
   width: max-content;
-  gap: 24px;
+  gap: 16px;
 }
 header .header-part3 .linksHeader .listlinks .listFromPart h5{
   font-size: 21px;
@@ -623,6 +623,7 @@ header .header-part3 .linksHeader .listlinks .listFromPart a{
 @media (max-width:614.40px) {
   header{display: none;}
   .navbar{display: block;}
+  .navbar .navbarPart2 .divLocation .itemLocation{padding: 5px;}
 }
 @media (max-width:512px) {
 }

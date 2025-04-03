@@ -236,6 +236,25 @@
 .filterProducts .divBanner .dotsCategoriesDetails div.active {
     background: #6DA117;
 }
+.btnFilterList {
+    display: none;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid var(--Color5, #d1d1d1);
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.btnFilterList span {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.btnFilterList img {
+    transform: rotate(90deg);
+}
 @media (min-width:1706.67px) {
     .filter .checkbox-group label,
     .filterPrice .field input{font-size: 19px;}
@@ -329,6 +348,7 @@
   .filterProducts .divBanner .dotsCategoriesDetails div{height: 8px;width: 8px;}
   .filterProducts .divBanner .dotsCategoriesDetails{gap: 4px;left: 0.5rem;top: 0.5rem;}
   .filterProducts .divBanner{margin-top: 20px;}
+  .btnFilterList {display: flex;}
 }
 @media (max-width:512px) {
 }

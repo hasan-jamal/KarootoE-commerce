@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#lines").click(function () {
+  $("#btnFilterList").click(function () {
     if ($("#filter").is(":visible")) {
       $("#filter").animate(
         {
