@@ -1,0 +1,58 @@
+.sectionProblem{margin: 100px 0 170px 0;}
+.sectionProblem .fxSectionProblem img{margin-bottom: 50px;width: 40%;}
+.sectionProblem .fxSectionProblem h1{font-size: 57px;}
+.sectionProblem .fxSectionProblem .oops{font-size: 64px;margin-bottom: 50px;}
+.sectionProblem .fxSectionProblem .imgOops{width: 50%;}
+.sectionProblem .fxSectionProblem p{width: 24%;margin-bottom:50px ;}
+.sectionProblem .fxSectionProblem button{width: 24%;}
+@media (min-width:1706.67px) {
+.sectionProblem .fxSectionProblem h1{font-size: 65px;}
+.sectionProblem .fxSectionProblem .oops{font-size: 74px;}
+}
+@media (min-width:1920px) {
+.sectionProblem .fxSectionProblem h1{font-size: 75px;}
+.sectionProblem .fxSectionProblem .oops{font-size: 84px;}
+}
+@media (min-width:2048px) {
+
+}
+@media (min-width:2304px) {
+
+}
+@media (min-width:3072px) {
+
+}
+@media (max-width:1396.36px) {
+.sectionProblem .fxSectionProblem h1{font-size: 53px;}
+.sectionProblem .fxSectionProblem .oops{font-size: 56px;margin-bottom: 40px;}
+}
+@media (max-width:1228.8px) {
+.sectionProblem .fxSectionProblem p{width:30%;margin-bottom:30px; font-size: 16px;}
+.sectionProblem .fxSectionProblem button{width: 30%;}
+.sectionProblem .fxSectionProblem h1{font-size: 48px;}
+.sectionProblem .fxSectionProblem .oops{font-size: 48px;margin-bottom: 30px;}
+.sectionProblem .fxSectionProblem .imgOops{width: 60%;}
+}
+@media (max-width:1024px) {
+.sectionProblem .fxSectionProblem p,.sectionProblem .fxSectionProblem button{width:35%}
+.sectionProblem .fxSectionProblem h1,
+.sectionProblem .fxSectionProblem .oops{font-size: 40px;}
+}
+@media (max-width:877.71px) {
+    .sectionProblem .fxSectionProblem p{margin-bottom: 30px;}
+    .sectionProblem .fxSectionProblem p,.sectionProblem .fxSectionProblem button{width:45%}
+    .sectionProblem .fxSectionProblem button {height: 50px;border-radius: 15px;}
+    .sectionProblem{margin: 60px 0;}
+    .sectionProblem .fxSectionProblem .imgOops{width: 70%;}
+}
+@media (max-width:768px) {
+}
+@media (max-width:614.4px) {
+    .sectionProblem .fxSectionProblem p,.sectionProblem .fxSectionProblem img{margin-bottom: 24px;}
+    .sectionProblem .fxSectionProblem p,.sectionProblem .fxSectionProblem button{width:70%}
+    .sectionProblem .fxSectionProblem button {height: 40px;}
+    .sectionProblem .fxSectionProblem img,
+    .sectionProblem .fxSectionProblem .imgOops{width: 85%;}
+}
+@media (max-width:512px) {
+}
