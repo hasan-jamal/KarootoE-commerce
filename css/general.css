@@ -683,6 +683,11 @@ border-radius: 0px 0px 10px 10px;
   padding:5px 10px;
 }
 .buttons{gap: 29px;}
+iframe{
+  width: 100%;
+  height: 26.938rem;
+  border-radius: 15px;
+}
 @media (min-width:1706.67px) {
   fieldset .labelRadio{padding: 15px 20px;}
   fieldset .fxDetailsProduct .fxPrice h3{font-size: 16px;}
@@ -699,6 +704,7 @@ border-radius: 0px 0px 10px 10px;
   table th{font-size: 24px;}
   input[type="text"], input[type="email"],
   .boxInput{height: 70px;}
+  iframe{height: 28.938rem;}
 }
 @media (min-width:1920px) {
   fieldset input[type="radio"]:checked:after,
@@ -726,6 +732,7 @@ border-radius: 0px 0px 10px 10px;
   .pagination button{font-size: 20px;padding: 5px 15px;}
     input[type="text"], input[type="email"],
     .boxInput{height: 70px;}
+    iframe{height: 30.938rem;}
 }
 @media (min-width:2048px) {
   .checkbox-group input:checked + label:after{left: 10px;}
@@ -759,6 +766,7 @@ border-radius: 0px 0px 10px 10px;
   table tr .weightCol button img{width: 25px;height: 25px;}
   input[type="text"], input[type="email"],
   .boxInput{height: 45px;}
+    iframe{height: 23.938rem;}
 }
 @media (max-width:1024px) {
   fieldset{margin-top: 8px;}
@@ -768,6 +776,7 @@ border-radius: 0px 0px 10px 10px;
   input[type="text"], input[type="email"],
   .boxInput{height: 40px;}
    .buttons{gap: 20px;}
+    iframe{height: 20.938rem;}
 }
 @media (max-width:877.71px) {
   .btnLinear-gradient{padding: 7px 20px;gap: 10px;}
@@ -776,6 +785,7 @@ border-radius: 0px 0px 10px 10px;
   fieldset .fxDetailsProduct .fxPrice h3{font-size: 12px;}
   fieldset .fxDetailsProduct .fxPrice span{font-size: 9px;}
   fieldset .fxDetailsProduct p{font-size: 10px;line-height: 15px;}
+    iframe{height: 18.938rem;}
 }
 @media (max-width:768px) {
   .btnLinear-gradient{padding: 5px 16px;gap: 8px;}
@@ -803,6 +813,7 @@ border-radius: 0px 0px 10px 10px;
   .buttons .buttons{font-size: 15px }
    .checkbox-group label span{font-size: 14px !important;}
    .btnProcessing,.btnProblemSolved{font-size: 13px;}
+    iframe{height: 16.938rem;}
 }
 @media (max-width:512px) {
 }

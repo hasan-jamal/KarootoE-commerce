@@ -71,19 +71,22 @@
     width: 95%;
     background: #E1E0E0;
 }
+.trackYourOrder .boxIfram{margin: 24px 0;}
+.trackYourOrder .boxIfram h3{margin-bottom: 20px;}
 @media (min-width:1706.67px) {
-  .deliveryDetails .box-deliveryDetails .userInformation,
-  .orderStatus .box-orderStatus{justify-content: space-between;}
-  .orderStatus .box-orderStatus{padding: 40px 60px;}
-  .deliveryDetails .box-deliveryDetails{padding:20px 40px;}
-  .trackYourOrder .boxProducts{padding: 30px;}
-      .deliveryDetails .userDetails .fx-reviewsOrder p{font-size: 15px;}
+    .deliveryDetails .box-deliveryDetails .userInformation,
+    .orderStatus .box-orderStatus{justify-content: space-between;}
+    .orderStatus .box-orderStatus{padding: 40px 60px;}
+    .deliveryDetails .box-deliveryDetails{padding:20px 40px;}
+    .trackYourOrder .boxProducts{padding: 30px;}
+    .deliveryDetails .userDetails .fx-reviewsOrder p{font-size: 15px;}
     .deliveryDetails .userDetails .fx-reviewsOrder .fxRate span{font-size: 14px;}
     .deliveryDetails .userDetails .fx-reviewsOrder{margin-top: 6px;}
 }
 @media (min-width:1920px) {
     .deliveryDetails .userDetails .userImage {width: 90px;height: 90px;}
-
+    .trackYourOrder .boxIfram{margin: 30px 0;}
+    .trackYourOrder .boxIfram h3{margin-bottom: 28px;}
     .orderStatus .box-orderStatus .step-orderStatus img{width: 70px;}
     .trackYourOrder .boxProducts .productsColumns{gap: 20px;}
 }
@@ -100,6 +103,8 @@
     .orderStatus .box-orderStatus .step-orderStatus img{margin-bottom: 10px;}
     .orderStatus .box-orderStatus .lineStep{width: 90px;}
     .orderStatus .box-orderStatus .step-orderStatus img{width: 50px;}
+    .trackYourOrder .boxIfram{margin: 20px 0;}
+    .trackYourOrder .boxIfram h3{margin-bottom: 16px;}
 }
 @media (max-width:1024px) {
     .trackYourOrder{width: 85%;}
@@ -126,4 +131,5 @@
     .trackYourOrder .boxProducts h2{font-size: 15px;}
     .orderStatus .box-orderStatus .lineStep{width: 70px;}
     .orderStatus .box-orderStatus .step-orderStatus img{width: 40px;}
+    .trackYourOrder .boxIfram{margin: 16px 0;}
 }

@@ -58,6 +58,8 @@
 .manageAddressStyle{
     width: 488px;
 }
+.manageAddress h2{margin-bottom: 24px;}
+.manageAddressStyle .listInputs{margin-top: 24px;}
 .manageAddressStyle .listInputs{
     display: flex;
     flex-direction: column;
@@ -82,6 +84,8 @@
     }
     .manageAddress .form__radio-button::after{width: 12px;height: 12px;}
     .manageAddress .form__radio-label h4{line-height: 30px;}
+    .manageAddress h2{margin-bottom: 30px;}
+    .manageAddressStyle .listInputs{margin-top: 30px;}
 }
 @media (max-width:1396.36px) {
 }
@@ -101,14 +105,19 @@
 }
 @media (max-width:1024px) {
     .manageAddressStyle .listInputs .btnLinear-gradient{width: 140px;}
+    .manageAddress h2{margin-bottom: 20px;}
+    .manageAddressStyle .listInputs{margin-top: 20px;}
 }
 @media (max-width:877.71px) {
     .manageAddressStyle{width: 90%;}
     .manageAddressStyle .listInputs .btnLinear-gradient{width: 120px;}
+
 }
 @media (max-width:614.4px) {
     .manageAddressStyle{width: 100%;}
     .manageAddressStyle .listInputs .btnLinear-gradient{width: 140px;margin-top: 0px;}
      .manageAddress .form__radio-label .fontSize20{font-size: 15px;}
     .manageAddress form .form__group{padding: 16px;}
+    .manageAddress h2{margin-bottom: 16px;}
+    .manageAddressStyle .listInputs{margin-top: 16px;}
 }
