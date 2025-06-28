@@ -789,11 +789,91 @@
                 </div>
             </div>
         </section>
-        <section class="sectionBanner">
+        <section class="sectionSliderBanner px-110">
+            <div class="sectionSliderBanner-container " style="background-image: url(../images/backBanner.png);">
+                <div class="dots-SliderBanner dots-SliderBanner1 d-flex align-items-center">
+                    <div class="active"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="SliderBanner SliderBanner1">
+                    <div class="slide">
+                        <div class="d-flex fx-SliderBanner justify-content-between">
+                            <div class="texts">
+                                <span class="font-medium spanOne">Weekly Deals</span>
+                                <h1 class="font-medium numberLines colorWhite">Unbeatable Offers : Your <br><span>Weekly
+                                        Grocery
+                                        Specials</span>
+                                </h1>
+                                <p class="style-font numberLines colorWhite">Dolores aut reiciendis. Repellat facere
+                                    beatae dolorem
+                                    exercitationem rerum rerum
+                                    commodi. Eum
+                                    beatae modi delectus
+                                    occaecati eum itaque eligendi quis. Omnis ut dicta expedita a.</p>
+                                <button
+                                    class="d-flex align-items-center justify-content-between btnLinear-gradient"><span
+                                        class=" font-bold colorWhite fontSize18">Shop
+                                        Now</span><img src=" ./images/arrow-left.svg" alt="arrow-left">
+                                </button>
+                            </div>
+                            <div class="image"><img src="./images/imageBanner1.png" alt="banner"></div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="d-flex fx-SliderBanner justify-content-between">
+                            <div class="texts">
+                                <span class="font-medium spanOne">Weekly Deals</span>
+                                <h1 class="font-medium numberLines colorWhite">Unbeatable Offers : Your <br><span>Weekly
+                                        Grocery
+                                        Specials</span>
+                                </h1>
+                                <p class="style-font numberLines colorWhite">Dolores aut reiciendis. Repellat facere
+                                    beatae dolorem
+                                    exercitationem rerum rerum
+                                    commodi. Eum
+                                    beatae modi delectus
+                                    occaecati eum itaque eligendi quis. Omnis ut dicta expedita a.</p>
+                                <button
+                                    class="d-flex align-items-center justify-content-between btnLinear-gradient"><span
+                                        class=" font-bold colorWhite fontSize18">Shop
+                                        Now</span><img src=" ./images/arrow-left.svg" alt="arrow-left">
+                                </button>
+                            </div>
+                            <div class="image"><img src="./images/imageBanner1.png" alt="banner"></div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="d-flex fx-SliderBanner justify-content-between">
+                            <div class="texts">
+                                <span class="font-medium spanOne">Weekly Deals</span>
+                                <h1 class="font-medium numberLines colorWhite">Unbeatable Offers : Your <br><span>Weekly
+                                        Grocery
+                                        Specials</span>
+                                </h1>
+                                <p class="style-font numberLines colorWhite">Dolores aut reiciendis. Repellat facere
+                                    beatae dolorem
+                                    exercitationem rerum rerum
+                                    commodi. Eum
+                                    beatae modi delectus
+                                    occaecati eum itaque eligendi quis. Omnis ut dicta expedita a.</p>
+                                <button
+                                    class="d-flex align-items-center justify-content-between btnLinear-gradient"><span
+                                        class=" font-bold colorWhite fontSize18">Shop
+                                        Now</span><img src=" ./images/arrow-left.svg" alt="arrow-left">
+                                </button>
+                            </div>
+                            <div class="image"><img src="./images/imageBanner1.png" alt="banner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="sectionBanner">
             <div class="sectionBanner-container px-110">
                 <img src=" ./images/banner1.png" alt="banner" class="w-100">
             </div>
-        </section>
+        </section> -->
         <section class="sectionProducts">
             <div class="sectionProducts-container px-110">
                 <div class="headStyle d-flex justify-content-between">
@@ -816,7 +896,20 @@
                             <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
                                     src="./images/product1.svg" alt="product image" class="">
                             </div>
-                            <img src="./images/favouriteIcon.svg" alt="favourite Icon" class="favouriteIcon btn-hover">
+                            <div class="toggle-icon" data-toggle="favourite">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 26 26"
+                                    fill="none" class="favouriteIcon icon-outline">
+                                    <path
+                                        d="M20.7735 4.66057C17.9801 2.94712 15.5421 3.63762 14.0775 4.73751C13.4769 5.1885 13.1766 5.41399 13 5.41399C12.8233 5.41399 12.5231 5.1885 11.9225 4.73751C10.4579 3.63762 8.01986 2.94712 5.22648 4.66057C1.56047 6.90931 0.730938 14.328 9.18699 20.5869C10.7976 21.779 11.6029 22.375 13 22.375C14.3971 22.375 15.2024 21.779 16.813 20.5869C25.269 14.328 24.4395 6.90931 20.7735 4.66057Z"
+                                        stroke="#072506" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 26 26"
+                                    fill="#b41518" class="favouriteIcon icon-filled hidden">
+                                    <path
+                                        d="M20.7735 4.66057C17.9801 2.94712 15.5421 3.63762 14.0775 4.73751C13.4769 5.1885 13.1766 5.41399 13 5.41399C12.8233 5.41399 12.5231 5.1885 11.9225 4.73751C10.4579 3.63762 8.01986 2.94712 5.22648 4.66057C1.56047 6.90931 0.730938 14.328 9.18699 20.5869C10.7976 21.779 11.6029 22.375 13 22.375C14.3971 22.375 15.2024 21.779 16.813 20.5869C25.269 14.328 24.4395 6.90931 20.7735 4.66057Z"
+                                        stroke="#b41518" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-between productCard-title">
                             <h2 class="font-medium mb-0 darkGreen2"
@@ -834,10 +927,15 @@
                                     <p class="mb-0 style-font letterSpacing">$ 5.2</p>
                                 </div>
                             </div>
-                            <button class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                            </button>
+                            <div class="d-flex align-items-center fxAddToCart">
+                                <button class="btn-minus">
+                                    <img src="./images/newImages/minProduct.svg" alt="min Product icon">
+                                </button>
+                                <span class="font-medium darkGreen2 quantity">1 Kg</span>
+                                <button class="btn-plus">
+                                    <img src="./images/newImages/plusProduct.svg" alt="plus Product icon">
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="productCard fxGeneral-card">
@@ -846,11 +944,25 @@
                             <div class="productImage" onclick="window.location.href='productsDetails.html'"><img
                                     src="./images/product2.svg" alt="product image" class="">
                             </div>
-                            <img src="./images/favouriteIcon.svg" alt="favourite Icon" class="favouriteIcon btn-hover">
+                            <div class="toggle-icon" data-toggle="favourite">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 26 26"
+                                    fill="none" class="favouriteIcon icon-outline">
+                                    <path
+                                        d="M20.7735 4.66057C17.9801 2.94712 15.5421 3.63762 14.0775 4.73751C13.4769 5.1885 13.1766 5.41399 13 5.41399C12.8233 5.41399 12.5231 5.1885 11.9225 4.73751C10.4579 3.63762 8.01986 2.94712 5.22648 4.66057C1.56047 6.90931 0.730938 14.328 9.18699 20.5869C10.7976 21.779 11.6029 22.375 13 22.375C14.3971 22.375 15.2024 21.779 16.813 20.5869C25.269 14.328 24.4395 6.90931 20.7735 4.66057Z"
+                                        stroke="#072506" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 26 26"
+                                    fill="#b41518" class="favouriteIcon icon-filled hidden">
+                                    <path
+                                        d="M20.7735 4.66057C17.9801 2.94712 15.5421 3.63762 14.0775 4.73751C13.4769 5.1885 13.1766 5.41399 13 5.41399C12.8233 5.41399 12.5231 5.1885 11.9225 4.73751C10.4579 3.63762 8.01986 2.94712 5.22648 4.66057C1.56047 6.90931 0.730938 14.328 9.18699 20.5869C10.7976 21.779 11.6029 22.375 13 22.375C14.3971 22.375 15.2024 21.779 16.813 20.5869C25.269 14.328 24.4395 6.90931 20.7735 4.66057Z"
+                                        stroke="#b41518" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-between productCard-title">
                             <h2 class="font-medium mb-0 darkGreen2"
-                                onclick="window.location.href='productsDetails.html'">Orange</h2>
+                                onclick="window.location.href='productsDetails.html'">
+                                Orange</h2>
                             <div class=" d-flex align-items-center fxRate-card">
                                 <img src="./images/star.svg" alt="star">
                                 <span class="font-medium darkGreen2 letterSpacing">4.5</span>
@@ -863,10 +975,15 @@
                                     <h2 class=" font-bold lightGreen2 letterSpacing mb-0">$3.99</h2>
                                 </div>
                             </div>
-                            <button class="d-flex align-items-center justify-content-center btnShoppingCart btn-hover">
-                                <img src=" ./images/shoppingCart-Green.svg" alt="shopping cart icon">
-                                <span class="font-medium letterSpacing lightGreen2 mb-0">Add to Cart</span>
-                            </button>
+                            <div class="d-flex align-items-center fxAddToCart">
+                                <button class="btn-minus">
+                                    <img src="./images/newImages/minProduct.svg" alt="min Product icon">
+                                </button>
+                                <span class="font-medium darkGreen2 quantity">1 Kg</span>
+                                <button class="btn-plus">
+                                    <img src="./images/newImages/plusProduct.svg" alt="plus Product icon">
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="productCard fxGeneral-card">
@@ -879,7 +996,8 @@
                         </div>
                         <div class="d-flex align-items-center justify-content-between productCard-title">
                             <h2 class="font-medium mb-0 darkGreen2"
-                                onclick="window.location.href='productsDetails.html'">Mango</h2>
+                                onclick="window.location.href='productsDetails.html'">
+                                Mango</h2>
                             <div class=" d-flex align-items-center fxRate-card">
                                 <img src="./images/star.svg" alt="star">
                                 <span class="font-medium darkGreen2 letterSpacing">4.5</span>
@@ -909,7 +1027,8 @@
                         </div>
                         <div class="d-flex align-items-center justify-content-between productCard-title">
                             <h2 class="font-medium mb-0 darkGreen2"
-                                onclick="window.location.href='productsDetails.html'">Strawberry</h2>
+                                onclick="window.location.href='productsDetails.html'">
+                                Strawberry</h2>
                             <div class=" d-flex align-items-center fxRate-card">
                                 <img src="./images/star.svg" alt="star">
                                 <span class="font-medium darkGreen2 letterSpacing">4.5</span>
@@ -938,7 +1057,8 @@
                         </div>
                         <div class="d-flex align-items-center justify-content-between productCard-title">
                             <h2 class="font-medium mb-0 darkGreen2"
-                                onclick="window.location.href='productsDetails.html'">Strawberry</h2>
+                                onclick="window.location.href='productsDetails.html'">
+                                Strawberry</h2>
                             <div class=" d-flex align-items-center fxRate-card">
                                 <img src="./images/star.svg" alt="star">
                                 <span class="font-medium darkGreen2 letterSpacing">4.5</span>
@@ -967,7 +1087,8 @@
                         </div>
                         <div class="d-flex align-items-center justify-content-between productCard-title">
                             <h2 class="font-medium mb-0 darkGreen2"
-                                onclick="window.location.href='productsDetails.html'">onion</h2>
+                                onclick="window.location.href='productsDetails.html'">
+                                onion</h2>
                             <div class=" d-flex align-items-center fxRate-card">
                                 <img src="./images/star.svg" alt="star">
                                 <span class="font-medium darkGreen2 letterSpacing">4.5</span>
@@ -996,7 +1117,8 @@
                         </div>
                         <div class="d-flex align-items-center justify-content-between productCard-title">
                             <h2 class="font-medium mb-0 darkGreen2"
-                                onclick="window.location.href='productsDetails.html'">Pepper</h2>
+                                onclick="window.location.href='productsDetails.html'">
+                                Pepper</h2>
                             <div class=" d-flex align-items-center fxRate-card">
                                 <img src="./images/star.svg" alt="star">
                                 <span class="font-medium darkGreen2 letterSpacing">4.5</span>
@@ -1025,7 +1147,8 @@
                         </div>
                         <div class="d-flex align-items-center justify-content-between productCard-title">
                             <h2 class="font-medium mb-0 darkGreen2"
-                                onclick="window.location.href='productsDetails.html'">Lemon</h2>
+                                onclick="window.location.href='productsDetails.html'">
+                                Lemon</h2>
                             <div class=" d-flex align-items-center fxRate-card">
                                 <img src="./images/star.svg" alt="star">
                                 <span class="font-medium darkGreen2 letterSpacing">4.5</span>
@@ -1054,12 +1177,12 @@
         </section>
         <section class="sectionSliderBanner px-110">
             <div class="sectionSliderBanner-container " style="background-image: url(../images/backBanner.png);">
-                <div class="dots-SliderBanner dots-SliderBanner1 d-flex align-items-center">
+                <div class="dots-SliderBanner dots-SliderBanner3  d-flex align-items-center">
                     <div class="active"></div>
                     <div></div>
                     <div></div>
                 </div>
-                <div class="SliderBanner SliderBanner1">
+                <div class="SliderBanner SliderBanner3">
                     <div class="slide">
                         <div class="d-flex fx-SliderBanner justify-content-between">
                             <div class="texts">
@@ -1532,12 +1655,12 @@
         </section>
         <section class="sectionSliderBanner px-110">
             <div class="sectionSliderBanner-container" style="background-image: url(../images/backBanner2.png);">
-                <div class="dots-SliderBanner d-flex align-items-center">
+                <div class="dots-SliderBanner dots-SliderBanner2 d-flex align-items-center">
                     <div class="active"></div>
                     <div></div>
                     <div></div>
                 </div>
-                <div class="SliderBanner">
+                <div class="SliderBanner SliderBanner2">
                     <div class="slide">
                         <div class="d-flex fx-SliderBanner justify-content-between">
                             <div class="texts">
@@ -2020,6 +2143,44 @@
     <script src="./js/modals/otpModal.js"></script>
     <!-- Dropdown Phone Js -->
     <script src="./js/dropdowns/dropdownPhone.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.fxAddToCart').each(function () {
+                let container = $(this);
+                container.find('.btn-plus').click(function () {
+                    let quantitySpan = container.find('.quantity');
+                    let current = parseInt(quantitySpan.text());
+                    current += 1;
+                    quantitySpan.text(current + ' Kg');
+                });
+                container.find('.btn-minus').click(function () {
+                    let quantitySpan = container.find('.quantity');
+                    let current = parseInt(quantitySpan.text());
+                    if (current > 1) {
+                        current -= 1;
+                        quantitySpan.text(current + ' Kg');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('click', function (e) {
+            const toggleContainer = e.target.closest('[data-toggle]');
+
+            if (toggleContainer) {
+                const outline = toggleContainer.querySelector('.icon-outline');
+                const filled = toggleContainer.querySelector('.icon-filled');
+
+                if (outline && filled) {
+                    outline.classList.toggle('hidden');
+                    filled.classList.toggle('hidden');
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

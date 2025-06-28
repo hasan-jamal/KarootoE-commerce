@@ -67,7 +67,6 @@
   padding: 10px;
   transition: .3s;
 }
-.productCard:hover{transform: scale(0.98);}
 .productCard .productCard-imgs{
   position: relative;
   display: flex;
@@ -100,6 +99,9 @@
   top: 1rem;
   padding: 4px;
   cursor: pointer;
+}
+.productCard .productCard-imgs .favouriteIcon.hidden{
+  display: none;
 }
 .productCard .productCard-imgs .productImage{
   margin: auto;
@@ -141,19 +143,36 @@
   padding: 5px 12px;
 }
 .productCard .productCard-Details .btnShoppingCart span{font-size: 10px;}
+.productCard .productCard-Details .fxAddToCart{
+  gap: 8px;
+}
+.productCard .productCard-Details .fxAddToCart button{
+  background: none;
+  display: flex;
+  transition: all 0.3s ease;
+}
+.productCard .productCard-Details .fxAddToCart span{font-size: 14px;}
+.productCard .productCard-Details .fxAddToCart button:hover{
+  transform: scale(0.9);
+}
 @media (min-width:1706.67px) {
   .productCard .productCard-Details .mount{font-size: 17px;}
   .productCard .productCard-Details .fxProduct-price h2{font-size: 22px;}
   .productCard .productCard-Details .fxProduct-price p{font-size: 16px;}
   .productCard .productCard-title h2{font-size: 24px;}
   .productCard .productCard-Details .btnShoppingCart span{font-size: 12px;}
-    .productCard .productCard-imgs span{font-size: 15px;}
+  .productCard .productCard-imgs span{font-size: 15px;}
   .productCard .productCard-title .fxRate-card span{font-size: 14px;}
   .fxProducts{gap: 23px;}
+  .productCard .productCard-Details .fxAddToCart button img{width: 30px;}
+  .productCard .productCard-Details .fxAddToCart span{font-size: 16px;}
   .fxProducts .productCard {flex: 1 1 calc(25% - 23px);max-width: calc(25.35% - 0px);}
   .productCard .productCard-Details .btnShoppingCart{padding: 10px 15px;}
+  .productCard .productCard-imgs .favouriteIcon{width: 40px;height: 40px;}
 }
 @media (min-width:1920px) {
+  .productCard .productCard-Details .fxAddToCart button img{width: 35px;}
+  .productCard .productCard-Details .fxAddToCart span{font-size: 20px;}
   .productCard .productCard-Details .mount{font-size: 19px;}
   .productCard .productCard-Details .fxProduct-price h2{font-size: 25px;}
   .productCard .productCard-Details .fxProduct-price p{font-size: 19px;}
@@ -162,10 +181,13 @@
   .productCard .productCard-imgs span{font-size: 18px;}
   .productCard .productCard-title .fxRate-card span{font-size: 16px;}
   .fxProducts{gap: 25px;}
+  .productCard .productCard-imgs .favouriteIcon{width: 45px;height: 45px;}
   .fxProducts .productCard {flex: 1 1 calc(25% - 25px);}
    .productCard .productCard-Details .btnShoppingCart{padding: 12px 17px;}
 }
 @media (min-width:2048px) {
+  .productCard .productCard-Details .fxAddToCart button img{width: 40px;}
+  .productCard .productCard-Details .fxAddToCart span{font-size: 23px;}
   .productCard .productCard-Details .mount{font-size: 23px;}
   .productCard .productCard-Details .fxProduct-price h2{font-size: 28px;}
   .productCard .productCard-Details .fxProduct-price p{font-size: 20px;}
@@ -189,11 +211,21 @@
   .productCard .productCard-Details .mount{font-size: 13px;}
   .productCard .productCard-Details .fxProduct-price p{font-size: 12px;}
   .productCard .productCard-imgs{height: 200px;padding: 22px 30px 13px 30px;}
-  .productCard .productCard-imgs .favouriteIcon{top: 0.5rem;r: 0.5rem;width: 30px;}
+  .productCard .productCard-imgs .favouriteIcon{
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 35px;
+    height: 35px;
+  }
   .productCard .productCard-imgs span{font-size: 11px;padding: 3px 8px;}
+  .productCard .productCard-Details .fxAddToCart button img{width: 20px;}
+  .fxProducts{gap: 1rem;}
+}
+@media (max-width:1024px) {
+  .fxProducts{gap: 0px;}
 }
 @media (max-width:877.71px) {
-  .fxProducts{gap: 20px;}
+  .fxProducts{gap: 8px;}
   .fxProducts .productCard{
     flex: 1 1 calc(33.3% - 20px);
     max-width: calc(33.3% - 0px);
@@ -211,6 +243,7 @@
     flex: 1 1 calc(50% - 10px);
     max-width: calc(50% - 0px);
   }
+  .productCard .productCard-Details .fxAddToCart button img{width: 25px;}
    .productCard .productCard-imgs{height: 100%;padding: 25px 30px 25px 30px;}
    .productCard .productCard-imgs .productImage img{height: 170px;}
 }

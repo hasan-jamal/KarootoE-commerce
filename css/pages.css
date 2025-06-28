@@ -117,7 +117,7 @@
 .shoppingCart .shoppingCart-part1 .form-group .fxBox-input span{
     color: rgba(7, 37, 6, 0.40);
 }
-.shoppingCart .shoppingCart-part1 .checkbox-group{
+.shoppingCart .shoppingCart-part1 .checkbox-group.styleHide{
     padding-bottom: 30px;
     border-bottom: 1px solid #E5E5E5; 
     margin-bottom: 20px;
@@ -126,7 +126,7 @@
 .shoppingCart .shoppingCart-part1 .checkbox-group input{width: 17px;height: 17px;}
 .shoppingCart .about-ShoppingCart {
     justify-content: space-between;gap: 16px;
-    align-items: center;
+    align-items: center;        
     margin-top: 24px;
 }
 .shoppingCart .shoppingCart-part1 .checkbox-group input:checked + label:after{top: 3px;}
@@ -526,7 +526,6 @@
     .boxQuote{height:73vh;width: 1200px;}
     .salesCenters .form__radio-button{width: 28px;height: 28px;}
     .salesCenters .form__radio-button::after{width: 13px;height: 13px;}
-
 }
 @media (min-width:3072px) {
     .boxQuote{height:55vh;width: 1300px;}
@@ -648,4 +647,32 @@
     .salesCenters .form__radio-label{width: auto;}
     .salesCenters .form__radio-label h4{font-size: 14px;margin-bottom: 0;}
     .salesCenters .exactAddress span{font-size: 12px;}
+}
+.fxMonthSchedule{
+    gap:15px;
+    margin: 20px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E5E5E5; 
+    margin-bottom: 20px;
+    display: none;
+}
+.fxMonthSchedule button{
+    color: #5A5555;
+    display: flex;
+    width: 107px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: #F4F4F4;
+    height: 32px;
+}
+.fxMonthSchedule button.active{
+    background: #6DA117;
+    font-weight: 700;
+    font-family: 'Dubai Bold';
+    color: #fff;
+}
+@media (max-width:614.4px) {
+    .fxMonthSchedule{margin-top: 12px;padding-bottom: 1rem;}
 }

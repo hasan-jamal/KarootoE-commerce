@@ -80,27 +80,77 @@ $(document).ready(function () {
 //  End Slider 1
 // StartSlider 2
 $(document).ready(function () {
-  $(".SliderBanner").slick({
+  $(".SliderBanner1").slick({
     dots: false,
-    appendDots: $(".dots-SliderBanner"),
+    appendDots: $(".dots-SliderBanner1"),
     customPaging: function (slider, i) {
       return "<div></div>";
     },
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
   });
 
-  $(".SliderBanner").on("afterChange", function (event, slick, currentSlide) {
-    $(".dots-SliderBanner div").removeClass("active");
-    $(".dots-SliderBanner div").eq(currentSlide).addClass("active");
+  $(".SliderBanner1").on("afterChange", function (event, slick, currentSlide) {
+    $(".dots-SliderBanner1 div").removeClass("active");
+    $(".dots-SliderBanner1 div").eq(currentSlide).addClass("active");
   });
 
   $(".dots-SliderBanner div").first().addClass("active");
+});
+//  End Slider 2
+// StartSlider 2
+$(document).ready(function () {
+  $(".SliderBanner2").slick({
+    dots: false,
+    appendDots: $(".dots-SliderBanner2"),
+    customPaging: function (slider, i) {
+      return "<div></div>";
+    },
+    arrows: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+
+  $(".SliderBanner2").on("afterChange", function (event, slick, currentSlide) {
+    $(".dots-SliderBanner2 div").removeClass("active");
+    $(".dots-SliderBanner2 div").eq(currentSlide).addClass("active");
+  });
+
+  $(".dots-SliderBanner2 div").first().addClass("active");
+});
+//  End Slider 2
+// StartSlider 2
+$(document).ready(function () {
+  $(".SliderBanner3").slick({
+    dots: false,
+    appendDots: $(".dots-SliderBanner3"),
+    customPaging: function (slider, i) {
+      return "<div></div>";
+    },
+    arrows: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+
+  $(".SliderBanner3").on("afterChange", function (event, slick, currentSlide) {
+    $(".dots-SliderBanner3 div").removeClass("active");
+    $(".dots-SliderBanner3 div").eq(currentSlide).addClass("active");
+  });
+
+  $(".dots-SliderBanner3 div").first().addClass("active");
 });
 //  End Slider 2
 // Start slider 3

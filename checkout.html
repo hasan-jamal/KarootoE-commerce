@@ -857,13 +857,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="checkbox-group d-flex align-items-center">
+                        <div class="checkbox-group d-flex flex-column styleHide">
                             <input type="checkbox" class="" id="establish" name="establish">
                             <label for="establish" class=" d-block">
                                 <span class="darkGreen2 fontSize15 style-font">Would you like to
                                     establish a
                                     regular supply of
-                                    products?</span></label>
+                                    products?</span>
+                            </label>
+                            <div class=" fxMonthSchedule">
+                                <button class="active fontSize16 style-font text-capitalize">weekly</button>
+                                <button class="fontSize16 style-font text-capitalize">monthly</button>
+                                <button class="fontSize16 style-font text-capitalize">Stop
+                                    order</button>
+                            </div>
                         </div>
                         <h2 class="font-medium fontSize25 letterSpacing darkGreen2">Order List</h2>
                         <div class="divTable">
@@ -1138,6 +1145,22 @@
     <script src="./js/plusMinusWeight.js"></script>
     <!-- All Dropdowns in Checkout Page One -->
     <script src="./js/dropdowns/checkoutOne.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.fxMonthSchedule').hide();
+            $('#establish').change(function () {
+                if ($(this).is(':checked')) {
+                    $('.fxMonthSchedule').css('display', 'flex');
+                    $('.shoppingCart .shoppingCart-part1 .checkbox-group').removeClass('styleHide');
+
+                } else {
+                    $('.fxMonthSchedule').hide();
+                    $('.shoppingCart .shoppingCart-part1 .checkbox-group').addClass('styleHide');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
