@@ -115,12 +115,12 @@
 };
 .productCard .productCard-title{padding: 15px 0 10px 0;}
 .productCard .productCard-title h2{
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: -0.333px;
 }
 .productCard .productCard-title .fxRate-card{gap: 5px;}
 .productCard .productCard-title .fxRate-card span{font-size: 12px;}
-.productCard .productCard-Details{align-items: center;}
+.productCard .productCard-Details{align-items: center;margin-top: auto;}
 .productCard .productCard-Details .mount{
   color: #989898;
   font-size: 15px;
@@ -155,11 +155,12 @@
 .productCard .productCard-Details .fxAddToCart button:hover{
   transform: scale(0.9);
 }
+.modalProducts .modal-content .productCard .productCard-title{gap: 8px;align-items: start;}
 @media (min-width:1706.67px) {
   .productCard .productCard-Details .mount{font-size: 17px;}
   .productCard .productCard-Details .fxProduct-price h2{font-size: 22px;}
   .productCard .productCard-Details .fxProduct-price p{font-size: 16px;}
-  .productCard .productCard-title h2{font-size: 24px;}
+  .productCard .productCard-title h2{font-size: 22px;}
   .productCard .productCard-Details .btnShoppingCart span{font-size: 12px;}
   .productCard .productCard-imgs span{font-size: 15px;}
   .productCard .productCard-title .fxRate-card span{font-size: 14px;}
@@ -176,7 +177,7 @@
   .productCard .productCard-Details .mount{font-size: 19px;}
   .productCard .productCard-Details .fxProduct-price h2{font-size: 25px;}
   .productCard .productCard-Details .fxProduct-price p{font-size: 19px;}
-  .productCard .productCard-title h2{font-size: 27px;}
+  .productCard .productCard-title h2{font-size: 25px;}
   .productCard .productCard-Details .btnShoppingCart span{font-size: 15px;}
   .productCard .productCard-imgs span{font-size: 18px;}
   .productCard .productCard-title .fxRate-card span{font-size: 16px;}
@@ -191,7 +192,7 @@
   .productCard .productCard-Details .mount{font-size: 23px;}
   .productCard .productCard-Details .fxProduct-price h2{font-size: 28px;}
   .productCard .productCard-Details .fxProduct-price p{font-size: 20px;}
-  .productCard .productCard-title h2{font-size: 30px;}
+  .productCard .productCard-title h2{font-size: 27px;}
   .productCard .productCard-Details .btnShoppingCart span{font-size: 18px;}
   .productCard .productCard-imgs span{font-size: 19px;}
   .productCard .productCard-title .fxRate-card span{font-size: 19px;}
@@ -199,7 +200,7 @@
   .fxProducts .productCard {flex: 1 1 calc(25% - 28px);}
 }
 @media (max-width:1396.36px) {
-  .productCard .productCard-title h2{font-size: 20px;}
+  .productCard .productCard-title h2{font-size: 18px;}
   .productCard .productCard-Details .fxProduct-price h2{font-size: 18px;}
   .productCard .productCard-Details .mount{font-size: 14px;}
   .productCard .productCard-Details .fxProduct-price p{font-size: 13px;}
@@ -243,6 +244,7 @@
     flex: 1 1 calc(50% - 10px);
     max-width: calc(50% - 0px);
   }
+
   .productCard .productCard-Details .fxAddToCart button img{width: 25px;}
    .productCard .productCard-imgs{height: 100%;padding: 25px 30px 25px 30px;}
    .productCard .productCard-imgs .productImage img{height: 170px;}
@@ -253,4 +255,5 @@
     flex: 1 1 calc(100% - 16px);
     max-width: calc(100% - 0px);
   }
+  .productCard{height: 100%;}
 }

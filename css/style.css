@@ -22,6 +22,7 @@
     object-fit: cover;
     width: 81px;
     height: 81px;   
+    border-radius: 50%;
 }
 .sectionOne .sliderCategories .styleSlide h2{font-size: 23px;}
 .sectionOne .sliderCategories p{

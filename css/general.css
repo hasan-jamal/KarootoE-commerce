@@ -201,6 +201,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
 .fontSize35{font-size: 35px;}
 .fontSize36{font-size: 36px;}
 .fontSize50{font-size: 36px;}
+.fontSize30{font-size:30px;}
 .h60px{height: 60px;}
 .w250px{width: 250px;}
 @media (min-width:1706.67px) {
@@ -212,6 +213,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize15{font-size: 17px;}
   .fontSize35{font-size: 37px;}
   .fontSize36{font-size: 39px;}
+  .fontSize30{font-size:32px;}
   .h60px{height: 65px;}
   .w250px{width: 280px;}
   .fontSize50{font-size: 54px;}
@@ -226,6 +228,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize15{font-size: 20px;}
   .fontSize35{font-size: 40px;}
   .fontSize36{font-size: 42px;}
+  .fontSize36{font-size:32px;}
   .h60px{height: 70px;}
   .w250px{width: 330px;}
   .fontSize50{font-size: 58px;}
@@ -239,6 +242,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize36{font-size: 45px;}
   .w250px{width: 370px;}
   .fontSize50{font-size: 62px;}
+  .fontSize30{font-size:37px;}
 }
 @media (min-width:2304px) {
   .fontSize18{font-size: 26px;}
@@ -259,6 +263,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize50{font-size: 46px;}
   .h60px{height: 55px;}
   .w250px{width: 230px;}
+  .fontSize30{font-size:28px;}
 }
 @media (max-width:1228.8px) {
   .fontSize18{font-size: 15px;}
@@ -270,6 +275,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize35{font-size: 30px;}
   .fontSize36{font-size: 32px;}
   .fontSize50{font-size: 42px;}
+  .fontSize30{font-size:25px;}
   .h60px{height: 50px;}
   .w250px{width: 210px;}
 }
@@ -283,6 +289,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize35{font-size: 26px;}
   .fontSize36{font-size: 28px;}
   .fontSize50{font-size: 36px;}
+  .fontSize30{font-size:22px;}
   .h60px{height: 40px;} 
   .w250px{width: 170px;}
 }
@@ -296,6 +303,7 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
   .fontSize35{font-size: 24px;}
   .fontSize36{font-size: 24px;} 
   .w250px{width: 150px;}
+  .fontSize30{font-size:18px;}
 }
 @media (max-width:768px) {
   .fontSize18{font-size: 12px;}

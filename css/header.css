@@ -250,7 +250,107 @@ header .header-part2 .HeaderLocation .location-list{
   position: absolute;
   left: -1rem;
 }
-header .header-part2 .headerlLinksIcons{gap: 20px;padding-left: 50px;}
+header .header-part2 .headerlLinksIcons{
+  gap: 1rem;
+  padding-left: 50px;
+}
+header .header-part2 .headerlLinksIcons img{
+  width: 30px;
+  height: 30px;
+  height: max-content;
+  object-fit: contain;
+}
+header .header-part2 .headerlLinksIcons a{position: relative;}
+.icon-notification{position: relative;}
+.icon-notification button{background: none;}
+.icon-notification .img-notification{width: 35px;height: 35px;}
+.icon-notification .numberNotification{
+  position: absolute;
+  top: -5px;
+  right: 2px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0px 5px;
+  color: #48660E;
+  font-size: 9px;
+}
+.icon-notification .listNotifications{
+  position: absolute;
+  width: 270px;
+  min-height: 260px;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  left: 30%;
+  transform: translateX(-70%);
+  top: 100%;
+  background: #fff;
+  border-radius: 12px 0  0 12px;
+  z-index: 9999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: none;
+ transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.icon-notification .listNotifications.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.icon-notification .listNotifications::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(232, 232, 232, 0.3);
+	border-radius: 50px;
+	background-color: #e3e3e3;
+}
+.icon-notification .listNotifications::-webkit-scrollbar
+{
+  width: 3px;
+	background-color: #dadada;
+}
+.icon-notification .listNotifications::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(235, 235, 235, 0.3);
+	background-color: #48660E ;
+
+}
+.icon-notification .listNotifications  .boxNotification{
+  border-bottom: 1px solid #e3e3e3;
+  transition: all 0.3s ease;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.icon-notification .listNotifications  .boxNotification:hover{
+  background: #e3e3e3;
+}
+.icon-notification .listNotifications  .boxNotification:first-child{
+  padding-top: 20px;
+  border-radius: 12px 12px 0 0;
+}
+.icon-notification .listNotifications  .boxNotification:last-child{
+  padding-bottom:8px;
+  border-bottom: none;
+  border-radius: 0 0 12px 12px;
+}
+.icon-notification .listNotifications  .boxNotification h4{
+ line-height: 110%;
+ margin-bottom: 4px;
+}
+.icon-notification .listNotifications .boxNotification p{
+ font-size: 11px;
+ margin-bottom: 0;
+ line-height: 130%;
+}
+.icon-notification .listNotifications .boxNotification .showMore{
+  color: #48660E;
+}
+.icon-notification .listNotifications  .boxNotification span{
+  white-space: pre;
+  font-size: 11px;
+}
 .fxHeaderForm{
   padding: 0 20px;
   border-radius: 10px;
@@ -508,6 +608,12 @@ header .header-part3 .linksHeader .listlinks .listFromPart a{
   header .header-part2 .HeaderLocation .btnLocation span{font-size: 16px;}
   header .header-part2 .HeaderLocation .btnLocation img{width: 25px;}
    header .header-part2 .HeaderLocation .btnLocation .location-user{width: 40px;}
+   .icon-notification .numberNotification {padding: 0px 7px;font-size: 12px;right: 0px;}
+   .icon-notification .listNotifications{width: 330px;min-height:290px}
+   .icon-notification .listNotifications .boxNotification{padding: 14px 24px;}
+   .icon-notification .listNotifications .boxNotification p,
+   .icon-notification .listNotifications .boxNotification span{font-size: 14px;}
+   header .header-part2 .headerlLinksIcons img{width: 35px;height: 35px;}
 }
 @media (min-width:1920px) {
     header .header-part3 .linksHeader .listlinks .listFromPart h5{font-size: 26px;}
@@ -522,6 +628,11 @@ header .header-part3 .linksHeader .listlinks .listFromPart a{
   header .header-part2 .HeaderLocation .btnLocation .location-user{width:45px;}
   .divCategories .listCategories{width: 250px;}
   .divCategories .listCategories .itemCategory{padding:16px 20px;}
+  .icon-notification .listNotifications{width: 360px;min-height:340px}
+  .icon-notification .listNotifications .boxNotification{padding: 16px 24px;}
+  .icon-notification .listNotifications .boxNotification p,
+  .icon-notification .listNotifications .boxNotification span{font-size: 15px;}
+  header .header-part2 .headerlLinksIcons img{width: 40px;height: 40px;}
 }
 @media (min-width:2048px) {
   .fxHeaderForm .fxFormSearch{width: 74%;}
@@ -561,6 +672,20 @@ header .header-part3 .linksHeader .listlinks .listFromPart a{
   header .header-part3 .linksHeader .listlinks .listFromPart a{font-size: 15px;}
   header .header-part3 .linksHeader .listlinks .listFromPart{gap: 22px;}
   header .header-part3 .linksHeader .listlinks{height: 350px;}
+  .icon-notification .listNotifications{
+    left: 20%;
+    transform: translateX(-80%);
+    width: 220px;
+    top:90%;
+  }
+  .icon-notification .listNotifications .boxNotification{padding: 8px 1rem;}
+  .icon-notification .listNotifications .boxNotification:first-child{padding-top: 1rem;}
+  .icon-notification .numberNotification {
+    top: -2px;
+    right: 0px;
+    padding: 0px 4px;
+    font-size: 8px;
+  }
 }
 @media (max-width:1024px) {
   header .header-part2 .headerlLinksIcons{padding-left: 20px;}
@@ -584,6 +709,7 @@ header .header-part3 .linksHeader .listlinks .listFromPart a{
   header .header-part3 .linksHeader .listlinks .listFromPart{gap: 18px;}
   header .header-part3 .linksHeader .listlinks{height: 300px;}
   header .header-part3 .linksHeader .divLinkLeft .listlinks{left: 20%;transform: translate(-80%,0);}
+
 }
 @media (max-width:877.71px) {
   header .header-part2{padding: 10px 30px;gap: 15px;}
@@ -606,6 +732,12 @@ header .header-part3 .linksHeader .listlinks .listFromPart a{
   header .header-part3 .linksHeader .listlinks .listFromPart a{font-size: 13px;}
   header .header-part3 .linksHeader .listlinks .listFromPart{gap: 14px;}
   header .header-part3 .linksHeader .listlinks{height: 300px;gap: 50px;}
+  .icon-notification .listNotifications{
+    width: 240px;
+    left: 10%;
+    transform: translateX(-90%);
+  }
+
 }
 @media (max-width:768px) {
   header{flex-wrap: wrap;}
@@ -621,8 +753,14 @@ header .header-part3 .linksHeader .listlinks .listFromPart a{
   .fxHeaderForm .fxFormSearch{width: 73%;}
 }
 @media (max-width:614.40px) {
+  .icon-notification .listNotifications{
+    left: 10%;
+    width: 220px;
+    transform: translateX(-90%);
+  }
   header{display: none;}
   .navbar{display: block;}
+
   .navbar .navbarPart2 .divLocation .itemLocation{padding: 5px;}
 }
 @media (max-width:512px) {

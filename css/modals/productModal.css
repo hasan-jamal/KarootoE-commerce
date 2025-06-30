@@ -1,0 +1,122 @@
+/* Modal */
+.modalProducts {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    width: 70%;
+    max-height: 90vh;
+    margin: auto;
+    background: #fff;
+    z-index: 6000;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    display: none;
+    opacity: 1;
+    transition: transform 0.3s ease;
+    padding: 30px;
+}
+.modalProducts.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+.modalProducts .modal-content{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 36px;
+    gap: 20px;
+    align-items: normal;
+}
+.modalProducts  .titleModal{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(225, 224, 224, 1);
+}
+.modalProducts  .titleModal button{background: none;}
+.modalProducts .modal-content .productCard {
+    flex: 1 1 calc(33.3% - 30px);
+    max-width: calc(33.3% - 0px);
+}
+.modalProducts .modal-content .productCard .productCard-title{margin-bottom: 15px;}
+.modalProducts .modal-content .productCard .productCard-title h2 {
+    line-height: 127%;
+}
+.coverBackground {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 5000;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .coverBackground.show {
+    display: block;
+    opacity: 1;
+  }
+@media (min-width:1706.67px) {
+    .modalProducts  .titleModal{
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+}
+@media (min-width:1920px) {
+    .modalProducts  .titleModal{
+        padding-bottom: 27px;
+        margin-bottom: 27px;
+    }
+}
+@media (min-width:2048px) {
+    .modalProducts  .titleModal{
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width:2304px) {
+    .modalProducts{width: 1300px;}
+}
+@media (min-width:3072px) {
+}
+@media (min-width:4608px) {
+
+}
+@media (max-width:1396.36px) {
+    .modalProducts{padding: 25px;}
+    .modalProducts  .titleModal{padding-bottom: 18px;margin-bottom: 18px;}
+}
+@media (max-width:1228.8px) {
+    .modalProducts{padding: 20px;}
+    .modalProducts  .titleModal{padding-bottom: 15px;margin-bottom: 15px;}
+}
+@media (max-width:1024px) {
+    .modalProducts{width: 80%;}
+    .modalProducts{padding: 16px;}
+    .modalProducts .modal-content{gap: 16px;}
+    .modalProducts .modal-content .productCard {
+        flex: 1 1 calc(33.3% - 16px);
+        max-width: calc(33.3% - 0px);
+    }
+    .modalProducts  .titleModal{padding-bottom: 12px;margin-bottom: 12px;}
+}
+@media (max-width:877.71px) {
+    .modalProducts .modal-content{gap: 4px;}
+    .modalProducts .modal-content .productCard {
+        flex: 1 1 calc(33.3% - 4px);
+        max-width: calc(33.3% - 0px);
+    }
+    .modalProducts{width: 90%;}
+    .productCard .productCard-title h2{font-size: 13px;}
+}
+@media (max-width:768px) {
+}
+@media (max-width:614.4px) {
+    .modalProducts .modal-content .productCard {
+        flex: 1 1 calc(100% - 4px);
+        max-width: calc(100% - 0px);
+    }
+}
+@media (max-width:512px) {}
